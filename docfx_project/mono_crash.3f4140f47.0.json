@@ -1,0 +1,3762 @@
+{
+  "protocol_version" : "0.0.6",
+  "configuration" : {
+    "version" : "(6.12.0.113) (2020-02/4fdfb5b1fd5)",
+    "tlc" : "normal",
+    "sigsgev" : "altstack",
+    "notifications" : "kqueue",
+    "architecture" : "amd64",
+    "disabled_features" : "none",
+    "smallconfig" : "disabled",
+    "bigarrays" : "disabled",
+    "softdebug" : "enabled",
+    "interpreter" : "enabled",
+    "llvm_support" : "0",
+    "suspend" : "hybrid"
+  },
+  "memory" : {
+    "Resident Size" : "227155968",
+    "Virtual Size" : "4694351872",
+    "minor_gc_time" : "6296207",
+    "major_gc_time" : "1300316",
+    "minor_gc_count" : "80",
+    "major_gc_count" : "7",
+    "major_gc_time_concurrent" : "4057188"
+ },
+  "threads" : [
+ {
+    "is_managed" : true,
+    "offset_free_hash" : "0x34c85ff52",
+    "offset_rich_hash" : "0x34c86fbb4",
+    "crashed" : false,
+    "native_thread_id" : "0x700003a19000",
+    "thread_info_addr" : "0x7f7fd2843000",
+    "dumping_error" : "Exceeded the maximum number of frames",
+    "thread_name" : "Thread Pool Worker",
+    "ctx" : {
+      "IP" : "0x7fff6fddae36",
+      "SP" : "0x112019fa8",
+      "BP" : "0x112019fc0"
+  },
+    "managed_frames" : [
+  {
+      "is_managed" : "false",
+      "native_address" : "unregistered"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "58E88B8B-C383-4E07-A237-B0C4D21C89F2",
+      "token" : "0x00000",
+      "native_offset" : "0x0",
+      "filename" : "mscorlib.dll",
+      "sizeofimage" : "0x472000",
+      "timestamp" : "0x86058d7a",
+      "il_offset" : "0x00000"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "58E88B8B-C383-4E07-A237-B0C4D21C89F2",
+      "token" : "0x6001470",
+      "native_offset" : "0x0",
+      "filename" : "mscorlib.dll",
+      "sizeofimage" : "0x472000",
+      "timestamp" : "0x86058d7a",
+      "il_offset" : "0x00072"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "51A2DE9C-5FDE-4124-A722-F0D32550ECEF",
+      "token" : "0x60019ef",
+      "native_offset" : "0x0",
+      "filename" : "System.Core.dll",
+      "sizeofimage" : "0x110000",
+      "timestamp" : "0xf73185d1",
+      "il_offset" : "0x00056"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "51A2DE9C-5FDE-4124-A722-F0D32550ECEF",
+      "token" : "0x6001194",
+      "native_offset" : "0x0",
+      "filename" : "System.Core.dll",
+      "sizeofimage" : "0x110000",
+      "timestamp" : "0xf73185d1",
+      "il_offset" : "0x0000e"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "51A2DE9C-5FDE-4124-A722-F0D32550ECEF",
+      "token" : "0x6001190",
+      "native_offset" : "0x0",
+      "filename" : "System.Core.dll",
+      "sizeofimage" : "0x110000",
+      "timestamp" : "0xf73185d1",
+      "il_offset" : "0x0007d"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "51A2DE9C-5FDE-4124-A722-F0D32550ECEF",
+      "token" : "0x6001197",
+      "native_offset" : "0x0",
+      "filename" : "System.Core.dll",
+      "sizeofimage" : "0x110000",
+      "timestamp" : "0xf73185d1",
+      "il_offset" : "0x0000b"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "51A2DE9C-5FDE-4124-A722-F0D32550ECEF",
+      "token" : "0x600119e",
+      "native_offset" : "0x0",
+      "filename" : "System.Core.dll",
+      "sizeofimage" : "0x110000",
+      "timestamp" : "0xf73185d1",
+      "il_offset" : "0x00000"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x0038e"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+
+  ]
+ },
+ {
+    "is_managed" : true,
+    "offset_free_hash" : "0x3f4140f47",
+    "offset_rich_hash" : "0x3f4150b07",
+    "crashed" : true,
+    "native_thread_id" : "0x10eb73dc0",
+    "thread_info_addr" : "0x7f7fd280c000",
+    "dumping_error" : "Exceeded the maximum number of frames",
+    "thread_name" : "tid_307",
+    "ctx" : {
+      "IP" : "0x7fff6fde133a",
+      "SP" : "0x7ffee35884f8",
+      "BP" : "0x7ffee3588520"
+  },
+    "managed_frames" : [
+  {
+      "is_managed" : "false",
+      "native_address" : "unregistered"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "58E88B8B-C383-4E07-A237-B0C4D21C89F2",
+      "token" : "0x00000",
+      "native_offset" : "0x0",
+      "filename" : "mscorlib.dll",
+      "sizeofimage" : "0x472000",
+      "timestamp" : "0x86058d7a",
+      "il_offset" : "0x00000"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "58E88B8B-C383-4E07-A237-B0C4D21C89F2",
+      "token" : "0x00000",
+      "native_offset" : "0x0",
+      "filename" : "mscorlib.dll",
+      "sizeofimage" : "0x472000",
+      "timestamp" : "0x86058d7a",
+      "il_offset" : "0xffffffff"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "51A2DE9C-5FDE-4124-A722-F0D32550ECEF",
+      "token" : "0x60019ef",
+      "native_offset" : "0x0",
+      "filename" : "System.Core.dll",
+      "sizeofimage" : "0x110000",
+      "timestamp" : "0xf73185d1",
+      "il_offset" : "0x00027"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "51A2DE9C-5FDE-4124-A722-F0D32550ECEF",
+      "token" : "0x6001194",
+      "native_offset" : "0x0",
+      "filename" : "System.Core.dll",
+      "sizeofimage" : "0x110000",
+      "timestamp" : "0xf73185d1",
+      "il_offset" : "0x0000e"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "51A2DE9C-5FDE-4124-A722-F0D32550ECEF",
+      "token" : "0x6001190",
+      "native_offset" : "0x0",
+      "filename" : "System.Core.dll",
+      "sizeofimage" : "0x110000",
+      "timestamp" : "0xf73185d1",
+      "il_offset" : "0x0007d"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "51A2DE9C-5FDE-4124-A722-F0D32550ECEF",
+      "token" : "0x6001197",
+      "native_offset" : "0x0",
+      "filename" : "System.Core.dll",
+      "sizeofimage" : "0x110000",
+      "timestamp" : "0xf73185d1",
+      "il_offset" : "0x0000b"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "51A2DE9C-5FDE-4124-A722-F0D32550ECEF",
+      "token" : "0x600119e",
+      "native_offset" : "0x0",
+      "filename" : "System.Core.dll",
+      "sizeofimage" : "0x110000",
+      "timestamp" : "0xf73185d1",
+      "il_offset" : "0x00000"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x0038e"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+      "token" : "0x60002f1",
+      "native_offset" : "0x0",
+      "filename" : "Jint.dll",
+      "sizeofimage" : "0x44000",
+      "timestamp" : "0xc900115c",
+      "il_offset" : "0x00389"
+   }
+
+  ],
+  "unmanaged_frames" : [
+ {
+    "is_managed" : "false",
+    "native_address" : "0x10c45ba06",
+    "native_offset" : "0x00000"
+  }
+,
+ {
+    "is_managed" : "false",
+    "native_address" : "0x10c5f7165",
+    "native_offset" : "0x00000"
+  }
+,
+ {
+    "is_managed" : "false",
+    "native_address" : "0x10c5f77da",
+    "native_offset" : "0x00000"
+  }
+,
+ {
+    "is_managed" : "false",
+    "native_address" : "0x10c4c8a97",
+    "native_offset" : "0x00000"
+  }
+,
+ {
+    "is_managed" : "false",
+    "native_address" : "0x10c46069e",
+    "native_offset" : "0x00000"
+  }
+,
+ {
+    "is_managed" : "false",
+    "native_address" : "0x10c4c7d8f",
+    "native_offset" : "0x00000"
+  }
+,
+ {
+    "is_managed" : "false",
+    "native_address" : "0x7fff6fe925fd",
+    "native_offset" : "0x00000"
+  }
+,
+ {
+    "is_managed" : "false",
+    "native_address" : "unregistered"
+  }
+,
+ {
+    "is_managed" : "false",
+    "native_address" : "0x7fff6fd68808",
+    "native_offset" : "0x00000"
+  }
+,
+ {
+    "is_managed" : "false",
+    "native_address" : "0x10c6b4f67",
+    "native_offset" : "0x00000"
+  }
+,
+ {
+    "is_managed" : "false",
+    "native_address" : "0x10c695def",
+    "native_offset" : "0x00000"
+  }
+,
+ {
+    "is_managed" : "false",
+    "native_address" : "0x10c6b53fe",
+    "native_offset" : "0x00000"
+  }
+,
+ {
+    "is_managed" : "false",
+    "native_address" : "0x10c6b54b2",
+    "native_offset" : "0x00000"
+  }
+,
+ {
+    "is_managed" : "false",
+    "native_address" : "0x10c6aaf80",
+    "native_offset" : "0x00000"
+  }
+,
+ {
+    "is_managed" : "false",
+    "native_address" : "0x10c6a881d",
+    "native_offset" : "0x00000"
+  }
+,
+ {
+    "is_managed" : "false",
+    "native_address" : "0x10c6463ad",
+    "native_offset" : "0x00000"
+  }
+,
+ {
+    "is_managed" : "false",
+    "native_address" : "0x10c6595e6",
+    "native_offset" : "0x00000"
+  }
+,
+ {
+    "is_managed" : "false",
+    "native_address" : "0x10c65624d",
+    "native_offset" : "0x00000"
+  }
+,
+ {
+    "is_managed" : "false",
+    "native_address" : "0x10c656197",
+    "native_offset" : "0x00000"
+  }
+,
+ {
+    "is_managed" : "false",
+    "native_address" : "0x10c64be55",
+    "native_offset" : "0x00000"
+  }
+,
+ {
+    "is_managed" : "false",
+    "native_address" : "0x10c64c3ae",
+    "native_offset" : "0x00000"
+  }
+,
+ {
+    "is_managed" : "false",
+    "native_address" : "0x10c647f1b",
+    "native_offset" : "0x00000"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "58E88B8B-C383-4E07-A237-B0C4D21C89F2",
+    "token" : "0x00000",
+    "native_offset" : "0x0",
+    "filename" : "mscorlib.dll",
+    "sizeofimage" : "0x472000",
+    "timestamp" : "0x86058d7a",
+    "il_offset" : "0x00000"
+  }
+
+ ]
+},
+{
+  "is_managed" : false,
+  "offset_free_hash" : "0x0",
+  "offset_rich_hash" : "0x0",
+  "crashed" : false,
+  "native_thread_id" : "0x700002e81000",
+  "thread_info_addr" : "0x7f7fd3809800",
+  "thread_name" : "Finalizer",
+  "ctx" : {
+    "IP" : "0x7fff6fddae36",
+    "SP" : "0x700002e80eb8",
+    "BP" : "0x700002e80f00"
+ },
+  "unmanaged_frames" : [
+ {
+    "is_managed" : "false",
+    "native_address" : "0x10c45ba06",
+    "native_offset" : "0x00000"
+  }
+,
+ {
+    "is_managed" : "false",
+    "native_address" : "0x10c5f7165",
+    "native_offset" : "0x00000"
+  }
+,
+ {
+    "is_managed" : "false",
+    "native_address" : "0x10c5f6e97",
+    "native_offset" : "0x00000"
+  }
+,
+ {
+    "is_managed" : "false",
+    "native_address" : "0x10c4c79d0",
+    "native_offset" : "0x00000"
+  }
+,
+ {
+    "is_managed" : "false",
+    "native_address" : "0x7fff6fe925fd",
+    "native_offset" : "0x00000"
+  }
+,
+ {
+    "is_managed" : "false",
+    "native_address" : "0x10cfefd38",
+    "native_offset" : "0x00000"
+  }
+,
+ {
+    "is_managed" : "false",
+    "native_address" : "0x10c5f7dad",
+    "native_offset" : "0x00000"
+  }
+,
+ {
+    "is_managed" : "false",
+    "native_address" : "0x7fff6fe9e109",
+    "native_offset" : "0x00000"
+  }
+,
+ {
+    "is_managed" : "false",
+    "native_address" : "0x7fff6fe99b8b",
+    "native_offset" : "0x00000"
+  }
+
+ ]
+},
+{
+  "is_managed" : true,
+  "offset_free_hash" : "0x34c85ff52",
+  "offset_rich_hash" : "0x34c86fbb4",
+  "crashed" : false,
+  "native_thread_id" : "0x700004225000",
+  "thread_info_addr" : "0x7f7fd42b1e00",
+  "dumping_error" : "Exceeded the maximum number of frames",
+  "thread_name" : "Thread Pool Worker",
+  "ctx" : {
+    "IP" : "0x7fff6fddae36",
+    "SP" : "0x113006fa8",
+    "BP" : "0x113006fc0"
+ },
+  "managed_frames" : [
+ {
+    "is_managed" : "false",
+    "native_address" : "unregistered"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "58E88B8B-C383-4E07-A237-B0C4D21C89F2",
+    "token" : "0x00000",
+    "native_offset" : "0x0",
+    "filename" : "mscorlib.dll",
+    "sizeofimage" : "0x472000",
+    "timestamp" : "0x86058d7a",
+    "il_offset" : "0x00000"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "58E88B8B-C383-4E07-A237-B0C4D21C89F2",
+    "token" : "0x6001470",
+    "native_offset" : "0x0",
+    "filename" : "mscorlib.dll",
+    "sizeofimage" : "0x472000",
+    "timestamp" : "0x86058d7a",
+    "il_offset" : "0x00072"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "51A2DE9C-5FDE-4124-A722-F0D32550ECEF",
+    "token" : "0x60019ef",
+    "native_offset" : "0x0",
+    "filename" : "System.Core.dll",
+    "sizeofimage" : "0x110000",
+    "timestamp" : "0xf73185d1",
+    "il_offset" : "0x00056"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "51A2DE9C-5FDE-4124-A722-F0D32550ECEF",
+    "token" : "0x6001194",
+    "native_offset" : "0x0",
+    "filename" : "System.Core.dll",
+    "sizeofimage" : "0x110000",
+    "timestamp" : "0xf73185d1",
+    "il_offset" : "0x0000e"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "51A2DE9C-5FDE-4124-A722-F0D32550ECEF",
+    "token" : "0x6001190",
+    "native_offset" : "0x0",
+    "filename" : "System.Core.dll",
+    "sizeofimage" : "0x110000",
+    "timestamp" : "0xf73185d1",
+    "il_offset" : "0x0007d"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "51A2DE9C-5FDE-4124-A722-F0D32550ECEF",
+    "token" : "0x6001197",
+    "native_offset" : "0x0",
+    "filename" : "System.Core.dll",
+    "sizeofimage" : "0x110000",
+    "timestamp" : "0xf73185d1",
+    "il_offset" : "0x0000b"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "51A2DE9C-5FDE-4124-A722-F0D32550ECEF",
+    "token" : "0x600119e",
+    "native_offset" : "0x0",
+    "filename" : "System.Core.dll",
+    "sizeofimage" : "0x110000",
+    "timestamp" : "0xf73185d1",
+    "il_offset" : "0x00000"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x0038e"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+
+ ]
+},
+{
+  "is_managed" : true,
+  "offset_free_hash" : "0x34c85ff52",
+  "offset_rich_hash" : "0x34c86fbb4",
+  "crashed" : false,
+  "native_thread_id" : "0x700004022000",
+  "thread_info_addr" : "0x7f7fd42fc600",
+  "dumping_error" : "Exceeded the maximum number of frames",
+  "thread_name" : "Thread Pool Worker",
+  "ctx" : {
+    "IP" : "0x7fff6fddae36",
+    "SP" : "0x112ffefa8",
+    "BP" : "0x112ffefc0"
+ },
+  "managed_frames" : [
+ {
+    "is_managed" : "false",
+    "native_address" : "unregistered"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "58E88B8B-C383-4E07-A237-B0C4D21C89F2",
+    "token" : "0x00000",
+    "native_offset" : "0x0",
+    "filename" : "mscorlib.dll",
+    "sizeofimage" : "0x472000",
+    "timestamp" : "0x86058d7a",
+    "il_offset" : "0x00000"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "58E88B8B-C383-4E07-A237-B0C4D21C89F2",
+    "token" : "0x6001470",
+    "native_offset" : "0x0",
+    "filename" : "mscorlib.dll",
+    "sizeofimage" : "0x472000",
+    "timestamp" : "0x86058d7a",
+    "il_offset" : "0x00072"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "51A2DE9C-5FDE-4124-A722-F0D32550ECEF",
+    "token" : "0x60019ef",
+    "native_offset" : "0x0",
+    "filename" : "System.Core.dll",
+    "sizeofimage" : "0x110000",
+    "timestamp" : "0xf73185d1",
+    "il_offset" : "0x00056"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "51A2DE9C-5FDE-4124-A722-F0D32550ECEF",
+    "token" : "0x6001194",
+    "native_offset" : "0x0",
+    "filename" : "System.Core.dll",
+    "sizeofimage" : "0x110000",
+    "timestamp" : "0xf73185d1",
+    "il_offset" : "0x0000e"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "51A2DE9C-5FDE-4124-A722-F0D32550ECEF",
+    "token" : "0x6001190",
+    "native_offset" : "0x0",
+    "filename" : "System.Core.dll",
+    "sizeofimage" : "0x110000",
+    "timestamp" : "0xf73185d1",
+    "il_offset" : "0x0007d"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "51A2DE9C-5FDE-4124-A722-F0D32550ECEF",
+    "token" : "0x6001197",
+    "native_offset" : "0x0",
+    "filename" : "System.Core.dll",
+    "sizeofimage" : "0x110000",
+    "timestamp" : "0xf73185d1",
+    "il_offset" : "0x0000b"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "51A2DE9C-5FDE-4124-A722-F0D32550ECEF",
+    "token" : "0x600119e",
+    "native_offset" : "0x0",
+    "filename" : "System.Core.dll",
+    "sizeofimage" : "0x110000",
+    "timestamp" : "0xf73185d1",
+    "il_offset" : "0x00000"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x0038e"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "F19D215D-E131-4151-B077-7F85EF6AFE48",
+    "token" : "0x60002f1",
+    "native_offset" : "0x0",
+    "filename" : "Jint.dll",
+    "sizeofimage" : "0x44000",
+    "timestamp" : "0xc900115c",
+    "il_offset" : "0x00389"
+  }
+
+ ]
+}
+]
+}

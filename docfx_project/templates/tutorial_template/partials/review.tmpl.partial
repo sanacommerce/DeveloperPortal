@@ -1,0 +1,45 @@
+<div id="feedback-survey">
+    <div class="feedback-question" data-for-title="{{title}}"> Did you find this article helpful?
+        <div class="feedback-btn">
+            <button class="yes feedback-btn-button" style="float: left;" alt="Yes, this article was helpful.">Yes</button>
+        </div>
+        <div class="feedback-btn">
+            <button class="no feedback-btn-button" alt="No, this article wasn't helpful.">No</button>
+        </div>
+    </div>
+    <div class="feedback-reason no" id="feedback-no">
+        <hr width="100%" size="0" align="center">
+            <div>
+                <p class="feedback-answer">Sorry about that</p>
+                <p>Why wasn't this helpful? (check all that apply)</p>
+                <div class="feedback-option">
+                    <input type="checkbox" class="option" id="option1" value="Couldn't find what I was looking for" data-analytics-label="Could not find">
+                    <label for="option1">Couldn't find what I was looking for</label>
+                </div>
+                <div class="feedback-option">
+                    <input type="checkbox" class="option" id="option2" value="Instructions confusing or unclear" data-analytics-label="Confusing or unclear">
+                    <label for="option2">Instructions were confusing or unclear</label>
+                </div>
+                <div class="feedback-option">
+                    <input type="checkbox" class="option" id="option3" value="Instructions didn't work" data-analytics-label="Did not work">
+                    <label for="option3">Instructions didn't work</label>
+                </div>
+                <div class="belowoptions">
+                    <div>
+                        <button class="btn btn-primary submitfeedback btn-sm">Submit</button>
+                    </div>
+                <div class="feedback-reason no-thanks" id="feedback-result-no">
+                    <p>
+                        <b>Thanks for your feedback!</b>
+                    </p>
+                </div>
+                </div>
+            </div>
+    </div>
+    <div class="feedback-reason yes-thanks" id="feedback-result-yes">
+        <hr width="100%" size="0" align="center">
+        <p class="feedback-answer">Great!</p>
+        <p>Thanks for taking the time to give us some feedback.</p>
+    </div>
+    <div id="gitalk-container"></div>
+</div>
