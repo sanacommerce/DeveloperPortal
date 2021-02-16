@@ -2,6 +2,10 @@ body {
     overflow-x: hidden;
 }
 
+.homepagetitle {
+    color: red;
+}
+
 #_model{
     display: none;
 }

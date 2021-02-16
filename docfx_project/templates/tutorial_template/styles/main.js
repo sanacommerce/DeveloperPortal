@@ -3,6 +3,9 @@ var _model = document.getElementById("_model")
 
 console.log(JSON.parse(_model.innerHTML))
 
+
+
+
 const gitalk = new Gitalk({
     clientID: '8ffabc8037cf22ca8da8',
     clientSecret: '52b0cc1edd81b0ed5cf8db65405354893a848ccb',

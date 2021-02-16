@@ -36,22 +36,28 @@
       {{#_disableToc}}
         <div class="article row grid">
         {{/_disableToc}}
+          {{#_isHomePage}}
           {{#_disableAffix}}
           <div class="col-md-12">
           {{/_disableAffix}}
+          {{/_isHomePage}}
+          {{^_isHomePage}}
           {{^_disableAffix}}
           <div class="col-md-10">
           {{/_disableAffix}}
+          {{/_isHomePage}}
             <article class="content wrap" id="_content" data-uid="{{uid}}">
-                {{!body}}
+                {{! body }}
                 {{#_allowReview}}
                 {{>partials/review}}
                 {{/_allowReview}}
             </article>
           </div>
+          {{^_isHomePage}}
           {{^_disableAffix}}
           {{>partials/affix}}
           {{/_disableAffix}}
+          {{/_isHomePage}}
         </div>
       </div>
       {{^_disableFooter}}
