@@ -5,9 +5,9 @@
  */
 exports.preTransform = function (model) {
     var splitKey = model._key.split("/")  
-    model._allowReview = (splitKey[splitKey.length - 1] !== "index.md") 
+    model.allowReview = !!model.allowReview || splitKey[splitKey.length - 1] !== "index.md"
     model._model = JSON.stringify(model)
-    model._isHomePage = model._key === "index.md"
+    model.isHomePage = model._key === "index.md"
     return model;
   }
   

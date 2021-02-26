@@ -29,8 +29,7 @@
           "sdk/**/toc.yml",
           "adk/**.md",
           "toc.yml",
-          "*.md",
-          "index.html"
+          "*.md"
         ]
       }
     ],
@@ -57,7 +56,7 @@
     "fileMetadataFiles": [],
     "template": [
       "default",
-      "templates/tutorial_template"
+      "templates/sana-template"
     ],
     "postProcessors": [],
     "markdownEngineName": "markdig",

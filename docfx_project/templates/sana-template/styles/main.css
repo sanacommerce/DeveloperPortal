@@ -9,6 +9,105 @@ body {
 #_model{
     display: none;
 }
+
+#feedback-survey {
+    position: relative;
+    margin-top: 45px;
+}
+
+.feedback-question {
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 2em;
+}
+
+.belowoptions {
+    margin-top: 20px;
+}
+
+.feedback-answer
+{
+	font-weight: bold;
+	font-size: 18.0pt;
+}
+
+.feedback-btn button {
+    cursor: pointer;
+}
+
+
+element.style {
+    float: left;
+}
+.feedback-btn button {
+    cursor: pointer;
+}
+
+.yes {
+    --color: #28a745;
+    --hover: #28a747;
+}
+
+.no {
+    --color: #990e13;
+    --hover: #990e11;
+}
+
+.yes:hover,
+.yes:focus
+{
+	box-shadow: inset 0 0 0 2em var(--hover);
+}
+
+.no:hover,
+.no:focus
+{
+	box-shadow: inset 0 0 0 2em var(--hover);
+}
+
+.feedback-reason {
+    display: none;
+	--hover: none;
+	line-height: 2em;
+}
+
+.feedback-reason.no {
+    display: none;
+}
+.feedback-reason.yes-thanks{
+    display: none;
+}
+
+.feedback-btn > button {
+    width: 70px;
+    background: none;
+    border: 2px solid;
+    font: inherit;
+    line-height: 1;
+    margin: 0.5em;
+    padding: 0.4em 0.2em;
+}
+
+.feedback-btn > button {
+    color: var(--color);
+    -webkit-transition: 0.25s;
+    transition: 0.25s;
+}
+.feedback-btn > button:hover, button:focus
+{
+	border-color: var(--hover);
+	color: #fff;
+}
+
+.feedback-answer {
+    font-weight: bold;
+    font-size: 18.0pt;
+}
+
+.createIssue {
+    display: none;
+}
+
 /* layout */
 
 #logo {
@@ -213,98 +312,4 @@ body {
     border-bottom-right-radius: 0;
 }
 
-
-#feedback-survey {
-    position: relative;
-    margin-top: 45px;
-}
-
-.feedback-question {
-    font-size: 1em;
-    font-weight: 600;
-    line-height: 2em;
-}
-
-.belowoptions {
-    margin-top: 20px;
-}
-
-.feedback-answer
-{
-	font-weight: bold;
-	font-size: 18.0pt;
-}
-
-.feedback-btn button {
-    cursor: pointer;
-}
-
-
-element.style {
-    float: left;
-}
-.feedback-btn button {
-    cursor: pointer;
-}
-
-.yes {
-    --color: #28a745;
-    --hover: #28a747;
-}
-
-.no {
-    --color: #990e13;
-    --hover: #990e11;
-}
-
-.yes:hover,
-.yes:focus
-{
-	box-shadow: inset 0 0 0 2em var(--hover);
-}
-
-.no:hover,
-.no:focus
-{
-	box-shadow: inset 0 0 0 2em var(--hover);
-}
-
-.feedback-reason {
-    display: none;
-	--hover: none;
-	line-height: 2em;
-}
-
-.feedback-reason.no {
-    display: none;
-}
-.feedback-reason.yes-thanks{
-    display: none;
-}
-
-.feedback-btn > button {
-    width: 70px;
-    background: none;
-    border: 2px solid;
-    font: inherit;
-    line-height: 1;
-    margin: 0.5em;
-    padding: 0.4em 0.2em;
-}
-
-.feedback-btn > button {
-    color: var(--color);
-    -webkit-transition: 0.25s;
-    transition: 0.25s;
-}
-.feedback-btn > button:hover, button:focus
-{
-	border-color: var(--hover);
-	color: #fff;
-}
-
-.feedback-answer {
-    font-weight: bold;
-    font-size: 18.0pt;
-}
 
