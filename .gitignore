@@ -66,6 +66,7 @@ UpgradeLog*.htm
 *.ndf
 
 # Repo-specific
+wwwroot
 _pub/
 **/_site/*
 log.txt
