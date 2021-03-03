@@ -1,0 +1,52 @@
+{
+  "metadata": [
+  ],
+  "build": {
+    "content": [
+      {
+        "files": [
+          "ADK/**.md",
+          "ADK/**/toc.yml",
+          "Graph-APIs/**.md",
+          "Graph-APIs/**/toc.yml",
+          "Examples/**.md",
+          "toc.yml",
+          "*.md"
+        ],
+        "exclude": [
+          "obj/**",
+          "wwwroot/**",
+          "README.md"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "images/**"
+        ]
+      }
+    ],
+    "overwrite": [
+    ],
+    "dest": "wwwroot",
+    "template": [
+      "default",
+      "_templates/sana-template",
+    ],
+    "globalMetadata": {
+      "_appFooter": "<span>Copyright © 2021 Sana Commerce</span>",
+      "_appTitle": "Sana Developer Portal",
+      "_enableNewTab": true,
+      "_enableSearch": true,
+      "_disableContribution": false,
+      "_appLogoPath": "logo.png",
+      "_enableModelDebug":  false
+    },
+    "globalMetadataFiles": [],
+    "fileMetadataFiles": [],
+    "postProcessors": [],
+    "markdownEngineName": "markdig",
+    "noLangKeyword": false
+  }
+}

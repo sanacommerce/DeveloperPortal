@@ -1,0 +1,165 @@
+{
+  "homepages": [],
+  "source_base_path": "D:/Development/DeveloperPortal/DeveloperPortal",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      },
+      "is_incremental": false
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "ADK/adk1.md",
+      "output": {
+        ".html": {
+          "relative_path": "ADK/adk1.html",
+          "hash": "N8lM8jK/gjBQQKm8Uw3flQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "ADK/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "ADK/index.html",
+          "hash": "Qtg/LR8iE77Yq87hX3qR3w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "ADK/toc.md",
+      "output": {
+        ".html": {
+          "relative_path": "ADK/toc.html",
+          "hash": "+8mGv9oO4suEq8Rm+eq/6w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Examples/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "Examples/index.html",
+          "hash": "cUc/33sxhjsSnQ1+l9RcWA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Graph-APIs/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "Graph-APIs/index.html",
+          "hash": "1wrwyeon2iO9dFc147uXjA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Graph-APIs/test.md",
+      "output": {
+        ".html": {
+          "relative_path": "Graph-APIs/test.html",
+          "hash": "n+hoXxwZUg7ey1GzvYGh1w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "Graph-APIs/toc.md",
+      "output": {
+        ".html": {
+          "relative_path": "Graph-APIs/toc.html",
+          "hash": "P7vFe1ZZ5B2mdqnDPadvcg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "x65/Slk15dtc89/cjOYDAw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "8ADwxE869Hy5NO9smEM9vQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 6,
+          "skipped_file_count": 6
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: should not trace intermediate info.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
