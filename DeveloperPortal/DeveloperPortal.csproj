@@ -6,7 +6,6 @@
 
   <ItemGroup>
     <None Remove="log.txt" />
-    <None Remove="runserver.sh" />
   </ItemGroup>
 
   <ItemGroup>
