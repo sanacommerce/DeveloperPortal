@@ -1,14 +1,108 @@
-body {
-    overflow-x: hidden;
+/* #region Homepage */
+
+@media (min-width: 768px) {
+    .homepage {
+        padding-top: 50px;
+    }
 }
 
-.homepagetitle {
-    color: red;
+.background-image {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
 }
 
-#_model{
-    display: none;
+.background-image img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 100%;
+    max-height: 640px;
 }
+
+.welcome-message {
+    width: 100%;
+    max-width: 75.125rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* #endregion */
+
+/* #region Top Header */
+
+.header-top {
+    background-color: #fff;
+}
+
+#logo {
+    height: 100%;
+}
+
+.article {
+    margin-top: 170px;
+}
+
+/* #endregion*/
+
+/* #region Navbar */
+
+.navbar-collapse {
+    padding-left: 0px;
+    margin-left: 0px !important;
+}
+
+.navbar-inverse {
+    background-color: #f8f8f8;
+    border-color: #e7e7e7;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #777;
+}
+
+.navbar-inverse .navbar-nav > li > a:focus,
+.navbar-inverse .navbar-nav > li > a:hover {
+    color: #333;
+    background-color: transparent;
+}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:focus,
+.navbar-inverse .navbar-nav > .active > a:hover {
+    color: #555;
+    background-color: #e7e7e7;
+}
+
+.navbar-inverse .navbar-toggle,
+.navbar-inverse .navbar-toggle > button:focus {
+    background-color: #e7e7e7 !important;
+    border-color: #ddd;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #888;
+}
+
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form {
+    border-color: #e7e7e7;
+}
+
+.btn.toc-toggle.focus,
+.btn.toc-toggle:focus,
+.btn.toc-toggle:hover {
+    color: #337ab7;
+}
+
+/* #endregion */
+
+/* #region Feedback */
 
 #feedback-survey {
     position: relative;
@@ -34,7 +128,6 @@ body {
 .feedback-btn button {
     cursor: pointer;
 }
-
 
 element.style {
     float: left;
@@ -108,53 +201,27 @@ element.style {
     display: none;
 }
 
-/* layout */
+/*#endregion*/
 
-#logo {
-    height: 100%;
+/* #region toc */
+
+
+
+/* #endregion */
+
+/* #region affix */
+
+.sideaffix {
+    bottom: 10px !important;
+    margin-top: 90px;
 }
 
-#wrapper .container {
-    width: auto;
-}
+/* #endregion */
 
+/* #region layout */
+/*
 .article.grid {
     margin-left: 10px;
-}
-
-.navbar-inverse {
-    background-color: #f8f8f8;
-    border-color: #e7e7e7;
-}
-
-.navbar-inverse .navbar-nav>li>a {
-    color: #777;
-}
-
-.navbar-inverse .navbar-nav>li>a:focus,
-.navbar-inverse .navbar-nav>li>a:hover {
-    color: #333;
-    background-color: transparent;
-}
-
-.navbar-inverse .navbar-nav>.active>a,
-.navbar-inverse .navbar-nav>.active>a:focus,
-.navbar-inverse .navbar-nav>.active>a:hover {
-    color: #555;
-    background-color: #e7e7e7;
-}
-
-.navbar-inverse .navbar-toggle {
-    border-color: #ddd;
-}
-
-.navbar-inverse .navbar-toggle .icon-bar {
-    background-color: #888;
-}
-
-.navbar-inverse .navbar-collapse,
-.navbar-inverse .navbar-form {
-    border-color: #e7e7e7;
 }
 
 .affix ul ul {
@@ -166,7 +233,6 @@ element.style {
 }
 
 #sidetoc .sidetoc .toc {
-    margin-left: 15px;
     padding-right: 0;
 }
 
@@ -194,24 +260,16 @@ element.style {
     bottom: 50px;
 }
 
-@media (min-width: 769px) {
-    #sidetoc {
-        margin-left: -15px;
-    }
-    #sidetoc .sidefilter,
-    #sidetoc .sidetoc {
-        width: 275px;
-    }
-}
-
 @media (max-width: 768px) {
     #sidetoc .sidetoc {
         text-align: left;
     }
 }
+*/
+/*#endregion*/
 
-/* DocFX fixes */
-
+/* #region DocFX fixes */
+/*
 @media (min-width: 768px) and (max-width: 768px) {
     #sidetoggle.collapse {
         display: none;
@@ -233,12 +291,6 @@ element.style {
 .btn.toc-toggle {
     -webkit-box-shadow: none;
     box-shadow: none;
-}
-
-.btn.toc-toggle.focus,
-.btn.toc-toggle:focus,
-.btn.toc-toggle:hover {
-    color: #337ab7;
 }
 
 #search-results mark,
@@ -277,10 +329,6 @@ element.style {
     margin-left: -31px !important;
 }
 
-.sideaffix {
-    bottom: 10px !important;
-}
-
 .sideaffix.shiftup {
     bottom: 50px !important;
 }
@@ -311,5 +359,5 @@ element.style {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
 }
-
-
+*/
+/* #endregion */

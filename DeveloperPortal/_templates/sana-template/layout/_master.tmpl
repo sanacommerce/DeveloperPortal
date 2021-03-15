@@ -8,12 +8,9 @@
 <!--[if IE]><![endif]-->
 <html>
   {{>partials/head}}
-  {{#_enableModelDebug}}
-  <div id="_model">{{_model}}</div>
-  {{/_enableModelDebug}}
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PW3S4D4"
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{_googleTagManagerId}}"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <div id="wrapper">
@@ -26,11 +23,12 @@
         {{/_disableBreadcrumb}}
       </header>
       {{#_enableSearch}}
-      <div class="goodContainer container body-content">
+      <div class="container body-content">
         {{>partials/searchResults}}
       </div>
       {{/_enableSearch}}
-      <div role="main" class="goodContainer container body-content hide-when-search">
+      {{^isHomePage}}
+      <div role="main" class="container body-content hide-when-search">
       {{^_disableToc}}
         {{>partials/toc}}
         <div class="article row grid-right">
@@ -38,16 +36,12 @@
       {{#_disableToc}}
         <div class="article row grid">
         {{/_disableToc}}
-          {{#isHomePage}}
           {{#_disableAffix}}
           <div class="col-md-12">
           {{/_disableAffix}}
-          {{/isHomePage}}
-          {{^isHomePage}}
           {{^_disableAffix}}
           <div class="col-md-10">
           {{/_disableAffix}}
-          {{/isHomePage}}
             <article class="content wrap" id="_content" data-uid="{{uid}}">
                 {{! body }}
                 {{#allowReview}}
@@ -55,13 +49,17 @@
                 {{/allowReview}}
             </article>
           </div>
-          {{^isHomePage}}
           {{^_disableAffix}}
           {{>partials/affix}}
           {{/_disableAffix}}
-          {{/isHomePage}}
         </div>
       </div>
+      {{/isHomePage}}
+      {{#isHomePage}}
+      <div class="body-content homepage">
+      {{! body }}
+      </div>
+      {{/isHomePage}}
       {{^_disableFooter}}
       {{>partials/footer}}
       {{/_disableFooter}}

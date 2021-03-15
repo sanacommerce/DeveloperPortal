@@ -1,7 +1,5 @@
-<h1 class="homepagetitle">
-    hello world
-</h1>
-<p>
-Just a paragraph on this page
-</p>
-
+<div>
+  <figure class="background-image">
+    <img class="" src="/img/home-red.svg" alt="">
+  </figure>
+</div>

@@ -1,6 +1,3 @@
-var _model = document.getElementById("_model")
-console.log(JSON.parse(_model.innerHTML))
-
 var feedbackQuestion = document.getElementsByClassName("feedback-question")[0]
 // Will only execute this block if its not an index markdown file.
 

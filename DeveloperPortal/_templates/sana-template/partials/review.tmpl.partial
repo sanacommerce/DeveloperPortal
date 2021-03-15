@@ -8,18 +8,16 @@
         </div>
     </div>
     <div class="feedback-reason no" id="feedback-no">
-        <hr width="100%" size="0" align="center">
-            <div>
-                <p class="feedback-answer">Sorry about that</p>
-                <div class="createIssue">
-                    <button class="btn btn-primary createissue btn-sm">Create new issue</button>
-                </div>
-            </div>
+      <div>
+          <p class="feedback-answer">Sorry about that</p>
+          <div class="createIssue">
+              <button class="btn btn-primary createissue btn-sm">Create new issue</button>
+          </div>
+      </div>
     </div>
     <div class="feedback-reason yes-thanks" id="feedback-result-yes">
-        <hr width="100%" size="0" align="center">
-        <p class="feedback-answer">Great!</p>
-        <p>Thanks for taking the time to give us some feedback.</p>
+      <p class="feedback-answer">Great!</p>
+      <p>Thanks for taking the time to give us some feedback.</p>
     </div>
     <div id="gitalk-container"></div>
 </div>

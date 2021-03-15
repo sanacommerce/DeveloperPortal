@@ -5,17 +5,19 @@
     "content": [
       {
         "files": [
-          "ADK/**.md",
-          "ADK/**/toc.yml",
-          "Graph-APIs/**.md",
-          "Graph-APIs/**/toc.yml",
-          "Examples/**.md",
-          "toc.yml",
-          "*.md"
+          //"ADK/**.md",
+          //"ADK/**/toc.yml",
+          //"Graph-APIs/**.md",
+          //"Graph-APIs/**/toc.yml",
+          "**toc.yml",
+          "**.md"
         ],
         "exclude": [
+          "bin/**",
           "obj/**",
           "wwwroot/**",
+          "_templates",
+          "Properties",
           "README.md"
         ]
       }
@@ -23,7 +25,8 @@
     "resource": [
       {
         "files": [
-          "images/**"
+          "robots.txt",
+          "**/img/**"
         ]
       }
     ],
@@ -35,13 +38,15 @@
       "_templates/sana-template",
     ],
     "globalMetadata": {
-      "_appFooter": "<span>Copyright © 2021 Sana Commerce</span>",
+      "_appFooter": "<span>Copyright &copy; 2021 Sana Commerce</span>",
       "_appTitle": "Sana Developer Portal",
       "_enableNewTab": true,
       "_enableSearch": true,
       "_disableContribution": false,
       "_appLogoPath": "logo.png",
-      "_enableModelDebug":  false
+      "_enableModelDebug": false,
+      "_googleTagManagerId": "GTM-PW3S4D4",
+      "_googleAnalyticsId": "UA-189400950-1"
     },
     "globalMetadataFiles": [],
     "fileMetadataFiles": [],

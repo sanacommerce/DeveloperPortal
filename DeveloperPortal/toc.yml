@@ -1,14 +1,14 @@
+- name: Getting Started
+  href: getting-started/
+  topicHref: getting-started/index.md
+
 - name: ADK
   href: adk/
-  topicHref: ADK/index.md
+  topicHref: adk/index.md
 
 - name: Graph APIs
   href: graph-apis/
-  topicHref: Graph-APIs/index.md
-
-- name: Examples
-  href: examples/
-  topicHref: Examples/index.md
+  topicHref: graph-apis/index.md
 
 - name: SDK
   href: https://community.sana-commerce.com/docs/SCC_Guides
