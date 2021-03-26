@@ -15,20 +15,6 @@
     </PackageReference>
   </ItemGroup>
 
-  <UsingTask TaskName="Sleep" TaskFactory="RoslynCodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll">
-    <ParameterGroup>
-      <!-- Delay in milliseconds -->
-      <Delay ParameterType="System.Int32" Required="true" />
-    </ParameterGroup>
-    <Task>
-      <Code Type="Fragment" Language="cs">
-        <![CDATA[
-  System.Threading.Thread.Sleep(this.Delay);
-  ]]>
-      </Code>
-    </Task>
-  </UsingTask>
-
   <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
     <RemoveDir Directories="$(ProjectDir)wwwroot" />
   </Target>
