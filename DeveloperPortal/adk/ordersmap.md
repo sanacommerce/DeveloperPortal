@@ -1,6 +1,7 @@
 # Orders Map Add-On Tutorial
 
-> [!NOTE] This tutorial requires the basic add-on development experience, covered in the base add-on development tutorial. Make sure to read it first, so that you are setup for this tutorial.
+> [!NOTE]
+> This tutorial requires the basic add-on development experience, covered in the base add-on development tutorial. Make sure to read it first, so that  you are setup for this tutorial.
 
 In this tutorial we will show you steps in the development of an add-on for a world map that shows all orders grouped by location on your website. The Sana GraphQL API will be invoked to retrieve these orders, and we will be using an external api to get the coordinates of these locations. We will make use of an external library called [leaflet](https://www.npmjs.com/package/leaflet) for mapping features that allow us to draw circles on a world map reflecting the order amounts per location. Additionally, we only want this map to be rendered when the user is a sales agent. So as to achieve these objectives multiple epics and a reducer will have to be used. We will also setup **npm** to install the necessary eslint and remaining dependencies for our add-on.
 
@@ -46,7 +47,7 @@ Considering you have setup the project and folder structure of a basic add-on. W
 }
 ```
 
-In order for these to be installed into node_modules, we will have to add a `PreBuildEvent` to `SalesMap.csproj`, which will run `npm install`.
+In order for these to be installed into node_modules, we will have to add a `PreBuildEvent` to `OrdersMap.csproj`, which will run `npm install`.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -54,7 +55,7 @@ In order for these to be installed into node_modules, we will have to add a `Pre
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <Folder Include="ClientApp/" />
+    <Folder Include="OrdersMap/" />
   </ItemGroup>
   <Import Project="$(MSBuildProjectDirectory)/../../Scripts/Addons/msbuild.targets" />
   <ItemGroup>
@@ -70,7 +71,7 @@ In order for these to be installed into node_modules, we will have to add a `Pre
 
 ## Add-on behavior
 
-In the `SalesMap/ClientApp/webstore` directory we must create a `behavior` directory where we can create the necessary files.
+In the `OrdersMap/ClientApp/webstore` directory we must create a `behavior` directory where we can create the necessary files.
 
 ### Orders behavior
 
@@ -106,7 +107,7 @@ query LatestOrders(){
 
 #### Orders actions
 
-Let us create an action that can be dispatched to redux from our component in order to initiate the process of firing our query. Additionally, we will create an action that will be dispatched when the querying has completed. Let us create a file where we will place these actions and future actions `Addons/SalesMap/ClientApp/behavior/actions.js`.
+Let us create an action that can be dispatched to redux from our component in order to initiate the process of firing our query. Additionally, we will create an action that will be dispatched when the querying has completed. Let us create a file where we will place these actions and future actions `Addons/OrdersMap/ClientApp/behavior/actions.js`.
 
 ```js
 export const ORDERS_INFO_REQUESTED = "ORDERS_INFO/REQUESTED";
@@ -129,7 +130,7 @@ export function loadOrdersInfo(list) {
 
 #### Orders epic
 
-We want this action to be handled by an epic that only accepts type `ORDERS_INFO_REQUESTED` which will asynchronously handle the querying of orders placed. Let us now create a file for our epics which we will call `Addons/SalesMap/ClientApp/behavior/epic.js`. The epic makes use of the api parameter that is provided to every epic, which contains a way to query the GraphAPI in an observable.
+We want this action to be handled by an epic that only accepts type `ORDERS_INFO_REQUESTED` which will asynchronously handle the querying of orders placed. Let us now create a file for our epics which we will call `Addons/OrdersMap/ClientApp/behavior/epic.js`. The epic makes use of the api parameter that is provided to every epic, which contains a way to query the GraphAPI in an observable.
 
 ```js
 // ...
@@ -148,7 +149,7 @@ export const ordersInfoEpic = (action$, _, { api }) =>
 
 #### Orders reducer
 
-Once the orders are loaded in the epic, the list of orders are mapped to the `loadOrdersInfo` action so that we can have our reducer handle it. We can now create a file `Addons/SalesMap/ClientApp/behavior/reducer.js` which contains the reducer which will react to this action.
+Once the orders are loaded in the epic, the list of orders are mapped to the `loadOrdersInfo` action so that we can have our reducer handle it. We can now create a file `Addons/OrdersMap/ClientApp/behavior/reducer.js` which contains the reducer which will react to this action.
 
 ```js
 // ...
@@ -172,7 +173,7 @@ export default function orderInfoReducer(state = initialState, action) {
 
 #### Improving the orders epic
 
-Since we want to group orders per location, we will have to map our orders through another function so that they get combined. Going back to `Addons/SalesMap/ClientApp/behavior/epic.js` we have made these improvements.
+Since we want to group orders per location, we will have to map our orders through another function so that they get combined. Going back to `Addons/OrdersMap/ClientApp/behavior/epic.js` we have made these improvements.
 
 ```js
 // ...
@@ -215,7 +216,7 @@ const extractOrderInfo = (data) => {
 
 ### Location coordinates
 
-The billing adresses of the orders do not include coordinates, which are needed in order to draw a circle on a map at their corresponding locations. We will make use an external api [positionstack](http://api.positionstack.com/) to get the coordinates for each location. After the locations are set in the add-on redux state, we can asyncronously request the coordinates for each location by means of an epic. We can now create an additional epic in `Addons/SalesMap/ClientApp/behavior/epic.js`. The api parameter also contains an observable form of fetch, which we will use for fetching data from an external api.
+The billing adresses of the orders do not include coordinates, which are needed in order to draw a circle on a map at their corresponding locations. We will make use an external api [positionstack](http://api.positionstack.com/) to get the coordinates for each location. After the locations are set in the add-on redux state, we can asyncronously request the coordinates for each location by means of an epic. We can now create an additional epic in `Addons/OrdersMap/ClientApp/behavior/epic.js`. The api parameter also contains an observable form of fetch, which we will use for fetching data from an external api.
 
 ```js
 // ...
@@ -248,7 +249,7 @@ export const coordsEpic = (action$, _, { api }) => action$.pipe(
 // ...
 ```
 
-If the api sucessfully responds, the epic will have to emit an action with the coordinates and its corresponding order. We can now add an action to `Addons/SalesMap/ClientApp/behavior/actions.js`.
+If the api sucessfully responds, the epic will have to emit an action with the coordinates and its corresponding order. We can now add an action to `Addons/OrdersMap/ClientApp/behavior/actions.js`.
 
 ```js
 export const COORDS_LOADED = 'COORDS/LOADED';
@@ -263,7 +264,7 @@ export function loadCoordinatesInfo(data) {
 }
 ```
 
-Now that the epic can successfully map to an action, it will be dispatched to redux. We must create a way for this action to update the order in the redux state. We should update the reducer at `Addons/SalesMap/ClientApp/behavior/reducer.js`.
+Now that the epic can successfully map to an action, it will be dispatched to redux. We must create a way for this action to update the order in the redux state. We should update the reducer at `Addons/OrdersMap/ClientApp/behavior/reducer.js`.
 
 ```js
 import _ from 'lodash';
@@ -296,7 +297,7 @@ export default function orderInfoReducer(state=initialState, action) {
 
 ### Account type
 
-The addon we are creating can be added to any page on the client application. However, we want the addon functionality to be limited to sales agents exclusively. We must create additional behavior in order to request the account type of the currently connected user. With that information we can decide on whether to render the addon. Let's begin by creating an action for requesting account type and one for when it has been loaded in. Add these actions to `Addons/SalesMap/ClientApp/behavior/actions.js`.
+The addon we are creating can be added to any page on the client application. However, we want the addon functionality to be limited to sales agents exclusively. We must create additional behavior in order to request the account type of the currently connected user. With that information we can decide on whether to render the addon. Let's begin by creating an action for requesting account type and one for when it has been loaded in. Add these actions to `Addons/OrdersMap/ClientApp/behavior/actions.js`.
 
 ```js
 // ...
@@ -318,7 +319,18 @@ export function loadedAccountType(accountType) {
 }
 ```
 
-Now we can create an additional epic that will react to the `requestAccountType` action. We can add this epic to `Addons/SalesMap/ClientApp/behavior/epic.js`.
+`Addons/OrdersMap/ClientApp/behavior/queries.js`
+
+```js
+export const getShopAccountType = `
+query ShopAccount{
+  viewer{
+    shopAccountType
+  }
+}`;
+```
+
+Now we can create an additional epic that will react to the `requestAccountType` action. We can add this epic to `Addons/OrdersMap/ClientApp/behavior/epic.js`.
 
 ```js
 export const accountTypeEpic = (action$, _, { api }) => action$.pipe(
@@ -356,11 +368,11 @@ export default function orderInfoReducer(state=initialState, action) {
 
 ## Orders map component
 
-Now that our behavior is finalized, we can start creating the component. Create a components directory for the development of our component, `Addons/SalesMap/ClientApp/webstore/components`. Within this directory we can make the file for the component, `SalesMapBlock.js`.
+Now that our behavior is finalized, we can start creating the component. Create a components directory for the development of our component, `Addons/OrdersMap/ClientApp/webstore/components`. Within this directory we can make the file for the component, `OrderMapBlock.js`.
 
 ### Importing the external library
 
-Our component will make use of an external library called leaflet. However, we do not want leaflet to be imported during server side rendering because it leads to errors. We will thus create a seperate file in which we import and export leaflet only if we are not server side rendering. We did this in `Addons/SalesMap/ClientApp/webstore/components/_leaflet.js`.
+Our component will make use of an external library called leaflet. However, we do not want leaflet to be imported during server side rendering because it leads to errors. We will thus create a seperate file in which we import and export leaflet only if we are not server side rendering. We did this in `Addons/OrdersMap/ClientApp/webstore/components/_leaflet.js`.
 
 ```js
 // The window object won't be defined during server side rendering
@@ -371,7 +383,7 @@ if (typeof window !== 'undefined') {
 }
 ```
 
-Within `Addons/SalesMap/ClientApp/webstore/components/SalesMapBlock.js` we can now import leaflet using es6 importing syntax as such, as well as the leaflet stylesheet.
+Within `Addons/OrdersMap/ClientApp/webstore/components/OrderMapBlock.js` we can now import leaflet using es6 importing syntax as such, as well as the leaflet stylesheet.
 
 ```js
 import Leaflet from './_leaflet';
@@ -381,7 +393,7 @@ import 'leaflet/dist/leaflet.css';
 
 ### Creating the component
 
-Let us first make sure our component will only return a title and a map when the user is logged in as a sales agent. All our development from now on will be in `Addons/SalesMap/ClientApp/webstore/components/SalesMapBlock.js`.
+Let us first make sure our component will only return a title and a map when the user is logged in as a sales agent. All our development from now on will be in `Addons/OrdersMap/ClientApp/webstore/components/OrderMapBlock.js`.
 
 ```js
 import React, { useEffect, useRef, useState } from 'react';
@@ -389,7 +401,7 @@ import { requestAccountType, requestOrdersInfo } from '../behavior/actions';
 import { useSelector, useDispatch } from 'react-redux';
 // ...
 
-function SalesMap() {
+function OrdersMap() {
   const { locationInfo, orderInfo, accountType } = useSelector(state => state);
   const mapRef = useRef();
 
@@ -408,13 +420,13 @@ function SalesMap() {
   );
 }
 
-export default React.memo(SalesMap);
+export default React.memo(OrdersMap);
 ```
 
 We will use the `useEffect` hook to perform a side effect in which we load a map when it is not already laoded. This effect will be run after the first render and after the render the user account type has changed.
 
 ```js
-function SalesMap() {
+function OrdersMap() {
   const dispatch = useDispatch();
   // We will save a reference to the leaflet map in react state
   const [map, setMap] = useState(undefined);
@@ -451,11 +463,11 @@ function random() {
   return  Math.floor(Math.random() * 255);
 }
 
-function SalesMap() {
+function OrdersMap() {
     // ...
     useEffect(() => {
-    if (map) {
       // If the map has been made
+    if (map) {
       const readyOrders = orderInfo.filter(order => order.coordsLoaded);
       // Make sure all orders have their coordinates loaded
       if (readyOrders.length === totalCount) {
@@ -472,5 +484,27 @@ function SalesMap() {
       }
     }
   }, [map, orderInfo]);
-  //...
+  // ...
 }
+// ...
+```
+
+## Finalizing the add on
+
+We have created the behavior and the component that will make use of it. We can finish off the addon by providing the content block component and the epic and reducer in the ClientApp index. Do this in `Addons/OrdersMap/ClientApp/webstore/index.js`.
+
+```js
+import OrderMapBlock from './components/OrderMapBlock';
+import reducer from './behavior/reducer';
+import { ordersInfoEpic, coordsEpic, accountTypeEpic } from 'behavior/epic';
+import { combineEpics } from 'redux-observable';
+
+const epic = combineEpics(ordersInfoEpic, coordsEpic, accountTypeEpic);
+export { reducer, epic };
+
+export const contentBlocks = {
+  'OrdersMap': OrderMapBlock,
+};
+```
+
+The addon can now be added to any page and will only be displayed to sales agents. Today you have learned to develop an extensive addon. You have learned how to use an external library in an addon. You have learned how to use multiple reducers to asynchronously fetch data, you have learned how we may work with this data to get new data, and how we can represent this data on the front end.
