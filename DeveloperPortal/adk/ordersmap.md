@@ -319,7 +319,7 @@ export function loadedAccountType(accountType) {
 }
 ```
 
-`Addons/OrdersMap/ClientApp/behavior/queries.js`
+To get the account type we have to query GraphQL. We will write the query that we want to use in `Addons/OrdersMap/ClientApp/behavior/queries.js`.
 
 ```js
 export const getShopAccountType = `
@@ -335,6 +335,7 @@ Now we can create an additional epic that will react to the `requestAccountType`
 ```js
 export const accountTypeEpic = (action$, _, { api }) => action$.pipe(
   ofType(ACCOUNT_TYPE_REQUESTED),
+  // Uses our previously created query
   switchMap(action => api.graphApi(getShopAccountType).pipe(
     pluck('viewer', 'shopAccountType'),
     map(loadedAccountType),
