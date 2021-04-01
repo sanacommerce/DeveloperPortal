@@ -74,4 +74,5 @@ log.txt
 **/DROP/*
 **/TEMP/*
 mono*.json
-*.DS_Store
+*.DS_Storepassword.txt
+password.txt
