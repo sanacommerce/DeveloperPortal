@@ -574,7 +574,7 @@
             GraphQLPlayground.init(root, {
                 name: "Sana Graph",
                 endpoint: "http://localhost:5000/api/graph",
-                query: "query Test{person{name}}"
+                query: "query Test{person{name}}",
                 headers: {
                     Authentication: "bearer 12039120858380139205"
                 }
