@@ -1,2 +1,5 @@
 # Main articles
-## [Testing article](test.md)
+
+## [GraphQL Introduction Article](intro.md)
+
+## [Playground](playground.md)

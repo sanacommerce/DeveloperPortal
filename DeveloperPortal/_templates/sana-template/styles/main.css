@@ -1,11 +1,15 @@
 /* #region Homepage */
 
-@media (min-width: 768px) {
-    .homepage {
-        padding-top: 50px;
-    }
+
+.homepage{
+    height: calc(100vh - 152px)
 }
 
+@media (min-width: 768px){
+    .homepage{
+        margin-top: 101px;
+    }
+}
 .background-image {
     bottom: 0;
     left: 0;

@@ -27,7 +27,7 @@
         {{>partials/searchResults}}
       </div>
       {{/_enableSearch}}
-      {{^isHomePage}}
+      {{^nonArticle}}
       <div role="main" class="container body-content hide-when-search">
       {{^_disableToc}}
         {{>partials/toc}}
@@ -54,12 +54,17 @@
           {{/_disableAffix}}
         </div>
       </div>
-      {{/isHomePage}}
-      {{#isHomePage}}
+      {{/nonArticle}}
+      {{#nonArticle}}
       <div class="body-content homepage">
-      {{! body }}
-      </div>
+      {{#isHomePage}}
+      {{>partials/homepage}}
       {{/isHomePage}}
+      {{#playground}}
+      {{>partials/playground}}
+      {{/playground}}
+      </div>
+      {{/nonArticle}}
       {{^_disableFooter}}
       {{>partials/footer}}
       {{/_disableFooter}}

@@ -1,2 +1,3 @@
-# Add your introductions here!
-Hallo dit is the intro
+# GraphQL Tutorials
+
+[Explore](playground.md) the GraphAPI that comes with Sana. 

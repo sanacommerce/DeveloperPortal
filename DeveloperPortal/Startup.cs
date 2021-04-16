@@ -22,7 +22,7 @@ namespace DeveloperPortal
             {
                 app.UseDeveloperExceptionPage();
             }
-
+            app.UseRouting();
             app.UseDefaultFiles();
             app.UseStaticFiles();
         }

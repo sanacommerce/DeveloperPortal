@@ -7,7 +7,7 @@ exports.preTransform = function (model) {
   var splitKey = model._key.split("/");
   model.allowReview = !!model.allowReview || splitKey[splitKey.length - 1] !== "index.md"
   model._model = JSON.stringify(model);
-  model.isHomePage = model._key === "index.md"
+  model.nonArticle = model.isHomePage || model.playground;
 
   return model;
 }
