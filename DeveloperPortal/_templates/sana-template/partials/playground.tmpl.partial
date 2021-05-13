@@ -501,6 +501,14 @@
         .dGfHfc {
             font-weight: 400;
         }
+        #root{
+            height: 80%; 
+        }
+        @media (min-width: 768px){
+            #root{
+                margin-top: 147px;
+            }
+        }
     </style>
     <div id="loading-wrapper">
         <svg class="logo" viewBox="0 0 128 128" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -559,7 +567,7 @@
         </div>
     </div>
 
-    <div id="root" style="height: 80%; margin-top: 147px;">
+    <div id="root">
     </div>
     <script type="text/javascript">
         window.addEventListener('load', function (event) {
@@ -570,14 +578,20 @@
 
             const root = document.getElementById('root');
             root.classList.add('playgroundIn');
-
+            let tabs = [
+                {
+                    name: "Test Query",
+                    query: "query TestQuery{\r\n\t\tperson{\r\n\t\tname}}",
+                    headers: {
+                        Authentication: "bearer 12039120858380139205"
+                    },
+                    endpoint: "http://localhost:5000/api/graph",
+                }, 
+            ]
             GraphQLPlayground.init(root, {
                 name: "Sana Graph",
                 endpoint: "http://localhost:5000/api/graph",
-                query: "query Test{person{name}}",
-                headers: {
-                    Authentication: "bearer 12039120858380139205"
-                }
+                tabs,
             })
         })
     </script>

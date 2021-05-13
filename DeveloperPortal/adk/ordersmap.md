@@ -1,7 +1,7 @@
 # Orders Map Add-On Tutorial
 
 > [!NOTE]
-> This tutorial requires the basic add-on development experience, covered in the base add-on development tutorial. Make sure to read it first, so that  you are setup for this tutorial.
+> This tutorial requires the basic add-on development experience, covered in the base add-on development tutorial. Make sure to read it first, so that you are setup for this tutorial.
 
 In this tutorial we will show you steps in the development of an add-on for a world map that shows all orders grouped by location on your website. The Sana GraphQL API will be invoked to retrieve these orders, and we will be using an external api to get the coordinates of these locations. We will make use of an external library called [leaflet](https://www.npmjs.com/package/leaflet) for mapping features that allow us to draw circles on a world map reflecting the order amounts per location. Additionally, we only want this map to be rendered when the user is a sales agent. So as to achieve these objectives multiple epics and a reducer will have to be used. We will also setup **npm** to install the necessary eslint and remaining dependencies for our add-on.
 
@@ -373,7 +373,7 @@ Now that our behavior is finalized, we can start creating the component. Create 
 
 ### Importing the external library
 
-Our component will make use of an external library called leaflet. However, we do not want leaflet to be imported during server side rendering because it leads to errors. We will thus create a seperate file in which we import and export leaflet only if we are not server side rendering. We did this in `Addons/OrdersMap/ClientApp/webstore/components/_leaflet.js`.
+Our component will make use of an external library called leaflet. However, we do not want leaflet to be imported during server side rendering because it leads to errors. We will thus create a seperate file in which we conditionally import and export leaflet if we are not server side rendering. We did this in `Addons/OrdersMap/ClientApp/webstore/components/_leaflet.js`.
 
 ```js
 // The window object won't be defined during server side rendering

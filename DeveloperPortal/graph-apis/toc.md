@@ -2,4 +2,4 @@
 
 ## [GraphQL Introduction Article](intro.md)
 
-## [Playground](playground.md)
+# [Playground](playground.md)
