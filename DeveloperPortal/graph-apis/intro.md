@@ -5,7 +5,7 @@
 This article will familiarize you with the Sana GraphQL implementation. It will cover some basic queries that can be dispatched to the GraphAPI.
 Using the [GraphQL playground](playground.md) we will show you how to add the necessary authentication header so that you can successfully make requests that need authentication. We will also use the playground to add variables, to show how variables are used in some queries.
 
-
+## Introduction to the playground
 ```graph
 
 ```
