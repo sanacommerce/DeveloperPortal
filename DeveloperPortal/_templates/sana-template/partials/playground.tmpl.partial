@@ -571,27 +571,29 @@
     </div>
     <script type="text/javascript">
         window.addEventListener('load', function (event) {
-
+            const params = new URLSearchParams(window.location.search)
             const loadingWrapper = document.getElementById('loading-wrapper');
             loadingWrapper.classList.add('fadeOut');
-
-
             const root = document.getElementById('root');
             root.classList.add('playgroundIn');
-            let tabs = [
-                {
-                    name: "Test Query",
-                    query: "query TestQuery{\r\n\t\tperson{\r\n\t\tname}}",
-                    headers: {
-                        Authentication: "bearer 12039120858380139205"
-                    },
-                    endpoint: "http://localhost:5000/api/graph",
-                }, 
-            ]
+            let tabs = {}
+            if (params.has("query")){
+                tab = {
+                        name: "Query",
+                        query: params.get("query"),
+                        headers: {
+                            Authentication: "bearer 12039120858380139205"
+                        },
+                        endpoint: "http://localhost:5000/api/graph",
+                    }, 
+                tabs = {tabs: [tab]}
+            }
             GraphQLPlayground.init(root, {
-                name: "Sana Graph",
                 endpoint: "http://localhost:5000/api/graph",
-                tabs,
+                headers: {
+                    Authentication: "bearer 12039120858380139205"
+                },
+                ...tabs
             })
         })
     </script>
