@@ -1,6 +1,5 @@
 {
-  "metadata": [
-  ],
+  "metadata": [],
   "build": {
     "content": [
       {
@@ -30,8 +29,7 @@
         ]
       }
     ],
-    "overwrite": [
-    ],
+    "overwrite": [],
     "dest": "wwwroot",
     "template": [
       "default",
