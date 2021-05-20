@@ -65,9 +65,11 @@
       {{/playground}}
       </div>
       {{/nonArticle}}
+      {{^playground}}
       {{^_disableFooter}}
       {{>partials/footer}}
       {{/_disableFooter}}
+      {{/playground}}
     </div>
     {{>partials/scripts}}
   </body>

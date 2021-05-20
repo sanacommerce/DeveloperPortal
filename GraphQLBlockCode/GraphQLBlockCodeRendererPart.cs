@@ -26,7 +26,7 @@ namespace GraphQLBlockCode
             result += "\">";
             result += token.Code;
             result += "\n</code></pre>";
-            result += "<a class=\"open-in-playground-btn\" target=\"_blank\" href=\"playground.html?query=";
+            result += "<a class=\"open-in-playground-btn btn-success btn btn-sm\" target=\"_blank\" href=\"playground.html?graphrequest=";
             result += WebUtility.UrlEncode(token.Code);
             result += "\">Open in playground</a>";
             return result;

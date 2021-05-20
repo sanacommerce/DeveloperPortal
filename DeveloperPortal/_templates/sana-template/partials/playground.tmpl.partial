@@ -582,17 +582,17 @@
                         name: "Query",
                         query: params.get("query"),
                         headers: {
-                            Authentication: "bearer 12039120858380139205"
-                        },
+                            Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJsdWNhcy5qb25nc21hQGxpdmUubmwiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL2V4cGlyYXRpb24iOiI2Mzc1NzEzNzMxNjk1NTE4MDYiLCJsb2dpbnNlc3Npb25pZCI6IjY1NzFlYWVkLTY5OWMtNDQ4MS1hMmE2LTE3YzVhNDkzNmZiZiIsInAiOiIxIiwidGkiOiIxMDI2IiwibmJmIjoxNjIxNTE4OTE3LCJleHAiOjE2MjE1NDA1MTYsImlhdCI6MTYyMTUxODkxN30.skhbDhdYSri16Ufp6VHaAfY6VBq8Pi06yYZl1OEKUjY"
+                        }, 
                         endpoint: "http://localhost:5000/api/graph",
                     }, 
                 tabs = {tabs: [tab]}
             }
             GraphQLPlayground.init(root, {
                 endpoint: "http://localhost:5000/api/graph",
-                headers: {
+                /*headers: {
                     Authentication: "bearer 12039120858380139205"
-                },
+                }, */
                 ...tabs
             })
         })
