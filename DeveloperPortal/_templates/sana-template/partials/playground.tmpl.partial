@@ -577,22 +577,19 @@
             const root = document.getElementById('root');
             root.classList.add('playgroundIn');
             let tabs = {}
-            if (params.has("query")){
+            if (params.has("graphrequest")){
                 tab = {
-                        name: "Query",
-                        query: params.get("query"),
+                        name: "graphrequest",
+                        query: params.get("graphrequest"),
                         headers: {
-                            Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJsdWNhcy5qb25nc21hQGxpdmUubmwiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL2V4cGlyYXRpb24iOiI2Mzc1NzEzNzMxNjk1NTE4MDYiLCJsb2dpbnNlc3Npb25pZCI6IjY1NzFlYWVkLTY5OWMtNDQ4MS1hMmE2LTE3YzVhNDkzNmZiZiIsInAiOiIxIiwidGkiOiIxMDI2IiwibmJmIjoxNjIxNTE4OTE3LCJleHAiOjE2MjE1NDA1MTYsImlhdCI6MTYyMTUxODkxN30.skhbDhdYSri16Ufp6VHaAfY6VBq8Pi06yYZl1OEKUjY"
+                            Authorization: params.get("admin") ? getAdminToken() : getWebStoreToken()
                         }, 
-                        endpoint: "http://localhost:5000/api/graph",
+                        endpoint: params.get("admin") ? "http://localhost:5000/admin/api/graph" :"http://localhost:5000/api/graph",
                     }, 
                 tabs = {tabs: [tab]}
             }
             GraphQLPlayground.init(root, {
                 endpoint: "http://localhost:5000/api/graph",
-                /*headers: {
-                    Authentication: "bearer 12039120858380139205"
-                }, */
                 ...tabs
             })
         })
