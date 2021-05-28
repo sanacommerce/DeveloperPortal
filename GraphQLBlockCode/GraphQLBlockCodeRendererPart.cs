@@ -15,7 +15,7 @@ namespace GraphQLBlockCode
 
         public override bool Match(IMarkdownRenderer renderer, MarkdownCodeBlockToken token, MarkdownBlockContext context)
         {
-            return token.Lang == "graph" || token.Lang == "graphql" || token.Lang == "gql";
+            return token.Lang == "graphql" || token.Lang == "graphql-admin";
         }
 
         public override StringBuffer Render(IMarkdownRenderer renderer, MarkdownCodeBlockToken token, MarkdownBlockContext context)
@@ -26,8 +26,9 @@ namespace GraphQLBlockCode
             result += "\">";
             result += token.Code;
             result += "\n</code></pre>";
-            result += "<a class=\"open-in-playground-btn\" target=\"_blank\" href=\"playground.html?graphrequest=";
+            result += "<a class=\"open-in-playground-btn btn-default btn btn-sm\" target=\"_blank\" href=\"/graph-apis/playground.html?graphrequest=";
             result += WebUtility.UrlEncode(token.Code);
+            result += token.Lang == "graphql-admin" ? "&admin=True" : ""; 
             result += "\">Open in playground</a>";
             return result;
         }

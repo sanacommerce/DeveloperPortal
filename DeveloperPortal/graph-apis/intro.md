@@ -44,7 +44,7 @@ If you open the query in playground you can expirement by changing the `PagingIn
 
 Staying in the news items context, we now want to create a mutation (which is used in the admin client) to upload new news items to the database through the GraphAPI. Similarly, exploring the docs we come to this mutation.
 
-```gql-admin
+```graphql-admin
 mutation NewsItemsMutation($input: NewsPageInput!){
     pages{
         news{
