@@ -1,6 +1,6 @@
 # GraphQL Introduction Article
 
->[!NOTE] In this article we will interact through the playground with an open Sana sandbox GraphAPI accessible to everyone. If you have Sana running on your computer you can test queries on the api through Sana's `/api/graph` endpoint using Altair GraphQL client.
+>[!NOTE] In this article we will interact through the playground with an open Sana sandbox GraphAPI accessible to everyone. If you have Sana running on your computer you can test queries on the webstore api through the`/api/graph` endpoint as well as `/admin/api/graph` for the admin client using Altair GraphQL client.
 
 This article will familiarize you with the Sana GraphQL implementation. It will cover some basic queries that can be dispatched to the GraphAPI.
 Using the [GraphQL playground](playground.md) we will show you how to add the necessary authentication header so that you can successfully make requests that need authentication. We will also use the playground to add variables, to show how variables are used in some queries.
@@ -44,7 +44,7 @@ If you open the query in playground you can expirement by changing the `PagingIn
 
 Staying in the news items context, we now want to create a mutation (which is used in the admin client) to upload new news items to the database through the GraphAPI. Similarly, exploring the docs we come to this mutation.
 
-```gql
+```gql-admin
 mutation NewsItemsMutation($input: NewsPageInput!){
     pages{
         news{

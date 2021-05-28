@@ -1,7 +1,3 @@
-<!DOCTYPE html>
-
-<html>
-
 <head>
     <meta charset=utf-8 />
     <meta name="viewport"
@@ -570,7 +566,54 @@
     <div id="root">
     </div>
     <script type="text/javascript">
-        window.addEventListener('load', function (event) {
+        window.addEventListener('load', async function (event) {
+            const getWebStoreToken = async () => {
+                query = `mutation GetWebStoreToken($logininfo: LoginInput!){ profile {
+                            login(input: $logininfo){
+                                token{
+                                    value
+                                }
+                            }
+                        } 
+                    }`
+                const res = await fetch('http://localhost:5000/api/graph', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json',
+                    },
+                    body: JSON.stringify({query: query,
+                    variables: {logininfo: {email: "graph@graph.com", password: "Sanagraph1#", persistent: false}}})
+                })
+                const data = await res.json()
+                return data.data.profile.login.token.value
+            }
+            // Sanagraph1#
+            const getAdminToken = async () => {
+                console.log("fetching token")
+                query = `mutation GetAdminToken($logininfo: LoginInput!){ profile {
+                            login(input: $logininfo){
+                                user{
+                                    token{
+                                        value
+                                    }
+                                }
+                            }
+                        }   
+                    }`
+                const res = await fetch('http://localhost:5000/admin/api/graph', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json',
+                    },
+                    body: JSON.stringify({query: query,
+                    variables: {logininfo: {email: "graph@graph.com", password: "Sanagraph1#", persistent: false}}})
+                })
+
+                const data = await res.json()
+                return data.data.profile.login.user.token.value
+            }
             const params = new URLSearchParams(window.location.search)
             const loadingWrapper = document.getElementById('loading-wrapper');
             loadingWrapper.classList.add('fadeOut');
@@ -579,10 +622,10 @@
             let tabs = {}
             if (params.has("graphrequest")){
                 tab = {
-                        name: "graphrequest",
+                        name: "Practice query",
                         query: params.get("graphrequest"),
                         headers: {
-                            Authorization: params.get("admin") ? getAdminToken() : getWebStoreToken()
+                            Authorization: "Bearer " + params.get("admin") ? await getAdminToken() : await getWebStoreToken()
                         }, 
                         endpoint: params.get("admin") ? "http://localhost:5000/admin/api/graph" :"http://localhost:5000/api/graph",
                     }, 
@@ -596,4 +639,3 @@
     </script>
 </body>
 
-</html>

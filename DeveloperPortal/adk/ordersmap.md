@@ -80,11 +80,12 @@ Before we start working on our component, we need a way of invoking the GraphQL 
 #### Orders query
 
 In the `behavior` subdirectory create a new file called `queries.js`.
-Where we will create the query we need for getting a list of placed orders.
+Where we will place the query we need for getting a list of placed orders.
 
-```js
-export const ordersQuery = `
-query LatestOrders(){
+> [!NOTE] Export the query below as a constant string named ordersQuery. Using template literals (``) you can keep the new lines in the string.
+
+```graphql
+query OrdersQuery(){
   documents{
     orders{
       list(options: { page: { index:0,size:0 } }){
@@ -102,7 +103,6 @@ query LatestOrders(){
     }
   }
 }
-`;
 ```
 
 #### Orders actions
@@ -321,13 +321,12 @@ export function loadedAccountType(accountType) {
 
 To get the account type we have to query GraphQL. We will write the query that we want to use in `Addons/OrdersMap/ClientApp/behavior/queries.js`.
 
-```js
-export const getShopAccountType = `
-query ShopAccount{
+```graphql
+query getShopAccountType{
   viewer{
     shopAccountType
   }
-}`;
+}
 ```
 
 Now we can create an additional epic that will react to the `requestAccountType` action. We can add this epic to `Addons/OrdersMap/ClientApp/behavior/epic.js`.

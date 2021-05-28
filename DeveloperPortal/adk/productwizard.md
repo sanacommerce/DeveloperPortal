@@ -182,10 +182,9 @@ export const addProductToBasket = product => ({
 > [!TIP]
 > Browse the schema on the `/api/graph` of your sana solution or checkout the [playground](../graph-apis/playground.md), so that you learn to make your own queries.
 
-We can now write the mutation which can be used to add the product to the basket. In the same `behavior` folder create `queries.js`.
+We can now write the mutation which can be used to add the product to the basket. In the same `behavior` folder create `queries.js`. Where you will export this mutation as a string in a constant variable named `addProductMutation`.
 
-```js
-export const addProductMutation = `
+```graphql
 mutation AddProduct($lines:[BasketLineInput!]!) {
  basket{
     addProducts(lines:$lines){
@@ -195,7 +194,7 @@ mutation AddProduct($lines:[BasketLineInput!]!) {
     }
   }
 }
-`;
+
 ```
 
 Now we can create a simple epic that acts on this action, it will query the graph api and wait for the product to be added to the basket.
