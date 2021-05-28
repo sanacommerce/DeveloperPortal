@@ -615,6 +615,7 @@
                 return data.data.profile.login.user.token.value
             }
             const params = new URLSearchParams(window.location.search)
+            console.log(params.get(""))
             const loadingWrapper = document.getElementById('loading-wrapper');
             loadingWrapper.classList.add('fadeOut');
             const root = document.getElementById('root');
@@ -632,8 +633,8 @@
                 tabs = {tabs: [tab]}
             }
             GraphQLPlayground.init(root, {
-                endpoint: "http://localhost:5000/api/graph",
-                ...tabs
+                ...tabs,
+                endpoint: "http://localhost:5000/api/graph"
             })
         })
     </script>

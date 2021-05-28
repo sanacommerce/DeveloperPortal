@@ -249,4 +249,4 @@ export const contentBlocks = {
 
 ## Final remarks
 
-In this tutorial you created a small application using create-react-app. You learned how to communicate with the webstore through a spawned window, and you interacted with the graph to add a product to the basket. A simple tutorial which shows the flexibility and usabilty of the ADK.
+In this tutorial you created a small application using create-react-app. You learned how to communicate with the webstore through a spawned window, and you interacted with the graph to add a product to the basket. A simple tutorial which showcases the flexibility and usabilty of the ADK.
