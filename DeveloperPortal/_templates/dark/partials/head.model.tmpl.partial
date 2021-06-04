@@ -1,0 +1,7 @@
+{{#_enableModelDebug}}
+<div id="_model" style="display:none;">{{_model}}</div>
+<script>
+var model = JSON.parse(document.getElementById('_model'));
+console.log(model);
+</script>
+{{/_enableModelDebug}}

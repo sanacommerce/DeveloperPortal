@@ -33,7 +33,8 @@
     "dest": "wwwroot",
     "template": [
       "default",
-      "_templates/sana-template",
+      "_templates/dark",
+      // "_templates/sana-template"
     ],
     "globalMetadata": {
       "_appFooter": "<span>Copyright &copy; 2021 Sana Commerce</span>",

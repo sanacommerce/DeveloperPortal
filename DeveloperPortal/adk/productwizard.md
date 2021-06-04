@@ -182,7 +182,7 @@ export const addProductToBasket = product => ({
 > [!TIP]
 > Browse the schema on the `/api/graph` of your sana solution or checkout the [playground](../graph-apis/playground.md), so that you learn to make your own queries.
 
-We can now write the mutation which can be used to add the product to the basket. In the same `behavior` folder create `queries.js`. Where you will export this mutation as a string in a constant variable named `addProductMutation`.
+We can now write the mutation which can be used to add the product to the basket. In the same `behavior` folder create `queries.js`. Where you will export this mutation as a string in a constant variable named `addProductMutation`, similarly to how it is done in the [GraphQL intoduction article](../graph-apis/intro.md#ExportingQueries).
 
 ```graphql
 mutation AddProduct($lines:[BasketLineInput!]!) {
