@@ -12,7 +12,7 @@ if (b) {
     }
   }
 
-  var isDarkTheme = !window.localStorage || !window.localStorage.getItem("theme") || window.localStorage && localStorage.getItem("theme") === "dark-theme";
+  var isDarkTheme = (window.localStorage && localStorage.getItem("theme") === "dark-theme") || window.matchMedia('(prefers-color-scheme: dark)').matches;
 
   if(sw && sw_mobile){
     sw.checked = isDarkTheme;
