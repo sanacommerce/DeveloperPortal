@@ -120,7 +120,7 @@ We can make a component for the content block, it takes the model as a prop, fro
 import PropTypes from 'prop-types';
 import React, { useEffect } from 'react';
 
-const ProductWizardBlock = ({ model: title, source }) => {
+const ProductWizardBlock = ({ model: { title, source } }) => {
   return (
     <div>
       <h4>
@@ -147,7 +147,7 @@ Once the component block has rendered we will setup the webstore window to liste
 
 ```js
 // ...
-const ProductWizardBlock = ({ model: title, source }) => {
+const ProductWizardBlock = ({ model: { title, source } }) => {
   const completionListener = event => {
     // Do we trust the sender of this message?
     if (event.origin === source) {
@@ -218,7 +218,7 @@ The `basketChangeCompleted` event emitted if the product was sucessfully added, 
 
 ```js
 // ...
-const ProductWizardBlock = ({ model: title, source }) => {
+const ProductWizardBlock = ({ model: { title, source } }) => {
 // ...
   const dispatch = useDispatch();
   const completionListener = event => {
