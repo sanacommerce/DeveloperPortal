@@ -490,19 +490,16 @@
             animation: fadeIn 0.5s ease-out forwards;
         }
         .jsBJIl {
-            height: calc(100vh - 204px);;
+            height: calc(100vh - 198px);;
             position: relative;
             overflow: hidden;
         }
         .dGfHfc {
             font-weight: 400;
         }
-        #root{
-            height: 80%; 
-        }
         @media (min-width: 768px){
             #root{
-                margin-top: 147px;
+                margin-top: 141px;
             }
         }
     </style>
