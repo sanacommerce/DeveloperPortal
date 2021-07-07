@@ -1,10 +1,11 @@
 # Navigation Search Bar
 
-Since the release of SCC 1.0.14 it is now possible to make adjustments to the webstore page header using the Visual Designer, as demonstrated in this [article](https://support.sana-commerce.com/Content/Sana-User-Guide/Design-and-Layout/Web-Store-Header.htm). This means content elements can now be added to the header. In this tutorial we will develop an add on which enables a user to search through the navigation items, similarly to how products can be searched through in the header. **Two external libraries** namely [fuse.js](https://fusejs.io/) and [autosuggest-react](https://react-autosuggest.js.org/) are utilized to implement the searching algorithm and search bar respectively. The add-on will contain specifiable options for in the admin panel, based on these options the navigation items query will be dynamically generated. 
+Since the release of SCC 1.0.14 it is now possible to make adjustments to the webstore page header using the Visual Designer, as demonstrated in this [article](https://support.sana-commerce.com/Content/Sana-User-Guide/Design-and-Layout/Web-Store-Header.htm). This means content elements can now be added to the header. In this tutorial we will develop an add on which enables a user to search through the navigation items, similarly to how products can be searched through in the header. **Two external libraries** namely [fuse.js](https://fusejs.io/) and [autosuggest-react](https://react-autosuggest.js.org/) are utilized to implement the searching algorithm and search bar respectively. The add-on will contain specifiable options for in the admin panel, based on these options the navigation items query will be dynamically generated.
 
 ## Developing the add on project
 
-Assuming you have set up the rudiments of an [add on project](). `package.json` can be added to the add on root to tell **npm** which external libraries we will be using. 
+Assuming you have set up the rudiments of an [add on project](). `package.json` can be added to the add on root to tell **npm** which external libraries we will be using.
+
 ```json
 {
   "private": true,
@@ -14,7 +15,9 @@ Assuming you have set up the rudiments of an [add on project](). `package.json` 
   }
 }
 ```
+
 Now the add on project file can be updated so that npm will install the packages.
+
 ```js
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
@@ -32,7 +35,8 @@ Now the add on project file can be updated so that npm will install the packages
 </Project>
 ```
 
-Now we can create the class implementing the `ContentBlockModel` with the properties we want the admin user to be able to select. Along with the `ContentBlockExtension` which operates on the previously created class. 
+Now we can create the class implementing the `ContentBlockModel` with the properties we want the admin user to be able to select. Along with the `ContentBlockExtension` which operates on the previously created class.
+
 ```cs
 using System;
 using Sana.Extensions.ContentBlocks;
@@ -59,13 +63,14 @@ namespace NavigationSearchBar
 
 ## Add-on behavior
 
-In order to be able to render navigation items suggestions, the navigation items must first be queried and placed in the redux state. 
+In order to be able to render navigation items suggestions, the navigation items must first be queried and placed in the redux state.
 
-### Request Navigation Items
+### Requesting Navigation Items
 
 We will setup the requesting of navigation items.
 
 #### Action
+
 Once the behavior is setup it can be accessed through an action which will initiate the process. If you don't already have a `ClientApp/webstore/behavior` directory, create it and add a `actions.js` file.
 
 ```js
@@ -82,7 +87,7 @@ export function requestNavigation(depth=1, group="MAIN") {
 };
 ```
 
-Eventually, we will setup the component to be able to dispatch this action, it takes a `depth` and `group` argument whose values were specified in the admin panel. 
+Eventually, we will setup the component to be able to dispatch this action, it takes a `depth` and `group` argument whose values were specified in the admin panel.
 
 #### Query
 
@@ -112,6 +117,7 @@ query GetFullNavigation($group: NavigationGroupCode!) {
 ```
 
 If the depth specified was 2 the query should look like this.
+
 ```graphql
 # Insert Nav Item Fragment
 
@@ -126,7 +132,9 @@ query GetFullNavigation($group: NavigationGroupCode!) {
     }
   }
 ```
-Therefore, we will create a helper function which will recursively generate the amount of nav item children we need. In the `/behavior` directory, create a `helpers.js` where all the helper functions will be located. 
+
+Therefore, we will create a helper function which will recursively generate the amount of nav item children we need. In the `/behavior` directory, create a `helpers.js` where all the helper functions will be located.
+
 ```js
 export const childrenGenerator = (size) => {
   if (size === 1) {
@@ -139,7 +147,9 @@ export const childrenGenerator = (size) => {
         `
 };
 ```
-With this helper function the `getFullNavigationQuery` function can be created. In the `/behavior` directory, create `queries.js`. 
+
+With this helper function the `getFullNavigationQuery` function can be created. In the `/behavior` directory, create `queries.js`.
+
 ```js
 import { childrenGenerator } from './helpers';
 
@@ -171,6 +181,7 @@ export const getFullNavigationQuery = (depth) => {
 #### Epic
 
 With a function that dynamically creates a query, we can now make use of an epic to send it to GraphQL. Once the items are received the epic will dispatch an action, which we will create in a subsequent step, to notify redux that the items have been received. The epic will be placed in a newly created file `epic.js` in the `/behavior` subdirectory.
+
 ```js
 import { ofType } from 'redux-observable';
 import { REQUEST_NAVIGATION_ITEMS, navigationItemsReceived } from './actions';
@@ -185,13 +196,15 @@ export const navigationItemsEpic = (action$, _, { api }) => action$.pipe(
   )),
 );
 ```
-Notice, the epic makes use of the admin specified arguments attached to the action payload making this a versatile content element. 
 
-### Navigation Items Received 
+Notice, the epic makes use of the admin specified arguments attached to the action payload making this a versatile content element.
+
+### Navigation Items Received
 
 The objective now is to tell redux the navigation items were received, and update state with a fuse of the navigation items, so that navigation items can easily be searched.
 
-#### Action 
+#### Receiving Action
+
 If the GraphQL request was succesful, the epic will dispatch an action that will be created now. Add to the exisisting `actions.js` file in `/behavior`.
 
 ```js
@@ -211,7 +224,8 @@ export function navigationItemsReceived(items){
 
 #### Flattening the received items
 
-The shape of the items returned by GraphQL with depth, contains children nested within each navigation item. We want to extract these children so that we have a list of all the navigation items, which will allow us to create a fuse. This is done with another recursive function which we will place in `helpers.j` at `/behavior`. 
+The shape of the items returned by GraphQL with depth, contains children nested within each navigation item. We want to extract these children so that we have a list of all the navigation items, which will allow us to create a fuse. This is done with another recursive function which we will place in `helpers.j` at `/behavior`.
+
 ```js
 export const extractChildren = (items, flattenedList=[]) => {
   items.forEach((item) => flattenedList.push(item) && item.children && extractChildren(item.children, flattenedList))
@@ -246,11 +260,11 @@ export function reducer(state=initialState, action) {
 
 ## Add-on Component
 
-With the behavior created, we can now develop the component. The `NavigationBlock` component will be developed in a new file `ClientApp/webstore/components/NavigationBlock.js`. 
+With the behavior created, we can now develop the component. The `NavigationBlock` component will be developed in a new file `ClientApp/webstore/components/NavigationBlock.js`.
 
 ### Connecting to redux
 
-We mapped the searchItems state to one of the props, it will default as `null`. We additionally mapped two actions to props which serve as the dispatchers for the corresponding actions. 
+We mapped the searchItems state to one of the props, it will default as `null`. We additionally mapped two actions to props which serve as the dispatchers for the corresponding actions.
 
 ```js
 import React from 'react'
@@ -265,7 +279,8 @@ export default connect((state) => {return { items: state.searchItems }}, {reques
 ```
 
 ### Request Navigation Items
-Add the `model` prop, which is an object containing the admin selected values. We will dispatch the `requestNavigation` action in a side effect. 
+
+Add the `model` prop, which is an object containing the admin selected values. We will dispatch the `requestNavigation` action in a side effect.
 
 ```js
 // ...
@@ -281,13 +296,14 @@ const NavigationBlock = ({items, requestNavigation, navigateTo, model}) => {
 // ...
 ```
 
-### Suggestion Box 
+### Suggestion Box
 
-Now it is time to use the [autosuggest-react](https://react-autosuggest.js.org/) library to create the suggestion box, and provide it the props it needs to succesfully render suggestions. The suggestions we want the suggestion box to render will be kept in react state. 
+Now it is time to use the [autosuggest-react](https://react-autosuggest.js.org/) library to create the suggestion box, and provide it the props it needs to succesfully render suggestions. The suggestions we want the suggestion box to render will be kept in react state. The autosuggest box takes an optional theme prop, this theme can be imported from a style sheet. We will change the sana theme that is used for other search boxes, located at `SDK/Sana.Commerce.WebApp/ClientApp/src/webstore/components/objects/search/Search.module.scss`, by changing the way the `_mixins.scss` is imported. However, this is out of scope for the tutorial.
 
-```js 
+```js
 import React, { useEffect, useState, useCallback } from 'react'
-// import styles from './NavigationSearchBar.module.scss';
+// Modified sana theme for autosuggest searchboxes, by changing import of mixins style sheet to relative import.
+import styles from './NavigationSearchBar.module.scss';
 import Autosuggest from 'react-autosuggest';
 import { requestNavigation } from 'behavior/actions'
 import { connect } from 'react-redux';
@@ -322,14 +338,14 @@ const NavigationBlock = ({items, requestNavigation, navigateTo, model}) => {
   }
 
   useEffect(() => {
-    requestNavigation(2, "MAIN")
+    requestNavigation(model.searchDepth, model.groupCode)
   }, [])
   return (
     // Wait for the fuse to load, only then will the suggestion box be rendered
     items && (
       <Autosuggest
         onSuggestionsClearRequested={()=>{setSuggestions([])}}
-        // theme={styles}
+        theme={styles}
         renderSuggestion={renderSuggestion}
         inputProps={{value, onChange, placeholder: "Search in navigation.."}}
         id="navigation"
@@ -346,7 +362,7 @@ const NavigationBlock = ({items, requestNavigation, navigateTo, model}) => {
 
 ## Finalizing the Add On
 
-Finally, we create `ClientApp/webstore/index.js` for the entry point to the content element. 
+Finally, we create `ClientApp/webstore/index.js`.
 
 ```js
 import { navigationItemsEpic as epic } from 'behavior/epic'
@@ -360,3 +376,7 @@ export const contentBlocks = {
   NavigationSearchBar
 }
 ```
+
+## Final Remarks
+
+In this tutorial you created an add-on which can be used for searching navigation items. Through, offering specifiable parameters, the content element became very flexible in its usage. Due to constant improvements in the sana framework, the content element could now be placed in the navigation bar, which is the preferable location for this add-on.
