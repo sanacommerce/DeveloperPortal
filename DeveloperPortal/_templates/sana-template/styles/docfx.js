@@ -266,9 +266,13 @@ $(function () {
       if (action === "show") {
         $('.hide-when-search').show();
         $('#search-results').hide();
+        $('.homepage').show()
+        $('.subnav').show()
       } else {
         $('.hide-when-search').hide();
         $('#search-results').show();
+        $('.homepage').hide()
+        $('.subnav').hide()
       }
     }
 

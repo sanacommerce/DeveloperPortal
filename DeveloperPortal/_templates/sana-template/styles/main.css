@@ -6,8 +6,12 @@
   margin-top: 10px !important;
 }
 
+/* Git textareas had grey text color */
+.gt-header-textarea{
+  color: black;
+}
 
-.homepage{
+/* .homepage{
   height: calc(100vh - 152px)
 }
 
@@ -15,7 +19,7 @@
   .homepage{
       margin-top: 101px;
   }
-}
+} */
 
 
 
@@ -28,7 +32,7 @@
   z-index: -1;
 }
 
-.background-image img {
+.background-image{
   height: 100%;
   object-fit: cover;
   width: 100%;

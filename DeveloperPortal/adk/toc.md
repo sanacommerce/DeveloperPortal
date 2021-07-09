@@ -5,3 +5,5 @@
 ## [Orders Map Tutorial](ordersmap.md)
 
 ## [Product Wizard Tutorial](productwizard.md)
+
+## [Navigation Search Bar](navigationsearchbar.md)
