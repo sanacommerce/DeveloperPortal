@@ -2,7 +2,7 @@
 
 <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
   <div class="header-top">
-    <div class="container">
+    <div class="container logo-container">
       {{>partials/logo}}
     </div>
   </div>
@@ -17,8 +17,10 @@
     </div>
     <div class="collapse navbar-collapse" id="navbar">
       <form class="navbar-form navbar-right" role="search" id="search">
-        <div class="form-group">
-          <input type="text" class="form-control" id="search-query" placeholder="{{__global.search}}" autocomplete="off">
+        <div class="search form-group">
+          <div class="search-bar search-bar-container ">
+            <input type="text" class="form-control" id="search-query" placeholder="{{__global.search}}" autocomplete="off">
+          </div>
         </div>
       </form>
     </div>
