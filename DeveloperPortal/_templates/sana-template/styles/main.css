@@ -2,6 +2,41 @@ header{
   box-shadow: 0 2px 2px -2px rgba(0,0,0,.3);
 }
 
+
+/* #region Nav grid */
+
+.nav-boxes{
+  margin-top: -2rem;
+
+}
+.cell {
+  box-shadow: 0 0 3px rgba(0,0,0,.5);
+  background-color: #fff;
+  padding: 10px;
+  width: 40%;
+}
+
+.grid-container{
+  padding-right: 1rem;
+  padding-left: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid-margin-x {
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+.grid-x {
+  justify-content: space-around;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+/* #endregion */
+
 .logo-container{
   position: relative;
   top: 20px;
@@ -12,48 +47,22 @@ header{
   min-height: 100%;
 }
 
+.background-image{
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+  /* display: inline-block; */
+  vertical-align: middle;
+  max-width: 100%;
+  max-height: 640px;
+}
+
 .open-in-playground-btn{
   text-decoration: none;
   margin-top: 0px !important;
   margin-bottom: 20px;
 }
 
-/* Git textareas had grey text color */
-.gt-header-textarea{
-  color: black;
-}
-
-/* .homepage{
-  height: calc(100vh - 152px)
-}
-
-@media (min-width: 768px){
-  .homepage{
-      margin-top: 101px;
-  }
-} */
-
-
-
-
-.background-image {
-  bottom: 0;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: -1;
-}
-
-.background-image{
-  height: 100%;
-  object-fit: cover;
-  width: 100%;
-  display: inline-block;
-  vertical-align: middle;
-  max-width: 100%;
-  max-height: 640px;
-}
 
 .welcome-message {
   width: 100%;
@@ -66,6 +75,13 @@ header{
 
 /* #region Top Header */
 
+
+/* #region Git Talk */
+/* Git textareas had grey text color */
+.gt-header-textarea{
+  color: black;
+}
+/* #endregion */
 
 .article {
   margin-top: 170px;
