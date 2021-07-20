@@ -1,5 +1,4 @@
 var feedbackQuestion = document.getElementsByClassName("feedback-question")[0]
-// Will only execute this block if its not an index markdown file.
 
 function generateIssue() {
     const gitalk = new Gitalk({
