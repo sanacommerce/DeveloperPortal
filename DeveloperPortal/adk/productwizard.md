@@ -3,11 +3,11 @@
 > [!NOTE]
 > This tutorial requires the basic add-on development experience, covered in the base add-on development tutorial. Make sure to read it first, so that you are setup for this tutorial.
 
-In this tutorial we will develop a custom content block in which we will render an external webpage through an iframe. The external page will have a form where the customer can state their preferences on a number of things. With these preferences some algorithm can be implemented that will recommend a product from the webstore to the customer. If the customer were to like the recommendation and clicked a button to add it to their basket we will make the webpage rendered in the iframe send a message to the webstore. The content block can then request through the graphapi to add the product referenced in the message to the customers basket.
+In this tutorial we will develop a custom content block in which we will render an external webpage through an iframe. The external page will have a form where the customer can state their preferences on a number of things. With these preferences some algorithm can be implemented that will recommend a product from the webstore to the customer. If the customer were to like the recommendation they can click a button to add it to their basket. We will make the webpage rendered in the iframe send a message throught the browser to the webstore. The content block can then request through the graphapi to add the product referenced in the message to the customers basket.
 
 ## Creating the Product Wizard
 
-We want to have a website that can be rendered in our add-on. We can make use of create-react-app, to make a website with a form. The form asks the user what their interest is, in reality you might have many more questions so that you can more accurately recommend a product to a user. Additionally, you might calculate the recommendation on a backend.
+We want to have a website that can be rendered in our add-on. We can make use of create-react-app, to make a website with a form. The form asks the user what their interest is, in reality you might have many more questions so that you can more accurately recommend a product to a user. In reality, you might calculate the recommendation on a backend.
 
 ### Rendering the form
 
@@ -93,7 +93,7 @@ Now you should be able to build and host the product wizard webpage somewhere, m
 
 ## Creating the content block
 
-Now we can setup the actual Add-On, considering you have done the basic setup for an add-on. We can begin by updating the class inheriting from `ContentBlockModel` to allow for two properties that will be passed to the component. This is done in `Addons/ProductWizard/ProductWizard.cs`.
+The Add-On can now be created, considering you have done the basic setup for an add-on. We begin by updating the class inheriting from `ContentBlockModel` to allow for two properties that will be passed to the component. This is done in `Addons/ProductWizard/ProductWizard.cs`.
 
 ```cs
 using Sana.Extensions.ContentBlocks;
@@ -214,7 +214,7 @@ export const addOrderEpic = (action$, _, { api }) => action$.pipe(
 );
 ```
 
-The `basketChangeCompleted` event emitted if the product was sucessfully added, will notify the user that the basket has been updated. The action can now be dispatched and will lead to the product to be added to the basket. In the `completionListener` at `Addons/ProductWizard/ClientApp/webstore/components/productwizard.js` we can now dispatch this action.
+The `basketChangeCompleted` event emitted if the product was sucessfully added, it will notify the user that the basket has been updated. The `addProductToBasket` action can now be dispatched and will lead to the product to be added to the basket. In the `completionListener` at `Addons/ProductWizard/ClientApp/webstore/components/productwizard.js` we can now dispatch this action.
 
 ```js
 // ...
@@ -236,7 +236,7 @@ const ProductWizardBlock = ({ model: { title, source } }) => {
 
 ### Finishing the webstore
 
-We can now setup the epic and the `ProductWizardBlock` in the `index.js` file at `ClientApp/webstore`.
+Finally, we setup the epic and the `ProductWizardBlock` in the `index.js` file at `ClientApp/webstore`.
 
 ```js
 import ProductWizard from 'components/productwizard';

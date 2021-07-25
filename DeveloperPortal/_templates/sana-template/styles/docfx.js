@@ -144,12 +144,24 @@ $(function () {
     //Adjust the position of search box in navbar
     function renderSearchBox() {
       autoCollapse();
+      $(".navbar-toggle").on('click', toggleCollapse)
       $(window).on('resize', autoCollapse);
       $(document).on('click', '.navbar-collapse.in', function (e) {
         if ($(e.target).is('a')) {
           $(this).collapse('hide');
         }
       });
+
+      function toggleCollapse(){
+        const autoCollapse = $("#autocollapse")
+          if (autoCollapse.hasClass(collapsed)){
+            setTimeout(() => {
+              autoCollapse.removeClass(collapsed)
+            }, 250)
+          } else{
+            autoCollapse.addClass(collapsed)
+          }
+      }
 
       function autoCollapse() {
         var navbar = $('#autocollapse');

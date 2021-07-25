@@ -1,4 +1,5 @@
 const sw = document.getElementById("switch-style"), sw_mobile = document.getElementById("switch-style-m"), b = document.body;
+
 if (b) {
   function toggleTheme(target, dark) {
     target.classList.toggle("dark-theme", dark)
@@ -14,6 +15,14 @@ if (b) {
 
   var isDarkTheme = (window.localStorage && localStorage.getItem("theme") === "dark-theme") || !(window.localStorage && localStorage.getItem("theme") === "light-theme") && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
 
+  if(sw_mobile && !sw){
+    sw_mobile.checked = isDarkTheme;
+
+    sw_mobile.addEventListener("change", switchEventListener);
+    
+    // sync state between switches
+  }
+
   if(sw && sw_mobile){
     sw.checked = isDarkTheme;
     sw_mobile.checked = isDarkTheme;
@@ -27,8 +36,12 @@ if (b) {
     });
 
     sw_mobile.addEventListener("change", function() {
+      console.log("Here")
       sw.checked = this.checked;
     });
+    
+
+    console.log("Registered")
   }
 
   toggleTheme(b, isDarkTheme);

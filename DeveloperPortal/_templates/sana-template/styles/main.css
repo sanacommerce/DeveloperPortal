@@ -35,6 +35,9 @@ header{
   box-shadow: 0 2px 2px -2px rgba(0,0,0,.3);
 }
 
+.navbarcontainer{
+  min-height: 49.99px;
+}
 
 /* #region Nav grid */
 .grid-margin-x {
@@ -51,8 +54,8 @@ header{
 
 
 .grid-container, .grid-container.fluid {
-  padding-right: 1rem;
-  padding-left: 1rem;
+  padding-right: 3rem;
+  padding-left: 3rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -97,7 +100,6 @@ header{
     flex-wrap: wrap;
     padding: 1.25rem 3.5rem 1.25rem 1.25rem;
     position: relative;
-    transition: all .2s ease-in-out;
 }
 .keyvisual-cta a:hover{
   box-shadow: 0 0.8125rem 1.375rem rgb(29 31 72 / 10%);
@@ -850,6 +852,11 @@ code {
   outline: 0;
   -webkit-box-shadow: none;
   box-shadow: none;
+}
+
+
+#search{
+  border: none;
 }
 
 input#search-query:focus {
