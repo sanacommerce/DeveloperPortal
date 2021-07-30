@@ -435,6 +435,12 @@ $(function () {
       if ($('footer').is(':visible')) {
         $('.sidetoc').addClass('shiftup');
       }
+      
+      $('#toc .nav li').each(function (i, e) {
+        if(i == 0) {
+          $(e).addClass(expanded)
+        }
+      })
 
       // Scroll to active item
       var top = 0;

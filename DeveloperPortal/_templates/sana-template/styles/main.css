@@ -26,10 +26,12 @@ body.dark-theme {
   --color-background-code: #202124;
 }
 
-@font-face {
+@font-face{font-family:"Infra";src:url(./fonts/Infra-Light.woff2) format("woff2"),url(./fonts/Infra-Light.woff) format("woff");font-weight:300;font-style:normal}@font-face{font-family:"Infra";src:url(./fonts/Infra-Regular.woff2) format("woff2"),url(./fonts/Infra-Regular.woff) format("woff");font-weight:400;font-style:normal}@font-face{font-family:"Infra";src:url(./fonts/Infra-RegularItalic.woff2) format("woff2"),url(./fonts/Infra-RegularItalic.woff) format("woff");font-weight:400;font-style:italic}@font-face{font-family:"Infra";src:url(./fonts/Infra-Medium.woff2) format("woff2"),url(./fonts/Infra-Medium.woff) format("woff");font-weight:500;font-style:normal}@font-face{font-family:"Infra";src:url(./fonts/Infra-MediumItalic.woff2) format("woff2"),url(./fonts/Infra-MediumItalic.woff) format("woff");font-weight:500;font-style:italic}@font-face{font-family:"Infra";src:url(./fonts/Infra-Bold.woff2) format("woff2"),url(./fonts/Infra-Bold.woff) format("woff");font-weight:700;font-style:normal}
+
+strong {
   font-family: "Infra";
-  src: url("Infra.woff2")format("woff2");
-  }
+  font-weight: 500;
+}
 
 @font-face {
   font-family: "Icomoon";
@@ -104,7 +106,7 @@ header{
   }
   .keyvisual-cta {
     margin: -2rem 0 0;
-    line-height: 21px;
+    line-height: 2.5rem;
   }
 
   .keyvisual-cta a img {
@@ -127,7 +129,7 @@ header{
   }
 
   .grid-container {
-    max-width: 100.125rem;
+    max-width: 110.125rem;
   }
 
   .keyvisual-cta a {
@@ -136,7 +138,9 @@ header{
       align-items: center;
       background-color: var(--color-background);
       border-radius: .5rem;
-      box-shadow: 0 0.3125rem 0.9375rem rgb(29 31 72 / 5%);
+      box-shadow: 0 0.3125rem 1rem rgb(29 31 72 / 5%);
+      transition: all .4s;
+      transition-property: box-shadow;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-wrap: wrap;
@@ -144,8 +148,17 @@ header{
       padding: 1.25rem 3.5rem 1.25rem 1.25rem;
       position: relative;
   }
+
+  body.dark-theme .keyvisual-cta a{
+    box-shadow: 0 0.3125rem 1rem rgb(29 31 72 / 15%);
+  }
+
   .keyvisual-cta a:hover{
-    box-shadow: 0 0.8125rem 1.375rem rgb(29 31 72 / 10%);
+    box-shadow: 0 0.8125rem 1.5rem rgb(29 31 72 / 10%);
+  }
+
+  body.dark-theme   .keyvisual-cta a:hover{
+    box-shadow: 0 0.8125rem 1.5rem rgb(29 31 72 / 30%);
   }
 
 
@@ -312,7 +325,7 @@ header{
   color: var(--color-foreground);
   background-color: var(--color-background-dark);
   border-bottom: 3px solid var(--color-foreground);
-  transition: all ease 0.25s, background-color 0ms;
+  transition: all ease 0.25s, background-color 0ms, color 0ms;
 }
 
 .navbar-form .form-control {
@@ -348,6 +361,16 @@ header{
   color: var(--color-foreground);
 }
 
+#sidetoc .nav>li {
+  border-left: solid 2px lightgrey;
+}
+#sidetoc .nav>li:hover {
+  border-left: solid 3px blue;
+}
+
+#sidetoc .nav.level1>li{
+  border:none;
+}
 
 /* #endregion */
 
@@ -478,8 +501,9 @@ color: #fff;
 body {
   color: var(--color-foreground);
   line-height: 1.5;
+  font-weight: 400;
   font-family: "Infra";
-  font-size: 14px;
+  font-size: 1.6rem;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   word-wrap: break-word;
@@ -615,7 +639,7 @@ article h4 {
 
 pre {
   padding: 9.5px;
-  margin: 0 0 10px;
+  margin: 4px 0 10px;
   font-size: 13px;
   word-break: break-all;
   word-wrap: break-word;
