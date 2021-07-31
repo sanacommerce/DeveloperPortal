@@ -353,24 +353,50 @@ header{
   position: relative;
 }
 
-.toc .level1>li {
-  font-weight: 400;
+#sidetoc {
+  font-weight: 300;
 }
 
 .toc .nav>li>a {
-  color: var(--color-foreground);
+  padding: 4px 0 ;
+  color: var(--color-navbar);
 }
 
-#sidetoc .nav>li {
-  border-left: solid 2px lightgrey;
-}
-#sidetoc .nav>li:hover {
-  border-left: solid 3px blue;
+
+#sidetoc ul.nav:not(.level1) {
+  margin:3px 0 0 7px;
+  font-size: 14px !important;
 }
 
-#sidetoc .nav.level1>li{
+
+
+
+#sidetoc .nav:not(.level1)>li>a[href]:not(.expand-stub + a) {
+  margin:0;
+  margin-left: -1px;
+  padding-left: 13px;
+  border-left: solid 1px lightgrey;
+  transition: all 0s ease;
+}
+body.light-theme #sidetoc .nav:not(.level1)>li>a[href]:not(.level1){
+  border-bottom: 1px solid rgba(35,46,105,0);
+}
+
+#sidetoc .nav:not(.level1)>li>a[href]:not(.expand-stub + a):hover, #sidetoc .nav:not(.level1)>li>a[href].active:not(.expand-stub + a) {
+  color: #4b71fc;
+  border-left: solid 3px #4b71fc;;
+  padding-left: 11px;
+}
+#sidetoc .nav:not(.level1)>li>a[href].active:not(.expand-stub + a){
+  background-color: var(--color-background-code);
+  box-shadow: 0 0 2px 0 rgb(35 46 105 / 10%);
+}
+
+
+/* #sidetoc .nav.level1>li>a{
   border:none;
-}
+  padding-left:5px;
+} */
 
 /* #endregion */
 
@@ -657,12 +683,27 @@ code {
   color: var(--color-foreground);
 }
 
-.toc .nav>li.active>.expand-stub::before, .toc .nav>li.in>.expand-stub::before, .toc .nav>li.in.active>.expand-stub::before, .toc .nav>li.filtered>.expand-stub::before {
-  content: "▾";
+.expand-stub {
+  z-index:1000;
+  position: absolute;
+  top: 4px;
+  right: 7px;
 }
 
-.toc .nav>li>.expand-stub::before, .toc .nav>li.active>.expand-stub::before {
-  content: "▸";
+.toc .nav>li.active>.expand-stub::before, .toc .nav>li.in>.expand-stub::before, .toc .nav>li.in.active>.expand-stub::before, .toc .nav>li.filtered>.expand-stub::before, .toc .nav>li>.expand-stub::before {
+  font-family: "Icomoon";
+  content: "";
+}
+
+.toc .nav>li.active>.expand-stub, .toc .nav>li.in>.expand-stub, .toc .nav>li.in.active>.expand-stub, .toc .nav>li.filtered>.expand-stub {
+  transform: rotate(0);
+}
+
+.toc .nav>li>.expand-stub, .toc .nav>li.active>.expand-stub {
+  transition-property: transform;
+  font-weight: 500;
+  transition: all .3s ease-in-out;
+  transform: rotate(-90deg);
 }
 
 .affix ul ul>li>a:before {
@@ -735,8 +776,7 @@ code {
 }
 
 .toc .nav>li>a:hover, .toc .nav>li>a:focus {
-  color: var(--color-toc-hover);
-  transition: all ease 0.1s;
+  color: #4b71fc;
 }
 
 .form-control {
