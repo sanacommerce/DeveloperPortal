@@ -83,7 +83,7 @@ Before we start working on our component, we need a way of invoking the GraphQL 
 
 In the `behavior` subdirectory create a new file called `queries.js`.
 Where we will place the query we need for getting a list of placed orders.
-Export the query below as a constant string named `ordersQuery`, similarly to how it is done in the [GraphQL intoduction article](../graph-apis/intro.md#ExportingQueries)
+Export the query below as a constant string named `ordersQuery`, similarly to how it is done in the [GraphQL intoduction article](/graph-apis/intro.html#ExportingQueries)
 
 ```graphql
 query OrdersQuery(){

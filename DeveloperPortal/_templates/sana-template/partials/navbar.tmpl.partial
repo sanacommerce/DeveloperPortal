@@ -1,10 +1,9 @@
 {{!Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See LICENSE file in the project root for full license information.}}
 
 <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
-  <div class="header-top">
-    <div class="container logo-container">
+  <div class="container">
       {{>partials/logo}}
-    </div>
+      <a href="https://www.sana-commerce.com/partners/" class="button primary icon-right icon-arrow-right partnerbutton">Become a partner</a>
   </div>
   <div class="container navbarcontainer">
     <div class="navbar-header">

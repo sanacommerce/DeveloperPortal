@@ -25,7 +25,7 @@ if (feedbackQuestion) {
             }
         })
     feedbackQuestion.onclick = (e) => {
-        if (e.target.classList[1] === "feedback-btn-button") {
+        if (e.target.classList[0] == "no" || e.target.classList[0] == "yes"){
             feedbackQuestion.style.display = "none"
         }
         if (e.target.classList[0] === "no") {
@@ -40,7 +40,7 @@ if (feedbackQuestion) {
             if (!issueExists) {
                 var createIssueDiv = document.getElementsByClassName("createIssue")[0]
                 createIssueDiv.style.display = "block"
-                createIssueDiv.children[0].onclick = (e) => {
+                createIssueDiv.children[1].onclick = (e) => {
                     createIssueDiv.style.display = "none"
                     generateIssue()
                 }

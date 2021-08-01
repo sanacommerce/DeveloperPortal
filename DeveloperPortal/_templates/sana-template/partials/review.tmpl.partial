@@ -1,17 +1,17 @@
 <div id="feedback-survey">
     <div class="feedback-question" data-for-title="{{title}}"> Did you find this article helpful?
         <div class="feedback-btn">
-            <button class="yes feedback-btn-button" style="float: left;" alt="Yes, this article was helpful.">Yes</button>
+            <button class="yes button primary feedback-btn-button" style="float: left;" alt="Yes, this article was helpful.">Yes</button>
         </div>
         <div class="feedback-btn">
-            <button class="no feedback-btn-button" alt="No, this article wasn't helpful.">No</button>
+            <button class="no button secondary feedback-btn-button" alt="No, this article wasn't helpful.">No</button>
         </div>
     </div>
     <div class="feedback-reason no" id="feedback-no">
       <div>
-          <p class="feedback-answer">Sorry about that</p>
           <div class="createIssue">
-              <button class="btn btn-primary createissue btn-sm">Create new issue</button>
+                <p class="feedback-answer">Sorry about that</p>
+              <button class="button primary icon-right icon-arrow-right createissue">Create GitHub issue</button>
           </div>
       </div>
     </div>

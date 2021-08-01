@@ -4,6 +4,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+@font-face{font-family:"Infra";src:url(./fonts/Infra-Light.woff2) format("woff2"),url(./fonts/Infra-Light.woff) format("woff");font-weight:300;font-style:normal}@font-face{font-family:"Infra";src:url(./fonts/Infra-Regular.woff2) format("woff2"),url(./fonts/Infra-Regular.woff) format("woff");font-weight:400;font-style:normal}@font-face{font-family:"Infra";src:url(./fonts/Infra-RegularItalic.woff2) format("woff2"),url(./fonts/Infra-RegularItalic.woff) format("woff");font-weight:400;font-style:italic}@font-face{font-family:"Infra";src:url(./fonts/Infra-Medium.woff2) format("woff2"),url(./fonts/Infra-Medium.woff) format("woff");font-weight:500;font-style:normal}@font-face{font-family:"Infra";src:url(./fonts/Infra-MediumItalic.woff2) format("woff2"),url(./fonts/Infra-MediumItalic.woff) format("woff");font-weight:500;font-style:italic}@font-face{font-family:"Infra";src:url(./fonts/Infra-Bold.woff2) format("woff2"),url(./fonts/Infra-Bold.woff) format("woff");font-weight:700;font-style:normal}
 .label,sub,sup{vertical-align:baseline}
 hr,img{border:0}
 body,figure{margin:0}

@@ -445,6 +445,13 @@ $(function () {
       // Scroll to active item
       var top = 0;
       $('#toc a.active').parents('li').each(function (i, e) {
+        if (i === 0) {
+          if (! $(e).parent("ul").hasClass("nav level1")){
+            if($(e).has("ul").length){
+              $(e).css('margin-top', "4px")
+            }
+          }
+        }
         $(e).addClass(active).addClass(expanded);
         $(e).children('a').addClass(active);
       })
@@ -585,6 +592,7 @@ $(function () {
           }
 
           if (util.getAbsolutePath(e.href) === currentHref) {
+            $(e).addClass("expandable_active");
             $(e).addClass(active);
           }
 
