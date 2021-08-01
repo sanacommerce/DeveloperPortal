@@ -3,7 +3,9 @@
 <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
   <div class="container">
       {{>partials/logo}}
-      <a href="https://www.sana-commerce.com/partners/" class="button primary icon-right icon-arrow-right partnerbutton">Become a partner</a>
+      <div class="">
+        <a href="https://www.sana-commerce.com/partners/" class="button partnerbutton primary icon-right icon-arrow-right partnerbutton">Become a partner</a>
+      </div>
   </div>
   <div class="container navbarcontainer">
     <div class="navbar-header">
