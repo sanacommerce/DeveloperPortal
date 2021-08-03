@@ -457,6 +457,7 @@ body.light-theme #sidetoc .nav:not(.level1)>li>a[href]:not(.expand-stub + a){
 /* #region Buttons */
 
 .button{
+  text-decoration: none;
   font-family: "Infra";
   font-weight: 500;
   border: .0625rem solid transparent;
@@ -824,7 +825,7 @@ code {
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
-  color: var(--color-breadcrumb);
+  color: var(--color-foreground);
 }
 
 #breadcrumb .breadcrumb>li span {
@@ -832,7 +833,7 @@ code {
 }
 
 #breadcrumb .breadcrumb>li a:hover {
-  color: var(--color-foreground);
+  color: var(--color-sana);
   transition: all ease 0.25s;
 }
 
