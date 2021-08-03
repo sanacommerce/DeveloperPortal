@@ -2,11 +2,11 @@ var feedbackQuestion = document.getElementsByClassName("feedback-question")[0]
 
 function generateIssue() {
     const gitalk = new Gitalk({
-        clientID: '8ffabc8037cf22ca8da8',
-        clientSecret: '52b0cc1edd81b0ed5cf8db65405354893a848ccb',
-        repo: 'SanaComments', // The repository for storing comments,
-        owner: 'Dionyzoz',
-        admin: ['Dionyzoz'],
+        clientID: 'f074cbe4bcd4c3c61541',
+        clientSecret: '28116a4e4308e2672dce925718a29285f53f3623',
+        repo: 'DeveloperPortal', // The repository for storing comments,
+        owner: 'sanacommerce',
+        admin: ['sanacommerce'],
         id: location.pathname,      
         distractionFreeMode: false  
     })
@@ -16,7 +16,7 @@ function generateIssue() {
 if (feedbackQuestion) {
     // Check whether the issue exists yet then 
     let issueExists = false;
-    fetch((`https://api.github.com/repos/Dionyzoz/SanaComments/issues?labels=Gitalk,${location.pathname}`)).then((res) => {
+    fetch((`https://api.github.com/repos/sanacommerce/DeveloperPortal/issues?labels=Gitalk,${location.pathname}`)).then((res) => {
             return res.json()
         }).then((data) => {
             if (data.length) {
