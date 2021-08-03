@@ -1,5 +1,6 @@
 var feedbackQuestion = document.getElementsByClassName("feedback-question")[0]
 
+
 function generateIssue() {
     const gitalk = new Gitalk({
         clientID: 'f074cbe4bcd4c3c61541',
