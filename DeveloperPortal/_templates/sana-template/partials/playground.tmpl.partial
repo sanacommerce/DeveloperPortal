@@ -562,6 +562,8 @@
 
     <div id="root">
     </div>
+    
+
     <script type="text/javascript">
         window.addEventListener('load', async function (event) {
             const getWebStoreToken = async () => {
@@ -573,14 +575,14 @@
                             }
                         } 
                     }`
-                const res = await fetch('http://localhost:5000/api/graph', {
+                const res = await fetch('https://playground.sana-commerce.com/api/graph', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
                         'Accept': 'application/json',
                     },
                     body: JSON.stringify({query: query,
-                    variables: {logininfo: {email: "graph@graph.com", password: "Sanagraph1#", persistent: false}}})
+                    variables: {logininfo: {email: "playground-user@sana-commerce.com", password: "Pl@ygr0undUser", persistent: false}}})
                 })
                 const data = await res.json()
                 return data.data.profile.login.token.value
@@ -598,14 +600,14 @@
                             }
                         }   
                     }`
-                const res = await fetch('http://localhost:5000/admin/api/graph', {
+                const res = await fetch('https://playground.sana-commerce.com/admin/api/graph', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
                         'Accept': 'application/json',
                     },
                     body: JSON.stringify({query: query,
-                    variables: {logininfo: {email: "graph@graph.com", password: "Sanagraph1#", persistent: false}}})
+                    variables: {logininfo: {email: "playground-user@sana-commerce.com", password: "Pl@ygr0undUser", persistent: false}}})
                 })
 
                 const data = await res.json()
@@ -625,13 +627,13 @@
                         headers: {
                             Authorization: "Bearer " + params.get("admin") ? await getAdminToken() : await getWebStoreToken()
                         }, 
-                        endpoint: params.get("admin") ? "http://localhost:5000/admin/api/graph" :"http://localhost:5000/api/graph",
+                        endpoint: params.get("admin") ? "https://playground.sana-commerce.com/admin/api/graph" :"https://playground.sana-commerce.com/api/graph",
                     }, 
                 tabs = {tabs: [tab]}
             }
             GraphQLPlayground.init(root, {
                 ...tabs,
-                endpoint: "http://localhost:5000/api/graph"
+                endpoint: "https://playground.sana-commerce.com/api/graph"
             })
         })
     </script>

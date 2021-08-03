@@ -245,7 +245,6 @@ a:hover, a:focus {
 @media (min-width: 768px){
   .partnerbutton {
     margin-top:14px;
-    width: 220px;
     margin-right: 30px;
     margin-left: 0;
     border: 0;
@@ -371,7 +370,7 @@ a:hover, a:focus {
 
 @media (min-width: 768px){
   .navbar-form {
-      width: 250px;
+      width: 290px;
       padding-top: 0;
       padding-bottom: 0;
       margin-right: 0;
@@ -457,7 +456,7 @@ body.light-theme #sidetoc .nav:not(.level1)>li>a[href]:not(.expand-stub + a){
 /* #region Buttons */
 
 .button{
-  text-decoration: none;
+  text-decoration: none !important;
   font-family: "Infra";
   font-weight: 500;
   border: .0625rem solid transparent;
