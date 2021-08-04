@@ -663,6 +663,9 @@ body.light-theme #sidetoc .nav:not(.level1)>li>a[href]:not(.expand-stub + a){
       background-color: var(--color-border);
       color: #fff;
   }
+  body.dark-theme .button.secondary:hover {
+    color: #1d1f48;
+  }
 }
 
 .button.primary { 
