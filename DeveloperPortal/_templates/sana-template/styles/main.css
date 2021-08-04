@@ -47,6 +47,10 @@ header{
   margin-bottom: 20px;
 }
 
+img{
+  max-width: 100%;
+}
+
 a {
   color: var(--color-sana)
 }
@@ -61,19 +65,124 @@ a:hover, a:focus {
 
 
 /* #region Homepage */
-.homepage{
-  min-height: 100%;
+
+@media (min-width: 768px){
+
+  .homepage{
+    margin-top: 100px;
+  }
 }
 
-.background-image{
+.keyvisual .background-image {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.keyvisual h1{
+  font-size: 4.7rem;
+  font-weight: 500;
+}
+.keyvisual p{
+  font-size: 1.65rem;
+  font-weight: 400;
+}
+
+@media print, screen and (min-width: 48em){
+  .keyvisual h1 {
+    
+      margin-bottom: 1.3rem;
+  }
+}
+@media print, screen and (min-width: 48em){
+  .keyvisual .button {
+      margin-top: 3.2rem;
+  }
+}
+
+.keyvisual .background-image img {
   height: 100%;
+  -o-object-fit: cover;
   object-fit: cover;
   width: 100%;
-  /* display: inline-block; */
   vertical-align: middle;
-  max-width: 100%;
-  max-height: 640px;
 }
+.keyvisual.extended .foreground-image {
+  margin: 0 -1rem 1.5rem 0;
+  position: relative;
+}
+@media print, screen and (min-width: 64em){
+  .keyvisual.extended .foreground-image {
+      bottom: 6.25rem;
+      left: calc(50% + 2rem);
+      margin: 0;
+      position: absolute;
+      right: 0;
+      top: 6.25rem;
+  }
+}
+
+@media print, screen and (min-width: 48em){
+  .keyvisual.extended .foreground-image {
+      margin-bottom: 2rem;
+  }
+}
+
+@media print, screen and (min-width: 64em){
+  .keyvisual.extended .foreground-image.contain img {
+    -o-object-fit: contain;
+    object-fit: contain;
+  }
+}
+.keyvisual.extended .foreground-image.contain img {
+    border-radius: 0;
+}
+@media print, screen and (min-width: 64em){
+  .keyvisual.extended .foreground-image img {
+      -o-object-fit: cover;
+      object-fit: cover;
+      height: 100%;
+      max-width: none;
+  }
+}
+
+.keyvisual.extended .foreground-image img {
+    border-radius: .5rem 0 0 .5rem;
+}
+
+
+
+@media print, screen and (min-width: 64em){
+  .keyvisual.extended {
+      min-height: 60rem;
+      padding: 6.25rem 0;
+  }
+}
+
+@media print, screen and (min-width: 48em){
+  .keyvisual.extended {
+      padding: 4rem 0 5rem;
+  }
+}
+.keyvisual.extended {
+    padding: 2.5rem 0 4rem;
+}
+.keyvisual.light {
+    color: #fff;
+}
+.keyvisual {
+    -ms-flex-align: center;
+    align-items: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    position: relative;
+}
+
 
 .open-in-playground-btn{
   text-decoration: none;
@@ -91,6 +200,23 @@ a:hover, a:focus {
 
 
   /* #region Nav grid */
+
+  @media print, screen and (min-width: 64em){
+    .grid-margin-x>.large-6 {
+      width: calc(50% - 2rem);
+    }
+  }
+  .grid-margin-x>.cell {
+      width: calc(100% - 2rem);
+      margin-left: 1rem;
+      margin-right: 1rem;
+  }
+  @media print, screen and (min-width: 64em){
+    .grid-x>.large-6 {
+        width: 50%;
+    }
+  }
+
   .grid-margin-x {
     margin-left: -1rem;
     margin-right: -1rem;
@@ -110,6 +236,19 @@ a:hover, a:focus {
     margin-left: auto;
     margin-right: auto;
   }
+
+  .homepage .keyvisual-cta .cell{
+    margin-top: 3rem;
+  }
+  .homepage .keyvisual-cta .cell:first-child{
+    margin-top: 0;
+  }
+  @media (min-width: 1024px){
+    .homepage .keyvisual-cta .cell:nth-child(2){
+      margin-top: 0;
+    }
+  }
+
   .keyvisual-cta {
     margin: -2rem 0 0;
     line-height: 2.5rem;
@@ -144,7 +283,7 @@ a:hover, a:focus {
       align-items: center;
       background-color: var(--color-background);
       border-radius: .5rem;
-      box-shadow: 0 0.3125rem 1rem rgb(29 31 72 / 5%);
+      box-shadow: 0 4px 10px 0 rgb(35 46 105 / 10%);
       transition: all .4s;
       transition-property: box-shadow;
       display: -ms-flexbox;
@@ -155,16 +294,17 @@ a:hover, a:focus {
       position: relative;
   }
 
+
   body.dark-theme .keyvisual-cta a{
-    box-shadow: 0 0.3125rem 1rem rgb(29 31 72 / 15%);
+    box-shadow: 0 4px 10px 0 rgb(61 63 114 / 25%);
   }
 
   .keyvisual-cta a:hover{
-    box-shadow: 0 0.8125rem 1.5rem rgb(29 31 72 / 10%);
+    box-shadow: 0 15px 30px 0 rgb(35 46 105 / 10%)
   }
 
   body.dark-theme   .keyvisual-cta a:hover{
-    box-shadow: 0 0.8125rem 1.5rem rgb(29 31 72 / 30%);
+    box-shadow: 0 15px 30px 0 rgb(61 63 114 / 40%);
   }
 
 
@@ -248,6 +388,10 @@ a:hover, a:focus {
 }
 
 @media (min-width: 768px){
+
+  .homepage{
+    margin-top: 100px;
+  }
   .partnerbutton {
     margin-top:14px;
     margin-right: 30px;

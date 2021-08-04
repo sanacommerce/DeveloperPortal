@@ -1,15 +1,41 @@
-<div>
-    <img class="background-image" src="/img/home-red.svg" alt="">
+<div >
+    <section class="keyvisual extended light animate">
+        <figure class="background-image"> 
+            <img src="/img/home-red.svg" alt="">
+        </figure>    
+        <div class="grid-container">
+            <figure class="foreground-image contain">   
+                <img src="/img/product-illustration.png" alt="Homepage Key visual">
+            </figure>
+            <div class="grid-x grid-margin-x">
+                <div class="large-6 cell">
+                <h1>
+                    Add your commerce solutions
+                    on top of our proven synergy
+                    between ERP & webstores.
+                </h1>
+                <span class="wysiwyg">
+                    <p>Build elegant & powerful solutions on top of our continuously evolving, natively integrated e-commerce platform. Our commitment is to supply you with and guide you through the best tools necessary to cater for your customers' needs.</p>
+                </span>
+                <a class="button primary icon-right icon-arrow-right" href="/getting-started" target="">
+                Getting started
+                </a>                
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    
     <section class="keyvisual-cta with-icon">
         <div class="grid-container">
             <div class="grid-x grid-margin-x">
-                <div class="medium-8 large-6 cell">
+                <div class="medium-8 large-6 cell text-column box-item">
                     <a href="/graph-apis" target="">
                         <img src="https://www.sana-commerce.com/wp-content/uploads/Shuttle-icon-100x100px.png" alt="">
                         <p>Interested in learning how graphql is implemented?<strong> Check out the graphql tutorials!</strong></p>
                     </a>
                 </div>
-            <div class="medium-8 large-6 cell">
+            <div class="medium-8 large-6 cell text-column box-item">
                     <a href="/adk" target="">
                         <img src="https://www.sana-commerce.com/wp-content/uploads/Shuttle-icon-100x100px.png" alt="">
                         <p>Interested in expanding your website?<strong> Check out the ADK tutorials!</strong></p>
