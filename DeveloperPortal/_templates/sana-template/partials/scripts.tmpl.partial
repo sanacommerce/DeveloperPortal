@@ -7,4 +7,6 @@
 </script> 
 <script type="text/javascript" src="{{_rel}}styles/toggle-theme.js"></script>
 <script type="text/javascript" src="{{_rel}}styles/docfx.js"></script>
-<script type="text/javascript" src="{{_rel}}styles/main.js"></script>
+{{#allowReview}}
+<script type="text/javascript" src="{{_rel}}styles/github.js"></script>
+{{/allowReview}}

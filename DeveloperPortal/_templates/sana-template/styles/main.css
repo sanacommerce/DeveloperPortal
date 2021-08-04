@@ -42,6 +42,11 @@ header{
   box-shadow: 0 2px 2px -2px rgba(0,0,0,.3);
 }
 
+#_content>a {
+  margin-top: 1px;
+  margin-bottom: 20px;
+}
+
 a {
   color: var(--color-sana)
 }

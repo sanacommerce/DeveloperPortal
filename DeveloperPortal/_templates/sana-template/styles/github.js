@@ -4,10 +4,10 @@ var feedbackQuestion = document.getElementsByClassName("feedback-question")[0]
 function generateIssue() {
     const gitalk = new Gitalk({
         clientID: 'f074cbe4bcd4c3c61541',
-        clientSecret: '28116a4e4308e2672dce925718a29285f53f3623',
+        clientSecret: 'xxxx',
         repo: 'DeveloperPortal', // The repository for storing comments,
         owner: 'sanacommerce',
-        admin: ['sanacommerce'],
+        admin: ['sanacommerce', 'Dionyzoz'],
         id: location.pathname,      
         distractionFreeMode: false  
     })
