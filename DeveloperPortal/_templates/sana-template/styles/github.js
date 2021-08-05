@@ -4,7 +4,7 @@ var feedbackQuestion = document.getElementsByClassName("feedback-question")[0]
 function generateIssue() {
     const gitalk = new Gitalk({
         clientID: 'f074cbe4bcd4c3c61541',
-        clientSecret: 'xxxx',
+        clientSecret: '28116a4e4308e2672dce925718a29285f53f3623',
         repo: 'DeveloperPortal', // The repository for storing comments,
         owner: 'sanacommerce',
         admin: ['sanacommerce', 'Dionyzoz'],
@@ -21,7 +21,6 @@ if (feedbackQuestion) {
             return res.json()
         }).then((data) => {
             if (data.length) {
-                generateIssue()
                 issueExists = true
             }
         })
@@ -44,6 +43,13 @@ if (feedbackQuestion) {
                 createIssueDiv.children[1].onclick = (e) => {
                     createIssueDiv.style.display = "none"
                     generateIssue()
+                }
+            } else {
+                let openIssueButton = document.getElementsByClassName("openissue")[0]
+                openIssueButton.style.display = "block";
+                openIssueButton.onclick = (e) => {
+                    generateIssue()
+                    openIssueButton.style.display = "none";
                 }
             }
 

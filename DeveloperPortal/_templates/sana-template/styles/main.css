@@ -33,10 +33,7 @@ strong {
   font-weight: 500;
 }
 
-@font-face {
-  font-family: "Icomoon";
-  src: url("icomoon.woff2")format("woff2");
-  }
+
   
 
 header{
@@ -746,6 +743,11 @@ line-height: 2em;
 }
 
 .createissue {
+  margin-top: 12px;
+}
+
+.openissue {
+  display: none;
   margin-top: 12px;
 }
 
