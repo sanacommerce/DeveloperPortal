@@ -114,12 +114,12 @@ a:hover, a:focus {
 }
 @media print, screen and (min-width: 64em){
   .keyvisual.extended .foreground-image {
-      bottom: 6.25rem;
-      left: calc(50% + 2rem);
+      bottom: 10rem;
+      left: calc(54% + 2rem);
       margin: 0;
       position: absolute;
       right: 0;
-      top: 6.25rem;
+      top: 10rem;
   }
 }
 
@@ -202,6 +202,9 @@ a:hover, a:focus {
   @media print, screen and (min-width: 64em){
     .grid-margin-x>.large-6 {
       width: calc(50% - 2rem);
+    }
+    .keyvisual .grid-margin-x>.large-6 {
+      width: calc(66% - 2rem);
     }
   }
   .grid-margin-x>.cell {
