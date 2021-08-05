@@ -1,18 +1,18 @@
 var feedbackQuestion = document.getElementsByClassName("feedback-question")[0]
 
 
-function generateIssue() {
-    const gitalk = new Gitalk({
-        clientID: 'f074cbe4bcd4c3c61541',
-        clientSecret: '28116a4e4308e2672dce925718a29285f53f3623',
-        repo: 'DeveloperPortal', // The repository for storing comments,
-        owner: 'sanacommerce',
-        admin: ['sanacommerce', 'Dionyzoz'],
-        id: location.pathname,      
-        distractionFreeMode: false  
-    })
-    gitalk.render('gitalk-container')
-}
+// function generateIssue() {
+//     const gitalk = new Gitalk({
+//         clientID: 'f074cbe4bcd4c3c61541',
+//         clientSecret: '',
+//         repo: 'DeveloperPortal', // The repository for storing comments,
+//         owner: 'sanacommerce',
+//         admin: ['sanacommerce', 'Dionyzoz'],
+//         id: location.pathname,      
+//         distractionFreeMode: false  
+//     })
+//     gitalk.render('gitalk-container')
+// }
 
 if (feedbackQuestion) {
     // Check whether the issue exists yet then 
@@ -37,21 +37,21 @@ if (feedbackQuestion) {
             });
             var feedbackNo = document.getElementById("feedback-no")
             feedbackNo.style.display = "block"
-            if (!issueExists) {
-                var createIssueDiv = document.getElementsByClassName("createIssue")[0]
-                createIssueDiv.style.display = "block"
-                createIssueDiv.children[1].onclick = (e) => {
-                    createIssueDiv.style.display = "none"
-                    generateIssue()
-                }
-            } else {
-                let openIssueButton = document.getElementsByClassName("openissue")[0]
-                openIssueButton.style.display = "block";
-                openIssueButton.onclick = (e) => {
-                    generateIssue()
-                    openIssueButton.style.display = "none";
-                }
-            }
+            // if (!issueExists) {
+            //     var createIssueDiv = document.getElementsByClassName("createIssue")[0]
+            //     createIssueDiv.style.display = "block"
+            //     createIssueDiv.children[1].onclick = (e) => {
+            //         createIssueDiv.style.display = "none"
+            //         generateIssue()
+            //     }
+            // } else {
+            //     let openIssueButton = document.getElementsByClassName("openissue")[0]
+            //     openIssueButton.style.display = "block";
+            //     openIssueButton.onclick = (e) => {
+            //         generateIssue()
+            //         openIssueButton.style.display = "none";
+            //     }
+            // }
 
         } else if (e.target.classList[0] === "yes") {
             // * Google analytics to record the yes

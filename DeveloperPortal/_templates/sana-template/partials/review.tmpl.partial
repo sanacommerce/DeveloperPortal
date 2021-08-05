@@ -10,8 +10,8 @@
     <div class="feedback-reason no" id="feedback-no">
       <div>
           <div class="createIssue">
-              <p class="feedback-answer">Sorry about that</p>
-              <button class="button primary icon-right icon-arrow-right createissue">Create GitHub issue</button>
+              <p class="feedback-answer">Sorry about that, thanks for taking the time to give us some feedback.</p>
+              {{! <button class="button primary icon-right icon-arrow-right createissue">Create GitHub issue</button> }}
           </div>
       </div>
     </div>
@@ -20,5 +20,5 @@
       <p>Thanks for taking the time to give us some feedback.</p>
     </div>
     <div id="gitalk-container"></div>
-    <button class="button primary icon-right icon-arrow-right openissue">Open GitHub issue</button>
+    {{! <button class="button primary icon-right icon-arrow-right openissue">Open GitHub issue</button> }}
 </div>
