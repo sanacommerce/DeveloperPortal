@@ -15,7 +15,7 @@ Now that we have an overview of the schema, we can construct a query with the ty
 
 ![Docs Image](img/docs.png)
 
-We can write a query for the `NewsQuery` type by using its name "news". The `NewsQuery` holds a `NewsItemCollection` type, if we click on that type we can see that it holds a list of `NewsItem` type and that it holds a scalar integer type which tells us how many news items there is. In the same row we can see that the `NewsItemCollection` type takes an argument of `PagingInput` type, clicking on `PagingInput` tells us what this input type is made of (it lets you choose how many news items you want starting at a specific index). Finally, we want to see the `NewsItem` type so that we know the shape of the `NewsItem` and so that we can query specific fields.
+We can write a query for the `NewsQuery` type by using its name "news". The `NewsQuery` holds a `NewsItemCollection` type referred to as "list", if we click on that type we can see that it holds a list of `NewsItem` type referred to as "items" and that it holds a scalar integer type which tells us how many news items there are, referred to as "totalCount". In the same row we can see that the `NewsItemCollection` type takes an argument of `PagingInput` type, referred to as "page". Clicking on `PagingInput` tells us what this input type is made of (it lets you choose how many news items you want starting at a specific index). Finally, we want to see the `NewsItem` type so that we know the shape of the `NewsItem` and so that we can query specific fields.
 
 ![Docs Image](img/NewsItem.png)
 
@@ -42,7 +42,7 @@ If you open the query in playground you can expirement by changing the `PagingIn
 
 ### Mutations
 
-Staying in the news items context, we now want to create a mutation (which is used in the admin client) to upload new news items to the database through the GraphAPI. Similarly, exploring the docs we come to this mutation.
+Staying in the news items context, we now want to create a mutation (which is used in the admin client `/admin/api/graph`) to upload new news items to the database through the GraphAPI. Similarly, exploring the docs we come to this mutation.
 
 ```graphql-admin
 mutation NewsItemsMutation($input: NewsPageInput!){
@@ -83,7 +83,7 @@ Now, we don't want everyone to be able to upload news items to the database, in 
 
 ## GraphQL in the ADK
 
-In the development of an add epics can be used to dispatch GraphQL queries and mutations. It is recommended to create a folder labeled "behavior" in which the query and epic are saved in javascript.
+In the development of an add-on epics can be used to dispatch GraphQL queries and mutations. It is recommended to create a folder named "behavior" in which the query and epic are saved in javascript.
 
 <a id="ExportingQueries"></a>
 

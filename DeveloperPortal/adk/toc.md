@@ -16,4 +16,10 @@
 
 # ADK Guides For ISV Partners
 
-## [Fake tutorial](fake.md)
+## [Payment Service Provider](isv/Payment/index.md)
+
+### [Settings per payment method](isv/Payment/payment-method-settings.md)
+
+### [Extra checkout step](isv/Payment/payment-extra-checkout-step.md)
+
+### [Storing sensitive data](isv/Payment/store-sensitive-data.md)

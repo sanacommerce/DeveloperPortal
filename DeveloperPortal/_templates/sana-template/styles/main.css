@@ -16,7 +16,7 @@
 
 
 body.dark-theme {
-  --color-foreground: #ccd5dc;
+  --color-foreground: #fcfcfc;
   --color-navbar: #999;
   --color-breadcrumb: #999;
   --color-border: #f0f0f0;
@@ -27,6 +27,18 @@ body.dark-theme {
   --color-background-table-alt: #212123;
   --color-background-code: #202124;
 }
+
+
+.articleContainer{
+  width: 100%;
+  margin: 20px 0;
+  padding: 20px 0;
+}
+
+.articleContainer>section{
+  margin: 0;
+}
+
 
 strong {
   font-family: "Infra";
@@ -236,21 +248,29 @@ a:hover, a:focus {
     margin-right: auto;
   }
 
-  .homepage .keyvisual-cta .cell{
+  .articleContainer .grid-container{
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  .keyvisual-cta .cell{
     margin-top: 3rem;
   }
-  .homepage .keyvisual-cta .cell:first-child{
+  .keyvisual-cta .cell:first-child{
     margin-top: 0;
   }
   @media (min-width: 1024px){
-    .homepage .keyvisual-cta .cell:nth-child(2){
+    .keyvisual-cta .cell:nth-child(2){
       margin-top: 0;
     }
   }
 
   .keyvisual-cta {
-    margin: -2rem 0 0;
     line-height: 2.5rem;
+  }
+
+  .keyvisual-up {
+    margin: -2rem 0 0;
   }
 
   .keyvisual-cta a img {
@@ -277,12 +297,13 @@ a:hover, a:focus {
   }
 
   .keyvisual-cta a {
+      min-height: 120px;
+      text-decoration: none !important;
       color: var(--color-foreground);
       -ms-flex-align: center;
       align-items: center;
       background-color: var(--color-background);
       border-radius: .5rem;
-      box-shadow: 0 4px 10px 0 rgb(35 46 105 / 10%);
       transition: all .4s;
       transition-property: box-shadow;
       display: -ms-flexbox;
@@ -291,21 +312,28 @@ a:hover, a:focus {
       flex-wrap: wrap;
       padding: 1.25rem 3.5rem 1.25rem 1.25rem;
       position: relative;
+      box-shadow: 0 4px 10px 0 rgb(35 46 105 / 10%);
+    }
+
+  body.dark-theme .keyvisual-cta:not(.with-borders) a{
+    box-shadow: 0 4px 10px 0 rgb(215 35 68 / 25%);
   }
 
-
-  body.dark-theme .keyvisual-cta a{
-    box-shadow: 0 4px 10px 0 rgb(61 63 114 / 25%);
+  body.light-theme .keyvisual-cta a:hover{
+    box-shadow: 0 15px 30px 0 rgb(35 46 105 / 10%);
   }
 
-  .keyvisual-cta a:hover{
-    box-shadow: 0 15px 30px 0 rgb(35 46 105 / 10%)
-  }
-
-  body.dark-theme   .keyvisual-cta a:hover{
+  body.dark-theme .keyvisual-cta:not(.with-borders) a:hover{
     box-shadow: 0 15px 30px 0 rgb(61 63 114 / 40%);
   }
 
+  .keyvisual-cta.with-borders a{
+    border: 1px solid;
+  }
+
+  .keyvisual-cta.with-borders a:hover{
+    border: 1px solid var(--color-sana);
+  }
 
   .keyvisual-cta a img {
       height: 6rem;
@@ -497,14 +525,14 @@ a:hover, a:focus {
 .navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
   color: var(--color-foreground);
   background-color: var(--color-background-dark);
-  border-bottom: 3px solid var(--color-background-subnav);
+  border-bottom: 3px solid var(--color-sana);
   transition: all ease 0.25s, background-color 0ms;
 }
 
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
-  color: var(--color-foreground);
+  color: var(--color-sana);
   background-color: var(--color-background-dark);
-  border-bottom: 3px solid var(--color-foreground);
+  border-bottom: 3px solid var(--color-sana);
   transition: all ease 0.25s, background-color 0ms, color 0ms;
 }
 
@@ -538,7 +566,7 @@ a:hover, a:focus {
 }
 
 .toc .nav>li>a {
-  padding: 4px 0 ;
+  padding: 9px 0 ;
   color: var(--color-navbar);
 }
 
@@ -569,6 +597,11 @@ body.light-theme #sidetoc .nav:not(.level1)>li>a[href]:not(.expand-stub + a){
   border-left: solid 3px var(--color-sana);
   padding-left: 9px;
 }
+
+#sidetoc .nav>li>a[href]{
+  margin-left: -.1px;
+}
+
 #sidetoc .nav:not(.level1)>li>a[href].active:not(.expand-stub + a){
   background-color: var(--color-background-code);
   box-shadow: 0 0 2px 0 rgb(35 46 105 / 10%);
@@ -814,7 +847,7 @@ article h1, article h2, article h3, article h4 {
 
 article h4 {
   padding-bottom: 8px;
-  border-bottom: 2px solid var(--color-underline);
+  border-bottom: 1px solid var(--color-underline);
 }
 
 
@@ -919,6 +952,14 @@ pre {
   border: none;
 }
 
+.hljs-name{
+  font-weight: 400;
+}
+
+.hljs-tag {
+  color: var(--color-foreground);
+}
+
 code {
   background: var(--color-background-code) !important;
   border-radius: 2px;
@@ -931,7 +972,7 @@ code {
 .expand-stub {
   z-index:1000;
   position: absolute;
-  top: 4px;
+  top: 8px;
   right: 7px;
 }
 
