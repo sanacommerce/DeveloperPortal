@@ -10,7 +10,7 @@
   --color-background-table-alt: #f9f9f9;
   --color-background-quote: #69696e;
   --color-underline: #ddd;
-  --color-background-code: rgba(27,31,35,.05);
+  --color-background-code: rgb(243 243 243); 
   --color-sana: #d72344;
 }
 
@@ -952,6 +952,10 @@ pre {
   border: none;
 }
 
+pre>code{
+  background: transparent;
+}
+
 .hljs-name{
   font-weight: 400;
 }
@@ -961,12 +965,13 @@ pre {
 }
 
 code {
-  background: var(--color-background-code) !important;
   border-radius: 2px;
 }
 
 p>code{
   color: var(--color-foreground);
+  font-family: "Infra";
+  background-color: var(--color-background-code);
 }
 
 .hljs {
