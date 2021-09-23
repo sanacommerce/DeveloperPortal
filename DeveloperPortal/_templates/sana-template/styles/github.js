@@ -5,9 +5,9 @@ function generateIssue() {
     const gitalk = new Gitalk({
         clientID: '8ffabc8037cf22ca8da8',
         clientSecret: '',
-        repo: 'SanaComments', // The repository for storing comments,
-        owner: 'Dionyzoz',
-        admin: ['Dionyzoz'],
+        repo: 'DeveloperPortal', // The repository for storing comments,
+        owner: 'sanacommerce',
+        admin: ['sanacommerce'],
         id: location.pathname,      
         distractionFreeMode: false  
     })
