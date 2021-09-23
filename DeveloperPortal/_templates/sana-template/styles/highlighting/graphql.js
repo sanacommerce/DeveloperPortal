@@ -55,9 +55,3 @@ function hljsDefineGraphQL(hljs) {
     illegal: /([;<']|BEGIN)/
   };
 }
-
-module.exports = function(hljs) {
-  hljs.registerLanguage("graphql", hljsDefineGraphQL);
-};
-
-module.exports.definer = hljsDefineGraphQL;
