@@ -17,7 +17,7 @@ function generateIssue() {
 if (feedbackQuestion) {
     // Check whether the issue exists yet then 
     let issueExists = false;
-    fetch((`https://api.github.com/repos/Dionyzoz/SanaComments/issues?labels=Gitalk,${location.pathname}`)).then((res) => {
+    fetch((`https://api.github.com/repos/sanacommerce/DeveloperPortal/issues?labels=Gitalk,${location.pathname}`)).then((res) => {
             return res.json()
         }).then((data) => {
             if (data.length) {
