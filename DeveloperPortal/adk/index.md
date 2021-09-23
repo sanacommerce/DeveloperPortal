@@ -3,7 +3,7 @@
 Here you can find a series of walkthroughs for creating your own the Application Development Kit (ADK) on your sana website.
 
 <div class="articleContainer">
-    <section class="keyvisual-cta with-icon with-borders">
+    <section class="keyvisual-cta with-icon in-article with-borders">
         <div class="grid-container">
             <div class="grid-x grid-margin-x">
                 <div class="medium-8 large-6 cell text-column box-item">
