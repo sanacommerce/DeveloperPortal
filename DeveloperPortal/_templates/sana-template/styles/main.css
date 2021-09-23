@@ -315,7 +315,11 @@ a:hover, a:focus {
   }
   .keyvisual-cta.in-article a{
     min-height: 120px;
-  } 
+  }
+  
+  .keyvisual-cta p {
+    transition: 100ms;
+  }
   body.dark-theme .keyvisual-cta:not(.with-borders) a{
     box-shadow: 0 4px 10px 0 rgb(215 35 68 / 25%);
   }
