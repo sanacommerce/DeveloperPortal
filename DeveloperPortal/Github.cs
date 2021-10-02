@@ -44,7 +44,5 @@ namespace DeveloperPortal
             JSONRESPONSE responseJson = JsonConvert.DeserializeObject<JSONRESPONSE>(responseBody);
             return responseJson.access_token;
         }
-
-
     }
 }

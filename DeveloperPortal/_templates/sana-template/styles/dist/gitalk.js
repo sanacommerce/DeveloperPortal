@@ -13259,6 +13259,21 @@ var _getComments2 = _interopRequireDefault(_getComments);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function getCookie(cname) {
+  var name = cname + '=';
+  var ca = document.cookie.split(';');
+  for (var i = 0; i < ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) === ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) === 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return '';
+}
+
 var GitalkComponent = function (_Component) {
   (0, _inherits3.default)(GitalkComponent, _Component);
 
@@ -13544,48 +13559,34 @@ var GitalkComponent = function (_Component) {
     }
 
     var query = (0, _util.queryParse)();
+
     if (query.code) {
-      var code = query.code;
-      delete query.code;
-      var replacedUrl = '' + window.location.origin + window.location.pathname + (0, _util.queryStringify)(query) + window.location.hash;
-      history.replaceState(null, null, replacedUrl);
-      _this.options = (0, _assign2.default)({}, _this.options, {
-        url: replacedUrl,
-        id: replacedUrl
-      }, props.options);
-
-      _util.axiosJSON.post(_this.options.proxy, {
-        code: code,
-        client_id: _this.options.clientID
-      }).then(function (res) {
-        if (res.data && res.data.access_token) {
-          _this.accessToken = res.data.access_token;
-
-          _this.getInit().then(function () {
-            return _this.setState({ isIniting: false });
-          }).catch(function (err) {
-            console.log('err:', err);
-            _this.setState({
-              isIniting: false,
-              isOccurError: true,
-              errorMsg: (0, _util.formatErrorMsg)(err)
-            });
-          });
-        } else {
-          // no access_token
-          console.log('res.data err:', res.data);
+      var token = getCookie('access_token');
+      if (token) {
+        var replacedUrl = '' + window.location.origin + window.location.pathname + (0, _util.queryStringify)(query) + window.location.hash;
+        history.replaceState(null, null, replacedUrl);
+        _this.options = (0, _assign2.default)({}, _this.options, {
+          url: replacedUrl,
+          id: replacedUrl
+        }, props.options);
+        _this.accessToken = token;
+        _this.getInit().then(function () {
+          return _this.setState({ isIniting: false });
+        }).catch(function (err) {
+          console.log('err:', err);
           _this.setState({
+            isIniting: false,
             isOccurError: true,
-            errorMsg: (0, _util.formatErrorMsg)(new Error('no access token'))
+            errorMsg: (0, _util.formatErrorMsg)(err)
           });
-        }
-      }).catch(function (err) {
-        console.log('err: ', err);
+        });
+      } else {
+        // no access_token
         _this.setState({
           isOccurError: true,
-          errorMsg: (0, _util.formatErrorMsg)(err)
+          errorMsg: (0, _util.formatErrorMsg)(new Error('no access token'))
         });
-      });
+      }
     } else {
       _this.getInit().then(function () {
         return _this.setState({ isIniting: false });
@@ -14178,10 +14179,9 @@ var GitalkComponent = function (_Component) {
   }, {
     key: 'accessToken',
     get: function get() {
-      return this._accessToke || window.localStorage.getItem(_const.GT_ACCESS_TOKEN);
+      return this._accessToken || getCookie('access_token');
     },
     set: function set(token) {
-      window.localStorage.setItem(_const.GT_ACCESS_TOKEN, token);
       this._accessToken = token;
     }
   }, {

@@ -6,7 +6,7 @@ function generateIssue() {
         clientID: '8ffabc8037cf22ca8da8',
         // clientID: '',
         clientSecret: '',
-        repo: 'SanaDev', // The repository for storing comments,
+        repo: 'SanaComments', // The repository for storing comments,
         owner: 'Dionyzoz',
         admin: [''],
         id: location.pathname,      
@@ -15,17 +15,32 @@ function generateIssue() {
     gitalk.render('gitalk-container')
 }
 
+const params = new URLSearchParams(window.location.search)
+
+if (params.has("code")) {
+    window.scrollTo(0,document.body.scrollHeight);
+}
+
 if (feedbackQuestion) {
+    let createIssue = document.getElementById("createissue")
+    createIssue.style.display = "none"
     // Check whether the issue exists yet then 
-    let issueExists = false;
     fetch((`https://api.github.com/repos/Dionyzoz/SanaComments/issues?labels=Gitalk,${location.pathname}`)).then((res) => {
             return res.json()
         }).then((data) => {
             if (data.length) {
-                issueExists = true
-                var createIssueDiv = document.getElementsByClassName("createIssue")[0].children[2]
-                createIssueDiv.style.display = "none"
                 generateIssue()
+            } else {
+                if (params.has("code")){
+                    generateIssue()
+                }
+                else{
+                    createIssue.style.display = "flex"
+                    createIssue.onclick = (e) => {
+                        createIssue.style.display = "none"
+                        generateIssue()
+                    }
+                }
             }
         })
     feedbackQuestion.onclick = (e) => {
@@ -41,22 +56,7 @@ if (feedbackQuestion) {
             });
             var feedbackNo = document.getElementById("feedback-no")
             feedbackNo.style.display = "block"
-            if (!issueExists) {
-                var createIssueDiv = document.getElementsByClassName("createIssue")[0]
-                createIssueDiv.style.display = "block"
-                createIssueDiv.children[2].onclick = (e) => {
-                    createIssueDiv.style.display = "none"
-                    generateIssue()
-                }
-            } 
-            // else {
-            //     let openIssueButton = document.getElementsByClassName("openissue")[0]
-            //     openIssueButton.style.display = "block";
-            //     openIssueButton.onclick = (e) => {
-            //         generateIssue()
-            //         openIssueButton.style.display = "none";
-            //     }
-            // }
+            
 
         } else if (e.target.classList[0] === "yes") {
             // * Google analytics to record the yes
