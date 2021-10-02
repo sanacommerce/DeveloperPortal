@@ -5,6 +5,9 @@ using Microsoft.Extensions.Hosting;
 using System.Net.Http;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
+using System.Web;
+using Microsoft.AspNetCore.Http;
+using System;
 
 namespace DeveloperPortal
 {
@@ -17,6 +20,7 @@ namespace DeveloperPortal
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            DeveloperPortal.GitHub.addHeaders();
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -30,7 +34,9 @@ namespace DeveloperPortal
                 {
                     string res = await DeveloperPortal.GitHub.PostAsync(code);
                     if (!string.IsNullOrEmpty(res)){
-                        context.Response.Cookies.Append("access_token", res);
+                        CookieOptions options = new CookieOptions();
+                        options.Expires = DateTime.Now.AddDays(60);
+                        context.Response.Cookies.Append("access_token", res, options);
                     }
                 }
                 await next();
