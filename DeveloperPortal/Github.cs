@@ -38,7 +38,12 @@ namespace DeveloperPortal
             string longurl = uriBuilder.ToString();
             StringContent emptyContent = new StringContent("");
             HttpResponseMessage response = await client.PostAsync(longurl, emptyContent);
-            response.EnsureSuccessStatusCode();
+            try{
+                response.EnsureSuccessStatusCode();
+            }
+            catch{
+                return "";
+            }
             string responseBody = await response.Content.ReadAsStringAsync();
             System.Console.WriteLine(responseBody);
             JSONRESPONSE responseJson = JsonConvert.DeserializeObject<JSONRESPONSE>(responseBody);

@@ -9788,6 +9788,8 @@ var GitalkComponent = function (_Component) {
   function GitalkComponent(props) {
     (0, _classCallCheck3.default)(this, GitalkComponent);
 
+    console.log(props);
+
     var _this = (0, _possibleConstructorReturn3.default)(this, (GitalkComponent.__proto__ || (0, _getPrototypeOf2.default)(GitalkComponent)).call(this, props));
 
     _this.state = {
@@ -10312,6 +10314,7 @@ var GitalkComponent = function (_Component) {
     value: function logout() {
       this.setState({ user: null });
       window.localStorage.removeItem(_const.GT_ACCESS_TOKEN);
+      document.cookie = 'access_token=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
     }
   }, {
     key: 'like',

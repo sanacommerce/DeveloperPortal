@@ -18,7 +18,8 @@ function generateIssue() {
 const params = new URLSearchParams(window.location.search)
 
 if (params.has("code")) {
-    window.scrollTo(0,document.body.scrollHeight);
+    window.history.replaceState({}, document.title, window.location.href.replace(/\??code.*/, ''))
+    window.scrollTo(0,document.body.scrollHeight)
 }
 
 if (feedbackQuestion) {
