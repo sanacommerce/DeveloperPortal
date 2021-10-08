@@ -76,3 +76,4 @@ log.txt
 mono*.json
 *.DS_Storepassword.txt
 password.txt
+DeveloperPortal/.env
