@@ -13280,8 +13280,6 @@ var GitalkComponent = function (_Component) {
   function GitalkComponent(props) {
     (0, _classCallCheck3.default)(this, GitalkComponent);
 
-    console.log(props);
-
     var _this = (0, _possibleConstructorReturn3.default)(this, (GitalkComponent.__proto__ || (0, _getPrototypeOf2.default)(GitalkComponent)).call(this, props));
 
     _this.state = {
@@ -13523,10 +13521,7 @@ var GitalkComponent = function (_Component) {
     };
 
     _this.options = (0, _assign2.default)({}, {
-      id: window.location.href,
-      number: -1,
-      labels: ['Gitalk'],
-      title: window.document.title,
+      labels: [],
       body: '', // window.location.href + header.meta[description]
       language: window.navigator.language || window.navigator.userLanguage,
       perPage: 10,

@@ -1,9 +1,11 @@
 var feedbackQuestion = document.getElementsByClassName("feedback-question")[0]
 
 
-function generateIssue() {
+function generateIssue(title, number) {
     const gitalk = new Gitalk({
+        number,
         clientID: '8ffabc8037cf22ca8da8',
+        title,
         // clientID: '',
         clientSecret: '',
         repo: 'SanaComments', // The repository for storing comments,
@@ -23,27 +25,34 @@ if (params.has("code")) {
 }
 
 if (feedbackQuestion) {
-    let createIssue = document.getElementById("createissue")
-    createIssue.style.display = "none"
+    let issues;
+    let dropdownMenuButton = document.getElementById("dropdownMenuButton")
+    let gitContainer = document.getElementById("gitalk-container")
     // Check whether the issue exists yet then 
-    fetch((`https://api.github.com/repos/Dionyzoz/SanaComments/issues?labels=Gitalk,${location.pathname}`)).then((res) => {
-            return res.json()
-        }).then((data) => {
-            if (data.length) {
-                generateIssue()
-            } else {
-                if (params.has("code")){
-                    generateIssue()
+    fetch((`https://api.github.com/repos/Dionyzoz/SanaComments/issues?labels=${location.pathname}`)).then((res) => {
+        return res.json()
+    }).then((data) => {
+        if (data.length) {
+            issues = data
+            dropdownMenuButton.style.display = "inline-block"
+            for(let issue of issues){
+                let anchor = document.createElement("a")
+                anchor.classList.add("dropdown-item")
+                anchor.innerHTML = issue.title
+                anchor.onclick = () => {
+                    gitContainer.innerHTML = ''
+                    generateIssue(issue.title, issue.number)
                 }
-                else{
-                    createIssue.style.display = "flex"
-                    createIssue.onclick = (e) => {
-                        createIssue.style.display = "none"
-                        generateIssue()
-                    }
-                }
+                document.getElementById("dd-menu").append(anchor)
             }
-        })
+        } 
+    })
+    let createIssue = document.getElementById("createissue")
+    createIssue.style.display = "flex"
+    createIssue.onclick = (e) => {
+        gitContainer.innerHTML = ''
+        generateIssue(prompt("How will you title your issue?"), -1)
+    }
     feedbackQuestion.onclick = (e) => {
         if (e.target.classList[0] == "no" || e.target.classList[0] == "yes"){
             feedbackQuestion.style.display = "none"
