@@ -28,7 +28,6 @@ namespace DeveloperPortal
             app.UseRouting();
             app.Use(async (context, next) =>
             {
-                System.Console.WriteLine("Hello World");
                 string code = context.Request.Query["code"].ToString();
                 if (!string.IsNullOrEmpty(code))
                 {

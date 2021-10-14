@@ -411,7 +411,7 @@ $(function () {
             } else {
               if (util.getAbsolutePath(href) === currentAbsPath) {
                 var dropdown = $(e).attr('data-toggle') == "dropdown"
-                if (!dropdown) {
+                  if (!dropdown) {
                   isActive = true;
                 }
               }
