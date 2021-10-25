@@ -3,7 +3,7 @@ var feedbackQuestion = document.getElementsByClassName("feedback-question")[0]
 
 
 
-const params = new URLSearchParams(window.location.search)
+const params = new URLSearchParams(window.location.searchj)
 
 if (params.has("code")) {
     window.history.replaceState({}, document.title, window.location.href.replace(/\??code.*/, ''))
