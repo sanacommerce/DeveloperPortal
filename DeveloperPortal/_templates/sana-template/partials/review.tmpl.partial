@@ -28,6 +28,8 @@
         </div>
         </span>
         <button class="button primary icon-right icon-arrow-right" id="createissue">Create GitHub issue</button>
+        <h3 id="gitalk-title"> </h3>
+        <p id="gitalk-description"></p>
         <div id="gitalk-container"></div>
     </div>
 </div>

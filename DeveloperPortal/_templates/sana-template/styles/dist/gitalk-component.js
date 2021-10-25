@@ -4529,6 +4529,8 @@ var _slicedToArray2 = __webpack_require__(263);
 
 var _slicedToArray3 = _interopRequireDefault(_slicedToArray2);
 
+exports.getCookie = getCookie;
+
 var _axios = __webpack_require__(270);
 
 var _axios2 = _interopRequireDefault(_axios);
@@ -4554,6 +4556,20 @@ var queryParse = exports.queryParse = function queryParse() {
 
   return query;
 };
+function getCookie(cname) {
+  var name = cname + '=';
+  var ca = document.cookie.split(';');
+  for (var i = 0; i < ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) === ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) === 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return '';
+}
 
 var queryStringify = exports.queryStringify = function queryStringify(query) {
   var queryString = (0, _keys2.default)(query).map(function (key) {
@@ -9771,21 +9787,6 @@ var _getComments2 = _interopRequireDefault(_getComments);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function getCookie(cname) {
-  var name = cname + '=';
-  var ca = document.cookie.split(';');
-  for (var i = 0; i < ca.length; i++) {
-    var c = ca[i];
-    while (c.charAt(0) === ' ') {
-      c = c.substring(1);
-    }
-    if (c.indexOf(name) === 0) {
-      return c.substring(name.length, c.length);
-    }
-  }
-  return '';
-}
-
 var GitalkComponent = function (_Component) {
   (0, _inherits3.default)(GitalkComponent, _Component);
 
@@ -10038,7 +10039,7 @@ var GitalkComponent = function (_Component) {
       body: '', // window.location.href + header.meta[description]
       language: window.navigator.language || window.navigator.userLanguage,
       perPage: 10,
-      pagerDirection: 'last', // last or first
+      pagerDirection: 'first', // last or first
       createIssueManually: false,
       distractionFreeMode: false,
       proxy: 'https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token',
@@ -10071,7 +10072,7 @@ var GitalkComponent = function (_Component) {
     var query = (0, _util.queryParse)();
 
     if (query.code) {
-      var token = getCookie('access_token');
+      var token = (0, _util.getCookie)('access_token');
       if (token) {
         var replacedUrl = '' + window.location.origin + window.location.pathname + (0, _util.queryStringify)(query) + window.location.hash;
         history.replaceState(null, null, replacedUrl);
@@ -10221,13 +10222,12 @@ var GitalkComponent = function (_Component) {
           title = _options2.title,
           body = _options2.body,
           id = _options2.id,
-          labels = _options2.labels,
-          url = _options2.url;
+          labels = _options2.labels;
 
       return _util.axiosGithub.post('/repos/' + owner + '/' + repo + '/issues', {
         title: title,
         labels: labels.concat(id),
-        body: body || url + ' \n\n ' + ((0, _util.getMetaContent)('description') || (0, _util.getMetaContent)('description', 'og:description') || '')
+        body: body
       }, {
         headers: {
           Authorization: 'token ' + this.accessToken
@@ -10657,7 +10657,7 @@ var GitalkComponent = function (_Component) {
   }, {
     key: 'accessToken',
     get: function get() {
-      return this._accessToken || getCookie('access_token');
+      return this._accessToken || (0, _util.getCookie)('access_token');
     },
     set: function set(token) {
       this._accessToken = token;
@@ -10666,12 +10666,15 @@ var GitalkComponent = function (_Component) {
     key: 'loginLink',
     get: function get() {
       var githubOauthUrl = 'https://github.com/login/oauth/authorize';
-      var clientID = this.options.clientID;
+      var _options6 = this.options,
+          clientID = _options6.clientID,
+          number = _options6.number;
 
       var query = {
         client_id: clientID,
         redirect_uri: window.location.href,
-        scope: 'public_repo'
+        scope: 'public_repo',
+        state: number
       };
       return githubOauthUrl + '?' + (0, _util.queryStringify)(query);
     }
