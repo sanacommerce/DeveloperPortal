@@ -1,18 +1,17 @@
 <div id="feedback-survey">
     <div class="feedback-question" data-for-title="{{title}}"> Did you find this article helpful?
         <div class="feedback-btn">
-            <button class="yes button primary feedback-btn-button" style="float: left;" alt="Yes, this article was helpful.">Yes</button>
+            <button class="yes button secondary feedback-btn-button" style="float: left;" alt="Yes, this article was helpful.">Yes</button>
         </div>
         <div class="feedback-btn">
-            <button class="no button secondary feedback-btn-button" alt="No, this article wasn't helpful.">No</button>
+            <button class="no button sana feedback-btn-button" alt="No, this article wasn't helpful.">No</button>
         </div>
     </div>
     <div class="feedback-reason no" id="feedback-no">
       <div>
-          <div class="createIssue">
+          <div class="reasonno">
               <p class="feedback-answer">Sorry about that...</p> 
               <p>Thanks for taking the time to give us some feedback.</p>
-              <button class="button primary icon-right icon-arrow-right">Create GitHub issue</button>
           </div>
       </div>
     </div>
@@ -20,5 +19,17 @@
       <p class="feedback-answer">Great!</p>
       <p>Thanks for taking the time to give us some feedback.</p>
     </div>
-    <div id="gitalk-container"></div>
+    <div id="issue-section">
+        <span class="dropdown">
+        <button class="dropdown-toggle button secondary" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Existing issues
+        </button>
+        <div class="dropdown-menu" id="dd-menu" aria-labelledby="dropdownMenuButton">
+        </div>
+        </span>
+        <button class="button primary icon-right icon-arrow-right" id="createissue">Create GitHub issue</button>
+        <h3 id="gitalk-title"> </h3>
+        <p id="gitalk-description"></p>
+        <div id="gitalk-container"></div>
+    </div>
 </div>

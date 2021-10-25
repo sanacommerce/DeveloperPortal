@@ -650,6 +650,9 @@ body.light-theme #sidetoc .nav:not(.level1)>li>a[href]:not(.expand-stub + a){
   line-height: 1;
   padding: 1rem 1.5rem;
   position: relative;
+}
+
+.button:not(.primary){
   transition: all .3s ease-in-out;
 }
 
@@ -673,7 +676,7 @@ body.light-theme #sidetoc .nav:not(.level1)>li>a[href]:not(.expand-stub + a){
 }
 
 @media print, screen and (min-width: 64em){
-  .button.primary.icon-right:hover:after {
+  .button.primary.icon-right:hover:after, .button.primary.icon-right:focus:after{
       transform: translateX(.4rem);
   }
 }
@@ -688,16 +691,20 @@ body.light-theme #sidetoc .nav:not(.level1)>li>a[href]:not(.expand-stub + a){
 }
 
 @media print, screen and (min-width: 64em){
-  .button:hover {
+  .button:hover, .button:focus {
   text-decoration: none;
   }
 }
 @media print, screen and (min-width: 64em){
-  .button.secondary:hover {
+  .button.secondary:hover, .button.secondary:focus {
       background-color: var(--color-border);
       color: #fff;
   }
-  body.dark-theme .button.secondary:hover {
+  .button.sana:hover, .button.sana:focus{
+      background-color: var(--color-sana);
+      color: #fff;
+  }
+  body.dark-theme .button.secondary:hover, body.dark-theme .button.secondary:focus{
     color: #1d1f48;
   }
 }
@@ -710,6 +717,12 @@ body.light-theme #sidetoc .nav:not(.level1)>li>a[href]:not(.expand-stub + a){
 .button.secondary {
   border-color: var(--color-border);
   color: var(--color-border);
+  background-color: transparent;
+}
+
+.button.sana{
+  border-color: var(--color-sana);
+  color: var(--color-sana);
   background-color: transparent;
 }
 
@@ -771,20 +784,47 @@ line-height: 2em;
   line-height: 1;
   margin: 0.5em;
 }
+.yes.button {
+  margin-left: 0px;
+}
 
+#issue-section {
+  margin-top: 10px;
+
+}
 
 .feedback-answer {
   font-weight: bold;
   font-size: 18.0pt;
 }
 
-.createissue {
-  margin-top: 12px;
+#dropdownMenuButton {
+  display: none;
+}
+
+#createissue {
+  margin-left: 10px;
+  display: inline-flex !important;
+    margin-top: 12px;
+}
+
+#issue-section:first-child {
+  margin-left: 0px !important;
 }
 
 .openissue {
   display: none;
   margin-top: 12px;
+}
+
+
+.dropdown-item{
+  padding: 0 4px;
+  display: block;
+}
+
+#dd-menu{
+  z-index: 10000;
 }
 
 /*#endregion*/

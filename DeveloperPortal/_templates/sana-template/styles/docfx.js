@@ -411,7 +411,7 @@ $(function () {
             } else {
               if (util.getAbsolutePath(href) === currentAbsPath) {
                 var dropdown = $(e).attr('data-toggle') == "dropdown"
-                if (!dropdown) {
+                  if (!dropdown) {
                   isActive = true;
                 }
               }
@@ -651,12 +651,16 @@ $(function () {
       // a stack of hierarchy items that are currently being built
       var stack = [];
       $headers.each(function (i, e) {
+        let name = '';
         if (!e.id) {
           return;
         }
+        if (e.id == "gitalk-title") {
+          name = "Issues" 
+        }
 
         var item = {
-          name: htmlEncode($(e).text()),
+          name: name || htmlEncode($(e).text()),
           href: "#" + e.id,
           items: []
         };
