@@ -4,7 +4,6 @@ var feedbackQuestion = document.getElementsByClassName("feedback-question")[0]
 
 
 
-
 if (feedbackQuestion) {
     let number;
     let clientID = "8ffabc8037cf22ca8da8"
