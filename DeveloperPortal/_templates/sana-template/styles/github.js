@@ -6,7 +6,9 @@ var feedbackQuestion = document.getElementsByClassName("feedback-question")[0]
 
 if (feedbackQuestion) {
     let number;
-    let clientID = "8ffabc8037cf22ca8da8"
+    let clientID = "f074cbe4bcd4c3c61541"
+    let repo = "DeveloperPortal"
+    let owner = "sanacommerce"
     // f074cbe4bcd4c3c61541 DeveloperPortal sanacommerce
     function getCookie (cname) {
         const name = `${cname}=`
@@ -92,8 +94,8 @@ if (feedbackQuestion) {
             title,
             // clientID: '',
             clientSecret: '',
-            repo: 'SanaComments', // The repository for storing comments,
-            owner: 'Dionyzoz',
+            repo,  // The repository for storing comments,
+            owner,
             admin: [''],
             id: location.pathname,      
             distractionFreeMode: false,
@@ -103,7 +105,7 @@ if (feedbackQuestion) {
         
     }   
     // Check whether the issue exists yet then 
-    fetch((`https://api.github.com/repos/Dionyzoz/SanaComments/issues?labels=${location.pathname}`)).then((res) => {
+    fetch((`https://api.github.com/repos/${owner}/${repo}/issues?labels=${location.pathname}`)).then((res) => {
         return res.json()
     }).then((data) => {
         if (data.length) {
