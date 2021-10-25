@@ -8,6 +8,7 @@ var feedbackQuestion = document.getElementsByClassName("feedback-question")[0]
 if (feedbackQuestion) {
     let number;
     let clientID = "8ffabc8037cf22ca8da8"
+    // f074cbe4bcd4c3c61541 DeveloperPortal sanacommerce
     function getCookie (cname) {
         const name = `${cname}=`
         const ca = document.cookie.split(';')
