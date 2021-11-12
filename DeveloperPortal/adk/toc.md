@@ -11,8 +11,8 @@
 ### [Orders Map Tutorial](advanced/ordersmap.md)
 
 ### [More Advanced](advanced/more_advanced/test.md)
-#### [More advanced tutorial](advanced/more_advanced/adk1.md)
 
+#### [More advanced tutorial](advanced/more_advanced/adk1.md)
 
 # ADK Guides For ISV Partners
 

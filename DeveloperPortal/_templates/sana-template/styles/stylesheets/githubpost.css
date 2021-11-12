@@ -1,0 +1,84 @@
+.popup-background {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1100;
+}
+
+.disclaimertext{
+    margin: auto;
+    margin-top: 15px;
+    -webkit-font-smoothing: antialiased;
+    font-size: 11px; 
+    font-weight: normal; 
+    text-align: center; 
+    transition: opacity 0.2s linear 0s; 
+    color: rgb(118, 118, 118); 
+    width: 250px;
+}
+
+.messagecard {
+    min-width: 340px;
+    display: none;
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    top:25vh;
+    z-index: 1200;
+}
+
+.messagecard form>*:not(br){
+    margin: 6px 0;
+}
+
+.messagecard form>input, .messagecard form>textarea{
+    font-size: 13px;
+    color: rgb(29, 31, 72);
+}
+
+.messagecard form>textarea{
+    height: 70px;
+    min-width: 70%;
+    max-width: 300px;
+}
+
+.cross{
+    fill: var(--color-foreground) !important;
+}
+
+.crossbutton{
+    height: 40px;
+    width: 40px;
+    position: relative;
+    top: 9px;
+    border-radius: 100% !important;
+    background-color: transparent;
+}
+.crossbutton:hover{
+    background-color: rgb(247, 240, 240);
+}
+
+
+.card {
+    padding: 10px;
+    word-wrap: break-word;
+    background-color: var(--color-background);
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0.25rem ;
+}
+
+.card-title {
+    margin-bottom: 0.75rem;
+}
+
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+}

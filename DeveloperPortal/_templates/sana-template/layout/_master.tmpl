@@ -71,6 +71,9 @@
       {{/_disableFooter}}
       {{/playground}}
     </div>
+    {{^nonArticle}}
+    {{>partials/message}}
+    {{/nonArticle}}
     {{>partials/scripts}}
   </body>
 </html>
