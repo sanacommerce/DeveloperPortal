@@ -50,6 +50,10 @@ header{
   box-shadow: 0 2px 2px -2px rgba(0,0,0,.3);
 }
 
+.emphasized {
+  color: var(--color-sana) !important;
+}
+
 #_content>a {
   margin-top: 1px;
   margin-bottom: 20px;
@@ -253,6 +257,10 @@ a:hover, a:focus {
     padding-left: 0px;
   }
 
+  .keyvisual-cta .grid-container{
+    padding-bottom: 20px;
+  }
+
   .keyvisual-cta .cell{
     margin-top: 3rem;
   }
@@ -287,10 +295,6 @@ a:hover, a:focus {
       min-width: 0;
       width: 100%;
   }
-  .keyvisual-countdown-timer .value, blockquote, dd, div, dl, dt, form, h1, h2, h3, h4, h5, h6, li, ol, p, pre, td, th, ul {
-      margin: 0;
-      padding: 0;
-  }
 
   .grid-container {
     max-width: 110.125rem;
@@ -309,7 +313,7 @@ a:hover, a:focus {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    padding: 1.25rem 3.5rem 1.25rem 1.25rem;
+    padding: 1.25rem 2.5rem 1.25rem 1.25rem;
     position: relative;
     box-shadow: 0 4px 10px 0 rgb(35 46 105 / 10%);
   }

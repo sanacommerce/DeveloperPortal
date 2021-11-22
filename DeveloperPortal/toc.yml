@@ -2,14 +2,14 @@
   href: getting-started/
   topicHref: getting-started/index.md
 
-- name: ADK
-  href: adk/
-  topicHref: adk/index.md
+- name: Integrate
+  href: integrate/
+  topicHref: integrate/index.md
 
-- name: Graph APIs
-  href: graph-apis/
-  topicHref: graph-apis/index.md
+- name: Customize
+  href: customize/
+  topicHref: customize/index.md
 
-- name: SDK
-  href: https://community.sana-commerce.com/docs/SCC_Guides
-  newTab: true
+- name: Contracts
+  href: contracts/
+  topicHref: contracts/extensions/index.md

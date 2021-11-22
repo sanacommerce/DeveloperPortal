@@ -1,33 +1,39 @@
-# Getting Started
-## First
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque convallis tempor magna, et faucibus nulla fermentum sit amet. Mauris quis nunc feugiat ipsum rhoncus efficitur. Mauris a ipsum in nisi maximus lobortis. In aliquet facilisis ante, pharetra blandit mauris sodales nec. Maecenas eu libero vel enim sodales hendrerit. Aliquam nec lectus ultricies ante molestie tincidunt nec ac enim. Morbi imperdiet at lacus sed volutpat. Integer et lectus eros. Nam eu porta tortor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+# Welcome to our Developer Portal
 
-Curabitur euismod et est ac tincidunt. Quisque aliquam eros a magna tincidunt rhoncus. Curabitur a convallis ex. Sed condimentum sodales gravida. Aliquam porta nec ligula sed rhoncus. Ut hendrerit bibendum diam, sit amet condimentum massa ullamcorper vel. Pellentesque massa risus, consectetur a eleifend at, rutrum quis nisl. Quisque vel ante eget metus tristique vulputate.
+<div class="articleContainer">
+    <section class="keyvisual-cta with-icon in-article with-borders">
+        <div class="grid-container">
+            <div class="grid-x grid-margin-x">
+                <div class="medium-8 large-6 cell text-column box-item">
+                    <a href="/getting-started/introduction/adk.html" target="">
+                        <img src="/img/icons/shuttle.png" alt="New to Sana?" height="100px" width="100px">
+                        <p><strong>New to Sana Commerce?</strong><br/>Get started on how to build your own Add-ons.</p>
+                    </a>
+                </div>
+                <div class="medium-8 large-6 cell text-column box-item">
+                    <a href="/integrate/index.html" target="">
+                        <img src="/img/icons/add-ons.png" alt="Integrate 3rd Party Solutions" height="100px" width="100px">
+                        <p><strong>Integrate 3<sup>rd</sup> Party Solutions</strong><br/>Integrate an existing solution into Sana.</p>
+                    </a>
+                </div>
+                <div class="medium-8 large-6 cell text-column box-item">
+                    <a href="/customize/index.html" target="">
+                        <img src="/img/icons/customize.png" alt="Build a Custom App" height="100px" width="100px">
+                        <p><strong>Build a Custom Add-on</strong><br/>Cater to your customers' specific needs.</p>
+                    </a>
+                </div>
+                <div class="medium-8 large-6 cell text-column box-item">
+                    <a href="/contracts/extensions/index.html" target="">
+                        <img src="/img/icons/reference-docs.png" alt="" height="100px" width="100px">
+                        <p><strong>Contracts</strong><br/>Dive deeper into our API's and Contracts.</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
 
-Nunc egestas, arcu at auctor tempor, metus ipsum ornare ex, vel convallis velit dui a tortor. Duis pulvinar et ante vitae pharetra. Praesent volutpat scelerisque massa, eget iaculis lacus finibus in. Integer blandit cursus augue, nec ultricies nisl euismod sed. Morbi porttitor pharetra lacus, ac mattis sapien mollis et. Donec eget dolor sed sem dictum facilisis tristique id ante. Integer quis pharetra urna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse lobortis dictum arcu, ac pellentesque elit bibendum sit amet. Aenean at lacinia odio, at congue lacus.
-
-Sed eleifend lacus eu nisl congue eleifend. Pellentesque consectetur, arcu imperdiet bibendum imperdiet, eros urna pellentesque mi, a sodales sem velit eu dolor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam mauris enim, elementum eu felis a, consectetur dapibus velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla rutrum sapien diam, bibendum vestibulum lectus porta a. Donec ac egestas ligula. Donec ac diam tellus. Vestibulum placerat maximus turpis, sit amet tempor nulla pretium vitae. Proin porttitor enim ut risus molestie eleifend. Maecenas nulla eros, molestie id suscipit vitae, hendrerit ac enim. Phasellus tempor sed orci quis accumsan. Proin non quam id urna ullamcorper lobortis eget nec metus. Nunc ut mauris porttitor, fermentum enim ut, euismod erat.
-
-Pellentesque purus purus, euismod nec ornare pulvinar, fermentum non orci. Sed ultrices lectus sit amet erat sagittis, ac lacinia neque consectetur. Nam congue mollis scelerisque. Aliquam quis efficitur velit. Curabitur pretium enim at lorem consequat gravida. Aliquam scelerisque nibh at orci mattis elementum. Mauris eu nisi non metus accumsan tempus. Integer faucibus et urna quis mollis. Suspendisse sed augue vel diam varius pharetra. Proin quis nulla sed arcu sollicitudin ornare vitae quis ligula. Donec id dapibus lorem.
-
-## Second
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque convallis tempor magna, et faucibus nulla fermentum sit amet. Mauris quis nunc feugiat ipsum rhoncus efficitur. Mauris a ipsum in nisi maximus lobortis. In aliquet facilisis ante, pharetra blandit mauris sodales nec. Maecenas eu libero vel enim sodales hendrerit. Aliquam nec lectus ultricies ante molestie tincidunt nec ac enim. Morbi imperdiet at lacus sed volutpat. Integer et lectus eros. Nam eu porta tortor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-
-Curabitur euismod et est ac tincidunt. Quisque aliquam eros a magna tincidunt rhoncus. Curabitur a convallis ex. Sed condimentum sodales gravida. Aliquam porta nec ligula sed rhoncus. Ut hendrerit bibendum diam, sit amet condimentum massa ullamcorper vel. Pellentesque massa risus, consectetur a eleifend at, rutrum quis nisl. Quisque vel ante eget metus tristique vulputate.
-
-Nunc egestas, arcu at auctor tempor, metus ipsum ornare ex, vel convallis velit dui a tortor. Duis pulvinar et ante vitae pharetra. Praesent volutpat scelerisque massa, eget iaculis lacus finibus in. Integer blandit cursus augue, nec ultricies nisl euismod sed. Morbi porttitor pharetra lacus, ac mattis sapien mollis et. Donec eget dolor sed sem dictum facilisis tristique id ante. Integer quis pharetra urna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse lobortis dictum arcu, ac pellentesque elit bibendum sit amet. Aenean at lacinia odio, at congue lacus.
-
-Sed eleifend lacus eu nisl congue eleifend. Pellentesque consectetur, arcu imperdiet bibendum imperdiet, eros urna pellentesque mi, a sodales sem velit eu dolor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam mauris enim, elementum eu felis a, consectetur dapibus velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla rutrum sapien diam, bibendum vestibulum lectus porta a. Donec ac egestas ligula. Donec ac diam tellus. Vestibulum placerat maximus turpis, sit amet tempor nulla pretium vitae. Proin porttitor enim ut risus molestie eleifend. Maecenas nulla eros, molestie id suscipit vitae, hendrerit ac enim. Phasellus tempor sed orci quis accumsan. Proin non quam id urna ullamcorper lobortis eget nec metus. Nunc ut mauris porttitor, fermentum enim ut, euismod erat.
-
-Pellentesque purus purus, euismod nec ornare pulvinar, fermentum non orci. Sed ultrices lectus sit amet erat sagittis, ac lacinia neque consectetur. Nam congue mollis scelerisque. Aliquam quis efficitur velit. Curabitur pretium enim at lorem consequat gravida. Aliquam scelerisque nibh at orci mattis elementum. Mauris eu nisi non metus accumsan tempus. Integer faucibus et urna quis mollis. Suspendisse sed augue vel diam varius pharetra. Proin quis nulla sed arcu sollicitudin ornare vitae quis ligula. Donec id dapibus lorem.
-
-## Third
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque convallis tempor magna, et faucibus nulla fermentum sit amet. Mauris quis nunc feugiat ipsum rhoncus efficitur. Mauris a ipsum in nisi maximus lobortis. In aliquet facilisis ante, pharetra blandit mauris sodales nec. Maecenas eu libero vel enim sodales hendrerit. Aliquam nec lectus ultricies ante molestie tincidunt nec ac enim. Morbi imperdiet at lacus sed volutpat. Integer et lectus eros. Nam eu porta tortor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-
-Curabitur euismod et est ac tincidunt. Quisque aliquam eros a magna tincidunt rhoncus. Curabitur a convallis ex. Sed condimentum sodales gravida. Aliquam porta nec ligula sed rhoncus. Ut hendrerit bibendum diam, sit amet condimentum massa ullamcorper vel. Pellentesque massa risus, consectetur a eleifend at, rutrum quis nisl. Quisque vel ante eget metus tristique vulputate.
-
-Nunc egestas, arcu at auctor tempor, metus ipsum ornare ex, vel convallis velit dui a tortor. Duis pulvinar et ante vitae pharetra. Praesent volutpat scelerisque massa, eget iaculis lacus finibus in. Integer blandit cursus augue, nec ultricies nisl euismod sed. Morbi porttitor pharetra lacus, ac mattis sapien mollis et. Donec eget dolor sed sem dictum facilisis tristique id ante. Integer quis pharetra urna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse lobortis dictum arcu, ac pellentesque elit bibendum sit amet. Aenean at lacinia odio, at congue lacus.
-
-Sed eleifend lacus eu nisl congue eleifend. Pellentesque consectetur, arcu imperdiet bibendum imperdiet, eros urna pellentesque mi, a sodales sem velit eu dolor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam mauris enim, elementum eu felis a, consectetur dapibus velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla rutrum sapien diam, bibendum vestibulum lectus porta a. Donec ac egestas ligula. Donec ac diam tellus. Vestibulum placerat maximus turpis, sit amet tempor nulla pretium vitae. Proin porttitor enim ut risus molestie eleifend. Maecenas nulla eros, molestie id suscipit vitae, hendrerit ac enim. Phasellus tempor sed orci quis accumsan. Proin non quam id urna ullamcorper lobortis eget nec metus. Nunc ut mauris porttitor, fermentum enim ut, euismod erat.
-
-Pellentesque purus purus, euismod nec ornare pulvinar, fermentum non orci. Sed ultrices lectus sit amet erat sagittis, ac lacinia neque consectetur. Nam congue mollis scelerisque. Aliquam quis efficitur velit. Curabitur pretium enim at lorem consequat gravida. Aliquam scelerisque nibh at orci mattis elementum. Mauris eu nisi non metus accumsan tempus. Integer faucibus et urna quis mollis. Suspendisse sed augue vel diam varius pharetra. Proin quis nulla sed arcu sollicitudin ornare vitae quis ligula. Donec id dapibus lorem.
+> [!NOTE]
+> This website's information is solely dedicated to our **SaaS** offering for our latest product **Sana Commerce Cloud**.
+> <br/><br/>If you're looking to **customize** Sana Commerce Cloud **beyond its APIs or Contracts**, please refer to our [SCC Guides](https://community.sana-commerce.com/docs/SCC_Guides/index.html) on our Sana Community.
+> <br/>If you're looking to **customize** our previous **Sana Commerce 9** product, please refer to our [Sana 9 Developer Documentation](https://community.sana-commerce.com/docs/) on our Sana Community.

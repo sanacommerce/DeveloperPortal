@@ -134,7 +134,6 @@ createIssue.onclick = (e) => {
     if(getCookie('access_token')){
         generateIssue()
     } else{
-        alert("You must be logged in first")
         login()
     }
 }

@@ -10,7 +10,7 @@
     <div class="feedback-reason no" id="feedback-no">
       <div>
           <div class="reasonno">
-              <p class="feedback-answer">Sorry about that...</p> 
+              <p class="feedback-answer">Sorry to hear that...</p> 
               <p>Thanks for taking the time to give us some feedback.</p>
           </div>
       </div>

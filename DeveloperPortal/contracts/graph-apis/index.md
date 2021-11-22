@@ -1,4 +1,4 @@
-# GraphQL Introduction Article
+# GraphQL Introduction
 
 >[!NOTE] In this article we will interact through the playground with an open Sana sandbox GraphAPI accessible to everyone. If you have Sana running on your computer you can test queries on the webstore api through the`/api/graph` endpoint as well as `/admin/api/graph` for the admin client using Altair GraphQL client.
 
