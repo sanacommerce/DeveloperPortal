@@ -1,8 +1,10 @@
-# [Webstores](index.md)
+# [Introduction](index.md)
 
-## [Visual Designer](introduction/visual-designer.md)
+## [Common Scenarios](introduction/customization-scenarios.md)
 
 # Tutorials
+
+## [Content Block](tutorials/content-block.md)
 
 ## [Navigation Search](tutorials/navigation-search.md)
 
@@ -10,7 +12,13 @@
 
 ## [Product Wizard](tutorials/product-wizard.md)
 
-# Advanced Scenario's
+# Custom Endpoint APIs
+
+## [Web store Endpoint](custom-endpoints/webstore.md)
+
+## [Admin Endpoint](custom-endpoints/admin.md)
+
+# Advanced Scenarios
 
 ## [Headless](advanced-scenarios/headless.md)
 

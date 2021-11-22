@@ -1,6 +1,6 @@
 # Sales Orders Map Tutorial
 
-# Introduction
+## Introduction
 
 In this tutorial we will show you steps in the development of an add-on for a world map that shows all orders grouped by location on your website. The Sana GraphQL API will be invoked to retrieve these orders, and we will be using an external api to get the coordinates of these locations. We will make use of an external library called [leaflet](https://www.npmjs.com/package/leaflet) for mapping features that allow us to draw circles on a world map reflecting the order amounts per location. Additionally, we only want this map to be rendered when the user is a sales agent. So as to achieve these objectives multiple epics and a reducer will have to be used. We will also setup **npm** to install the necessary eslint and remaining dependencies for our add-on.
 

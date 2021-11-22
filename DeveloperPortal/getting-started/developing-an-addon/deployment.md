@@ -18,4 +18,4 @@ Deploying your Add-on to your customer(s) is done in the same way as shown in th
 
 ## What's next?
 
-Topics such as the client-side state management, GraphQL API usage, reusing core Sana components etc. are explained in the [Advanced Content Block Tutorial](advanced-cb-tutorial.md).
+Topics such as the client-side state management, GraphQL API usage, reusing core Sana components etc. are explained in the [Content Block Tutorial](../../customize/tutorials/content-block.md).

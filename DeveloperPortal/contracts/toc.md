@@ -1,8 +1,14 @@
+# [Introduction](index.md)
+
+## [Breaking Changes](introduction/breaking-changes.md)
+
 # [Extensions](extensions/index.md)
 
 ## [Reference](extensions/reference.md)
 
 # Client Apps
+
+## [Visual Designer](extensions/visual-designer.md)
 
 ## [ClientApp Bundles](client-apps/bundles.md)
 
@@ -14,6 +20,12 @@
 
 ## [Using GraphQL](graph-apis/index.md)
 
+## [Using the ADK Client](graph-apis/adk-client.md)
+
+## [Reference](graph-apis/reference.md)
+
 ## [Playground](graph-apis/playground.md)
 
 # [eBusiness Connector](ebusiness-connector/index.md)
+
+## [Reference](https://community.sana-commerce.com/docs/eBusiness/index.html)

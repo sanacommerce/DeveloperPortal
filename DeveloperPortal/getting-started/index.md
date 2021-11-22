@@ -19,7 +19,7 @@
                 <div class="medium-8 large-6 cell text-column box-item">
                     <a href="/customize/index.html" target="">
                         <img src="/img/icons/customize.png" alt="Build a Custom App" height="100px" width="100px">
-                        <p><strong>Build a Custom Add-on</strong><br/>Cater to your customers' specific needs.</p>
+                        <p><strong>Customize Web Stores</strong><br/>Cater to your customers' specific needs.</p>
                     </a>
                 </div>
                 <div class="medium-8 large-6 cell text-column box-item">

@@ -16,8 +16,8 @@
 
 ## [Simple Content Block Tutorial](developing-an-addon/simple-cb-tutorial.md)
 
+## [Build, Test & Debug](developing-an-addon/build-test-debug.md)
+
 ## [Packaging](developing-an-addon/packaging.md)
 
 ## [Deployment](developing-an-addon/deployment.md)
-
-## [Advanced Content Block Tutorial](developing-an-addon/advanced-cb-tutorial.md)

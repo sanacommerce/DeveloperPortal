@@ -1,6 +1,6 @@
 # Navigation Search Tutorial
 
-# Introduction
+## Introduction
 
 Since the release of SCC 1.0.14 it is now possible to make adjustments to the webstore page header using the Visual Designer, as demonstrated in this [article](https://support.sana-commerce.com/Content/Sana-User-Guide/Design-and-Layout/Web-Store-Header.htm). This means content elements can now be added to the header. In this tutorial we will develop an add on which enables a user to search through the navigation items, similarly to how products can be searched through in the header. **Two external libraries** namely [fuse.js](https://fusejs.io/) and [autosuggest-react](https://react-autosuggest.js.org/) are utilized to implement the searching algorithm and search bar respectively. The add-on will contain specifiable options for in the admin panel, based on these options the navigation items query will be dynamically generated.
 

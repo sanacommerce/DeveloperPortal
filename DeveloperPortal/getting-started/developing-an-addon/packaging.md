@@ -67,4 +67,4 @@ Here is an overview of the contents of the add-on package manifest file:
 
 ## What's next?
 
-Continue with [Deploying your Add-on](deployment.md).
+Continue with [deploying your Add-on](deployment.md).

@@ -1,4 +1,4 @@
-# Create a new Add-on Project
+# Create an Add-on Project
 
 Before writing any code, a new project for the future add-on has to be added to the Sana Commerce SDK solution.
 
@@ -22,8 +22,7 @@ Second, add the following `Import` statement to the project file:
 </Project>
 ```
 
-Doing this will automatically add the reference to the `Sana Extension Framework` library and all other required NuGet packages, 
-like `System.ComponentModel.Annotations`.
+Doing this will automatically add the reference to the [`Sana Extension Framework`](/contracts/extensions/index.md) library and all other required NuGet packages, like `System.ComponentModel.Annotations`.
 This will ensure, that an add-on is using the same NuGet packages versions, as the Extension Framework itself.
 
 ### Add Package Metadata
@@ -48,4 +47,4 @@ To do that, add a new XML file named `sanamanifest.xml` to the root of the add-o
 
 ## What's next?
 
-Continue with [creating your first Content Block Add-on](simple-cb-tutorial.md).
+Continue with [creating your first simple Content Block Add-on](simple-cb-tutorial.md).

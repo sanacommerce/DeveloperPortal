@@ -1,6 +1,6 @@
 # Simple Content Block Tutorial
 
-Finally it's time to develop the actual add-on. For the sake of simplicity, this tutorial will guide you through creating a simple Content Block Add-on. Not all Add-ons require a Content Block though, but it's a good place to start.
+Finally it's time to start developing the actual Add-on itself. For the sake of simplicity, this tutorial will guide you through creating a simple Content Block Add-on. Not all Add-ons require a Content Block though. Most 3<sup>rd</sup> party Integration Add-ons don't even require UI extensions. But it's the easiest option to start learning the basics.
 
 The Content Block Add-on we're going to develop will only render an H1 heading HTML element with the configured text.
 
@@ -115,4 +115,4 @@ Next, create a React component responsible for rendering the model:
 
 ## What's next?
 
-Continue with [Packaging your Add-on](packaging.md).
+Continue with [building, running & testing your Add-on](build-run-test.md).

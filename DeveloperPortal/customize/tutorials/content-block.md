@@ -1,8 +1,4 @@
-# Advanced Content Block Tutorial
-
-> [!Note]
-> This tutorial requires the basic add-on development experience, covered in the base [add-on development tutorial](develop-addon_jupiter.md).
-> Make sure to read it first.
+# Content Block Tutorial
 
 ## Requirements
 
@@ -29,9 +25,9 @@ Instead, an add-on is implemented by incrementally adding functionality on top o
 
 ## Preparation
 
-Set up the development environment and create a minimal add-on project, as explained in the base [add-on development tutorial](develop-addon_jupiter.md).
+Set up a new [SDK development environment](../../getting-started/developing-an-addon/environment-setup.md) and create a minimal Add-on project as explained in [Create a new Add-on Project](../../getting-started/developing-an-addon/create-addon-project.md) step.
 
-Also make sure, that "sanamanifest.xml" file is present at the root of the project.
+Make sure that "sanamanifest.xml" file is present at the root of the project.
 
 ## Content Block Extension
 
@@ -65,7 +61,7 @@ The content block web store user interface is represented by a single React comp
 In this step, such component is going to be created.
 
 > [!Note]
-> Refer to the base [add-on development tutorial](develop-addon_jupiter.md) for the hints on creating the required folder structure and adding the support for JS IntelliSense in the editor.
+> Refer to the [Create a UI Component](/getting-started/developing-an-addon/simple-cb-tutorial.html#create-a-ui-component) step of the Simple Content Block Tutorial for creating the required folder structure and adding support for JS IntelliSense in the editor through either a `jsconfig.json` or `tsconfig.json` file.
 
 Since news loading is not yet implemented, the initial version of the component will just render some stub data, but with respect to the real structure of the news items.
 
@@ -164,7 +160,7 @@ because they are automatically transformed into unique names to avoid naming con
 > But even in this case, always make sure, that all such CSS classes are correctly prefixed to avoid unexpected strange styling behavior on the frontend.
 
 The `@use` directive at the first line is importing Sana web store theme variables into a `theme` alias to make them available in the current stylesheet.
-All exported Sana theme variables can be found in `Sana.Commerce.WebApp/ClientApp/src/adk/webstore/theme.scss` file, which is a part of the client-side [Sana ADK](../adk.md).
+All exported Sana theme variables can be found in `Sana.Commerce.WebApp/ClientApp/src/adk/webstore/theme.scss` file, which is a part of the client-side [Sana ADK](../../getting-started/introduction/adk.md).
 
 Sana also supports raw CSS files in addition to SCSS, but only when using SCSS, it is possible to use predefined theme variables, like those in the above code snippet.
 
@@ -285,7 +281,7 @@ The values of all screen breakpoints are also provided as part of the current Sa
 Now let's extract the stub news items collection out of the React component into a Redux state.
 This is basically an intermediate step before fetching the real data via the GraphQL API.
 
-As it is described in the [Sana ADK article](../adk.md), every add-on is dedicated an isolated portion of the global Redux state, which it can work with.
+As it is described in the [Sana ADK article](../../getting-started/introduction/adk.md), every add-on is dedicated an isolated portion of the global Redux state, which it can work with.
 And that's, actually, the only difference.
 All other aspects of working with Redux and its React integration are exactly the same as descibed in their official tutorials.
  

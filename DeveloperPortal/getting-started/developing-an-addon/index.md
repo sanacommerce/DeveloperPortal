@@ -1,4 +1,4 @@
-# Develop an Add-on for Sana Commerce
+# Developing an Add-on for Sana Commerce
 
 This section explains the full development life-cycle for developing **any kind** of Add-on for Sana Commerce Cloud from start to finish.
 

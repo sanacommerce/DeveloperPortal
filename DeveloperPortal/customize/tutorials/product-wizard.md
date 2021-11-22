@@ -1,6 +1,6 @@
 # Product Wizard Tutorial
 
-# Introduction
+## Introduction
 
 In this tutorial we will develop a custom content block in which we will render an external webpage through an iframe. The external page will have a form where the customer can state their preferences on a number of things. With these preferences some algorithm can be implemented that will recommend a product from the webstore to the customer. If the customer were to like the recommendation they can click a button to add it to their basket. We will make the webpage rendered in the iframe send a message throught the browser to the webstore. The content block can then request through the graphapi to add the product referenced in the message to the customers basket.
 
