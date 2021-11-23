@@ -1,14 +1,14 @@
 # [Introduction](index.md)
 
-## [Breaking Changes](introduction/breaking-changes.md)
+<!-- ## [Breaking Changes](introduction/breaking-changes.md) -->
 
 # [Extensions](extensions/index.md)
 
-## [Reference](extensions/reference.md)
+## [Reference](https://community.sana-commerce.com/docs/SCC_Guides/Extensions/reference/extension-api.html)
 
 # Client Apps
 
-## [Visual Designer](extensions/visual-designer.md)
+<!-- ## [Visual Designer](extensions/visual-designer.md) -->
 
 ## [ClientApp Bundles](client-apps/bundles.md)
 
@@ -18,11 +18,11 @@
 
 # Graph APIs
 
-## [Using GraphQL](graph-apis/index.md)
+## [Introduction](graph-apis/index.md)
 
 ## [Using the ADK Client](graph-apis/adk-client.md)
 
-## [Reference](graph-apis/reference.md)
+<!-- ## [Reference](graph-apis/reference.md) -->
 
 ## [Playground](graph-apis/playground.md)
 

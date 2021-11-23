@@ -1,6 +1,6 @@
 # [Introduction](index.md)
 
-## [Common Scenarios](introduction/customization-scenarios.md)
+<!-- ## [Common Scenarios](introduction/customization-scenarios.md) -->
 
 # Tutorials
 
@@ -18,8 +18,8 @@
 
 ## [Admin Endpoint](custom-endpoints/admin.md)
 
-# Advanced Scenarios
+<!-- # Advanced Scenarios
 
 ## [Headless](advanced-scenarios/headless.md)
 
-## [ERP Integration](advanced-scenarios/erp-integration.md)
+## [ERP Integration](advanced-scenarios/erp-integration.md) -->
