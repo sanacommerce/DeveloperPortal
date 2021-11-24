@@ -23,6 +23,7 @@ $(function () {
 
   breakText();
   renderTabs();
+   $('[data-spy="scroll"]').data().offset = 154;
 
   window.refresh = function (article) {
     // Update markup result
@@ -1135,7 +1136,7 @@ $(function () {
           var href = item.href;
           var name = item.name;
           if (!name) continue;
-          html += href ? '<li><a href="' + href + '">' + name + '</a>' : '<li>' + name;
+          html += href ? '<li><a href="' + href + '">' + name + '</a>' : '<li>' + '<span>' + name + "</span>";
           html += getList(item, cls) || '';
           html += '</li>';
         }
