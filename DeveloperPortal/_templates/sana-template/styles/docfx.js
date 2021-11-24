@@ -23,6 +23,7 @@ $(function () {
 
   breakText();
   renderTabs();
+   $('[data-spy="scroll"]').data().offset = 154;
 
   window.refresh = function (article) {
     // Update markup result
@@ -586,6 +587,9 @@ $(function () {
         var currentHref = util.getAbsolutePath(window.location.pathname);
         $('#sidetoc').find('a[href]').each(function (i, e) {
           var href = $(e).attr("href");
+          if (href.startsWith("http")){
+            $(e).html('<span class="external-link">' + $(e).html() + "</span>"); 
+          }
           if (util.isRelativePath(href)) {
             href = tocrel + href;
             $(e).attr("href", href);
@@ -656,7 +660,7 @@ $(function () {
           return;
         }
         if (e.id == "gitalk-title") {
-          name = "Issues" 
+          return;
         }
 
         var item = {
@@ -1135,7 +1139,7 @@ $(function () {
           var href = item.href;
           var name = item.name;
           if (!name) continue;
-          html += href ? '<li><a href="' + href + '">' + name + '</a>' : '<li>' + name;
+          html += href ? '<li><a href="' + href + '">' +  name +  '</a>' : '<li>' + '<span>' + name + "</span>";
           html += getList(item, cls) || '';
           html += '</li>';
         }

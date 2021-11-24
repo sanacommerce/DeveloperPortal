@@ -29,10 +29,10 @@ Here is the list of supported web store named exports, which Sana expects an add
 
 - `epic`
 
-    All side effects, like any API calls, are recommended to be handled via `redux-observable` epics. 
-    Additionally, an add-on might need a possibility to react to certain events, being happened in the web store, for example, a shopping cart change event.
-    In such case, an add-on can provide its own epic to be injected into the Sana environment.
-    If an add-on contains multiple epics, they can be just combined with the help of `combineEpics` function from the `redux-observable` module.
+    All side effects, like any API calls, are recommended to be handled via `redux-observable` epics.
+    Additionally, an add-on might need a possibility to react to certain events, happening in the web store, for example, a shopping cart change event.
+    In that case, an add-on can provide its own epic to be injected into the Sana environment.
+    If an add-on contains multiple epics, they can be combined with the help of `combineEpics` function from the `redux-observable` module.
 
 
 Here is an example of an add-on's Web store entry point:
@@ -62,11 +62,11 @@ The contract for the Sana Admin add-on exports is the following:
     These settings consist of two properties: "editor" and "translator".
     Each of these properties should be assigned to the React components, responsible, correspondingly, for editing the content block model or for translating it to another language.
     
-    If the "translator" property is omitted, the content block is considered as non-translatable.
+    If the "translator" property is omitted, the content block is considered to be non-translatable.
     
     If the add-on does not provide any settings for a certain content block or does not provide the Sana Admin client bundle at all, Sana will render a generic form UI for this content block.
     It can be generated for both the "editor" and the "translator" parts, based on the `System.ComponentModel.Annotations` attributes, applied to the content block model .NET class on the server side.
-    When some add-on model is a simple class with one-level properties, the generic UI can drammatically reduce the add-on implementation time by skipping the UI for these simple models.
+    When some add-on model is a simple class with one-level properties, the generic UI can dramatically reduce the add-on implementation time by skipping the UI for these simple models.
     This "generic UI" approach is applied not only to the content blocks, but also to other model editors in the Sana Admin.
     
     Important to notice, that the "generic UI" feature is available only in Sana Admin and is not supported for any of the web store components.

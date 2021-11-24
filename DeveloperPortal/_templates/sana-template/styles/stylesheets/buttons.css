@@ -1,0 +1,87 @@
+.button{
+  text-decoration: none !important;
+  font-family: "Infra";
+  font-weight: 500;
+  border: .0625rem solid transparent;
+  border-radius: 3rem;
+  cursor: pointer;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  line-height: 1;
+  padding: 1rem 1.5rem;
+  position: relative;
+}
+
+.button:not(.primary){
+  transition: all .3s ease-in-out;
+}
+
+@media print, screen and (min-width: 48em){
+  .button.icon-right.icon-arrow-right:after {
+      content: "";
+      content: "";
+  }
+}
+
+@media print, screen and (min-width: 48em){
+  .button.icon-right.icon-arrow-right:after, .button.icon-right.icon-arrow-up:after {
+    font-family: "Icomoon";
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1;
+    margin-left: .5rem;
+    transition: all .3s ease-in-out;
+    transition-property: transform;
+  }
+}
+
+@media print, screen and (min-width: 64em){
+  .button.primary.icon-right:hover:after, .button.primary.icon-right:focus:after{
+      transform: translateX(.4rem);
+  }
+}
+
+.button.icon-left:after, .button.icon-left:before, .button.icon-right:after, .button.icon-right:before {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  line-height: 0!important;
+  position: relative;
+  top: .75rem;
+  vertical-align: bottom;
+}
+
+@media print, screen and (min-width: 64em){
+  .button:hover, .button:focus {
+  text-decoration: none;
+  }
+}
+@media print, screen and (min-width: 64em){
+  .button.secondary:hover, .button.secondary:focus {
+      background-color: var(--color-border);
+      color: #fff;
+  }
+  .button.sana:hover, .button.sana:focus{
+      background-color: var(--color-sana);
+      color: #fff;
+  }
+  body.dark-theme .button.secondary:hover, body.dark-theme .button.secondary:focus{
+    color: #1d1f48;
+  }
+}
+
+.button.primary { 
+  background-color: #ffda00;
+  color: #1d1f48;
+}
+
+.button.secondary {
+  border-color: var(--color-border);
+  color: var(--color-border);
+  background-color: transparent;
+}
+
+.button.sana{
+  border-color: var(--color-sana);
+  color: var(--color-sana);
+  background-color: transparent;
+}
