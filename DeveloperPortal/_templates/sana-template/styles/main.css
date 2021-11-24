@@ -570,6 +570,19 @@ article h4 {
   border: none;
 }
 
+.sidetoc .external-link:after{
+  position: relative;
+  top:2px;
+  left:6px;
+  display: inline-block;
+  content: "";
+  background-color: var(--color-navbar);
+  -webkit-mask-image: url("./external_link_icon.svg");
+  mask-image: url("./external_link_icon.svg");
+  height: 13px;
+  width: 13px;
+}
+
 .alert {
   background-color: inherit;
   border: none;

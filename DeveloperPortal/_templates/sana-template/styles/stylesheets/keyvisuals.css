@@ -16,13 +16,13 @@
   font-weight: 400;
 }
 
-@media print, screen and (min-width: 48em){
+@media print, screen and (min-width: 28em){
   .keyvisual h1 {
     
       margin-bottom: 1.3rem;
   }
 }
-@media print, screen and (min-width: 48em){
+@media print, screen and (min-width: 28em){
   .keyvisual .button {
       margin-top: 3.2rem;
   }
@@ -50,7 +50,7 @@
   }
 }
 
-@media print, screen and (min-width: 48em){
+@media print, screen and (min-width: 28em){
   .keyvisual.extended .foreground-image {
       margin-bottom: 2rem;
   }
@@ -87,7 +87,7 @@
   }
 }
 
-@media print, screen and (min-width: 48em){
+@media print, screen and (min-width: 28em){
   .keyvisual.extended {
       padding: 4rem 0 5rem;
   }
@@ -248,29 +248,29 @@
   }
 
 
-  @media print, screen and (min-width: 48em){
+  @media print, screen and (min-width: 28em){
     .keyvisual-cta a {
         -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     }
   }
-  @media print, screen and (min-width: 48em){
+  @media print, screen and (min-width: 28em){
     .keyvisual-cta a img {
         margin: 0 1.5rem 0 0;
     }
   }
-  @media print, screen and (min-width: 48em){
+  @media print, screen and (min-width: 28em){
     .grid-x>.medium-1, .grid-x>.medium-2, .grid-x>.medium-3, .grid-x>.medium-4, .grid-x>.medium-5, .grid-x>.medium-6, .grid-x>.medium-7, .grid-x>.medium-8, .grid-x>.medium-9, .grid-x>.medium-10, .grid-x>.medium-11, .grid-x>.medium-12, .grid-x>.medium-shrink {
         -ms-flex: 0 0 auto;
         flex: 0 0 auto;
     }
-  @media print, screen and (min-width: 48em){
+  @media print, screen and (min-width: 28em){
     .grid-x>.medium-1, .grid-x>.medium-2, .grid-x>.medium-3, .grid-x>.medium-4, .grid-x>.medium-5, .grid-x>.medium-6, .grid-x>.medium-7, .grid-x>.medium-8, .grid-x>.medium-9, .grid-x>.medium-10, .grid-x>.medium-11, .grid-x>.medium-12, .grid-x>.medium-full, .grid-x>.medium-shrink {
         -ms-flex-preferred-size: auto;
         flex-basis: auto;
     }}
 
-  @media print, screen and (min-width: 48em){ 
+  @media print, screen and (min-width: 28em){ 
     .grid-x>.medium-8 {
       width: 66.6666666667%;
   }}
