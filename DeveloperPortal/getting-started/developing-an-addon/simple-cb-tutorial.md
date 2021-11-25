@@ -115,4 +115,4 @@ Next, create a React component responsible for rendering the model:
 
 ## What's next?
 
-Continue with [building, running & testing your Add-on](build-run-test.md).
+Continue with [building, testing & debugging your Add-on](build-test-debug.md).
