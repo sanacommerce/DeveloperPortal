@@ -1,3 +1,4 @@
 ---
 playground: true
+nonArticle: true
 ---
