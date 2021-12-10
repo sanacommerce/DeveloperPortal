@@ -17,7 +17,7 @@
 
 body.dark-theme {
   --color-foreground: #e4e4e4;
-  --color-navbar: #999;
+  --color-navbar: #e4e4e4;
   --color-breadcrumb: #999;
   --color-border: #f0f0f0;
   --color-toc-hover: #fff;
