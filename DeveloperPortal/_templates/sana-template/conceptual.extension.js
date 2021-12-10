@@ -6,9 +6,10 @@
 exports.preTransform = function (model) {
   var splitKey = model._key.split("/");
   if (typeof model.allowReview === "undefined")
-    model.allowReview = splitKey[splitKey.length - 1] !== "index.md"
+    model.allowReview = splitKey[splitKey.length - 1] !== "index.md" || model.nonArticle
   model._model = JSON.stringify(model);
-  model.nonArticle = model.isHomePage || model.playground;
+  if (typeof model.nonArticle === "undefined")
+    model.nonArticle = model.isHomePage || model.playground;
 
   return model;
 }

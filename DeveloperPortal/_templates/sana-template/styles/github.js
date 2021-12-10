@@ -115,7 +115,7 @@ function issueSubmission(e){
     hideIssueForm()
 }
 
-issueForm && issueForm.onsubmit = issueSubmission
+issueForm.onsubmit = issueSubmission
 
 // Check whether the issue exists yet then 
 fetch((`https://api.github.com/repos/${owner}/${repo}/issues?labels=${location.pathname}`)).then((res) => {

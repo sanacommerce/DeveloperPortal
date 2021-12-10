@@ -85,3 +85,9 @@
   color: var(--color-sana);
   background-color: transparent;
 }
+
+.inline{
+    font-weight: inherit;
+    padding: 0.6rem 1.2rem;
+    margin: 0;
+}
