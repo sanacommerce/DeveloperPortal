@@ -588,6 +588,7 @@ $(function () {
         $('#sidetoc').find('a[href]').each(function (i, e) {
           var href = $(e).attr("href");
           if (href.startsWith("http")){
+            $(e).attr('target', '_blank')
             $(e).html('<span class="external-link">' + $(e).html() + "</span>"); 
           }
           if (util.isRelativePath(href)) {
