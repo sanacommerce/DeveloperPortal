@@ -2,105 +2,105 @@
 
 <!-- ## [Breaking Changes](introduction/breaking-changes.md) -->
 
-# [Extensions](Extensions/index.md)
+# [Extensions](extensions/index.md)
 
 ## Reference
 
-### [Structure of the package](Extensions/reference/package-structure.md)
+### [Structure of the package](extensions/reference/package-structure.md)
 
-### [Extension.Api](Extensions/reference/extension-api.md)
+### [Extension.Api](extensions/reference/extension-api.md)
 
-### [Extension.Api.Data](Extensions/reference/extension-api-data.md)
+### [Extension.Api.Data](extensions/reference/extension-api-data.md)
 
-### [Extension.Api.DataFiles](Extensions/reference/extension-api-datafiles.md)
+### [Extension.Api.DataFiles](extensions/reference/extension-api-datafiles.md)
 
-### [Extension.Api.Products](Extensions/reference/extension-api-products.md)
+### [Extension.Api.Products](extensions/reference/extension-api-products.md)
 
-### [Extension.Api.MailManager](Extensions/reference/extension-api-mail.md)
+### [Extension.Api.MailManager](extensions/reference/extension-api-mail.md)
 
-### [Extension.Api.NewsletterManager](Extensions/reference/extension-api-newsletter.md)
+### [Extension.Api.NewsletterManager](extensions/reference/extension-api-newsletter.md)
 
-### [Extension.Api.SecureInMemoryStorage](Extensions/reference/extension-api-secureinmemorystorage.md)
+### [Extension.Api.SecureInMemoryStorage](extensions/reference/extension-api-secureinmemorystorage.md)
 
-### [ExtensionViewHelper](Extensions/reference/extension-view-helper.md)
+### [ExtensionViewHelper](extensions/reference/extension-view-helper.md)
 
-### [NextAction](Extensions/reference/next-action.md)
+### [NextAction](extensions/reference/next-action.md)
 
-### [PaymentExtension](Extensions/reference/payment-extension.md)
+### [PaymentExtension](extensions/reference/payment-extension.md)
 
-### [PaymentStatus](Extensions/reference/payment-status.md)
+### [PaymentStatus](extensions/reference/payment-status.md)
 
-### [PaymentContext](Extensions/reference/payment-context.md)
+### [PaymentContext](extensions/reference/payment-context.md)
 
-### [PaymentStartContext](Extensions/reference/payment-start-context.md)
+### [PaymentStartContext](extensions/reference/payment-start-context.md)
 
-### [PaymentStatusSynchronizationExtension](Extensions/reference/payment-status-sync-extension.md)
+### [PaymentStatusSynchronizationExtension](extensions/reference/payment-status-sync-extension.md)
 
-### [PickupLocation](Extensions/reference/pickup-location.md)
+### [PickupLocation](extensions/reference/pickup-location.md)
 
 ### Customer data export
 
-#### [CustomersExportExtension](Extensions/reference/customer-export-extension.md)
+#### [CustomersExportExtension](extensions/reference/customer-export-extension.md)
 
-#### [ExportContext](Extensions/reference/customer-export-context.md)
+#### [ExportContext](extensions/reference/customer-export-context.md)
 
-#### [LoadOptions](Extensions/reference/customer-export-load-options.md)
+#### [LoadOptions](extensions/reference/customer-export-load-options.md)
 
-#### [ProcessBatchContext](Extensions/reference/customer-export-process-batch-context.md)
+#### [ProcessBatchContext](extensions/reference/customer-export-process-batch-context.md)
 
 ### Product data export
 
-#### [ProductExportExtension](Extensions/reference/product-export-extension.md)
+#### [ProductExportExtension](extensions/reference/product-export-extension.md)
 
-#### [ExportContext](Extensions/reference/product-export-context.md)
+#### [ExportContext](extensions/reference/product-export-context.md)
 
-#### [LoadOptions](Extensions/reference/product-export-load-options.md)
+#### [LoadOptions](extensions/reference/product-export-load-options.md)
 
-#### [ProcessBatchContext](Extensions/reference/product-export-process-batch-context.md)
+#### [ProcessBatchContext](extensions/reference/product-export-process-batch-context.md)
 
 ### Product configurator
 
-#### [ConfigurableProductDetectionContext](Extensions/reference/configurable-product-detection-context.md)
+#### [ConfigurableProductDetectionContext](extensions/reference/configurable-product-detection-context.md)
 
-#### [ConfigurableProductDetectionResult](Extensions/reference/configurable-product-detection-result.md)
+#### [ConfigurableProductDetectionResult](extensions/reference/configurable-product-detection-result.md)
 
-#### [ConfiguratorMessageContext](Extensions/reference/configurator-message-context.md)
+#### [ConfiguratorMessageContext](extensions/reference/configurator-message-context.md)
 
-#### [ProductConfiguratorExtension](Extensions/reference/product-configurator-extension.md)
+#### [ProductConfiguratorExtension](extensions/reference/product-configurator-extension.md)
 
-#### [ProductConfiguratorContext](Extensions/reference/product-configurator-context.md)
+#### [ProductConfiguratorContext](extensions/reference/product-configurator-context.md)
 
-#### [ProductConfiguratorResult](Extensions/reference/product-configurator-result.md)
+#### [ProductConfiguratorResult](extensions/reference/product-configurator-result.md)
 
-### [Size](Extensions/reference/size.md)
+### [Size](extensions/reference/size.md)
 
-### [ShippingExtension](Extensions/reference/shipping-extension.md)
+### [ShippingExtension](extensions/reference/shipping-extension.md)
 
-### [ShippingContext](Extensions/reference/shipping-context.md)
+### [ShippingContext](extensions/reference/shipping-context.md)
 
-### [ShippingRate](Extensions/reference/shipping-rate.md)
+### [ShippingRate](extensions/reference/shipping-rate.md)
 
-### [ShippingPickupLocationsContext](Extensions/reference/shipping-pickup-locations-context.md)
+### [ShippingPickupLocationsContext](extensions/reference/shipping-pickup-locations-context.md)
 
-### [Sana Admin editors](Extensions/reference/sana-admin-editors.md)
+### [Sana Admin editors](extensions/reference/sana-admin-editors.md)
 
-### [Weight](Extensions/reference/weight.md)
+### [Weight](extensions/reference/weight.md)
 
-### [Link](Extensions/reference/link.md)
+### [Link](extensions/reference/link.md)
 
-### [ISanaApiValidationAttribute](Extensions/reference/sana-api-validation-attribute.md)
+### [ISanaApiValidationAttribute](extensions/reference/sana-api-validation-attribute.md)
 
-### [WebstoreContext](Extensions/reference/webstore-context.md)
+### [WebstoreContext](extensions/reference/webstore-context.md)
 
 ### Endpoints
 
-#### [AdminEndpointContext](Extensions/reference/admin-endpoint-context.md)
+#### [AdminEndpointContext](extensions/reference/admin-endpoint-context.md)
 
-#### [AdminEndpointExtension](Extensions/reference/admin-endpoint-extension.md)
+#### [AdminEndpointExtension](extensions/reference/admin-endpoint-extension.md)
 
-#### [WebstoreEndpointContext](Extensions/reference/webstore-endpoint-context.md)
+#### [WebstoreEndpointContext](extensions/reference/webstore-endpoint-context.md)
 
-#### [WebstoreEndpointExtension](Extensions/reference/webstore-endpoint-extension.md)
+#### [WebstoreEndpointExtension](extensions/reference/webstore-endpoint-extension.md)
 
 # Client Apps
 
