@@ -582,7 +582,7 @@
                         'Accept': 'application/json',
                     },
                     body: JSON.stringify({query: query,
-                    variables: {logininfo: {email: "playground-user@sana-commerce.com", password: "bu2C*M~)U@Q[\6L`4qJP", persistent: false}}})
+                    variables: {logininfo: {email: "playground-user@sana-commerce.com", password: "bu2C*M~)U@Q[\\6L`4qJP", persistent: false}}})
                 })
                 const data = await res.json()
                 return data.data.profile.login.token.value
@@ -607,7 +607,7 @@
                         'Accept': 'application/json',
                     },
                     body: JSON.stringify({query: query,
-                    variables: {logininfo: {email: "playground-user@sana-commerce.com", password: "bu2C*M~)U@Q[\6L`4qJP", persistent: false}}})
+                    variables: {logininfo: {email: "playground-user@sana-commerce.com", password: "bu2C*M~)U@Q[\\6L`4qJP", persistent: false}}})
                 })
 
                 const data = await res.json()

@@ -654,7 +654,7 @@ code {
   border-radius: 2px;
 }
 
-p>code{
+*:not(pre)>code{
   color: var(--color-foreground);
   font-family: "Infra";
   background-color: var(--color-background-code);

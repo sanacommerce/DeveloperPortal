@@ -26,7 +26,7 @@ namespace GraphQLBlockCode
             result += "\">";
             result += token.Code;
             result += "\n</code></pre>";
-            result += "<a class=\"button secondary\" target=\"_blank\" href=\"/graph-apis/playground.html?graphrequest=";
+            result += "<a class=\"button secondary\" target=\"_blank\" href=\"/contracts/graph-apis/playground.html?graphrequest=";
             result += WebUtility.UrlEncode(token.Code);
             result += token.Lang == "graphql-admin" ? "&admin=True" : ""; 
             result += "\">Open in playground</a>";
