@@ -2,7 +2,7 @@
 
 This interface declares `Api` property which holds the instance of `SanaApi` type while validation and which is the entry point to core Sana Commerce Framework functionality.
 
-You can find example of this interface usage in next article: [Using Sana texts in custom validation attributes](https://community.sana-commerce.com/docs/SCC_Guides/Extensions/how-to//sana-texts-in-validation-attributes.md)
+You can find example of this interface usage in next article: [Using Sana texts in custom validation attributes](https://community.sana-commerce.com/docs/SCC_Guides/Extensions/how-to/sana-texts-in-validation-attributes.html)
 
 ## Properties
 
@@ -18,6 +18,6 @@ var validationMessage = Api.GetSanaText("LastDigitsOfPhoneNumber_ValidationMessa
 
 ## See also
 
-[Using Sana texts in custom validation attributes](https://community.sana-commerce.com/docs/SCC_Guides/Extensions/how-to//sana-texts-in-validation-attributes.md)
+[Using Sana texts in custom validation attributes](https://community.sana-commerce.com/docs/SCC_Guides/Extensions/how-to/sana-texts-in-validation-attributes.html)
 
 [Extension.Api](extension-api.md)

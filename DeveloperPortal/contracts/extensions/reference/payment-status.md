@@ -49,4 +49,4 @@ can be sure that customer account hasn't being charged, the `Cancelled` status s
 
 ## See also
 
-[New payment service provider](https://community.sana-commerce.com/docs/SCC_Guides/Extensions/how-to//create-payment-extension.md)
+[New payment service provider](https://community.sana-commerce.com/docs/SCC_Guides/Extensions/how-to/create-payment-extension.html)

@@ -127,7 +127,7 @@ you need to access any external resources in an asynchronous way.
 
 ## See also
 
-[Create product configurator extension](https://community.sana-commerce.com/docs/SCC_Guides/Extensions/how-to//create-product-configurator-extension.md)
+[Create product configurator extension](https://community.sana-commerce.com/docs/SCC_Guides/Extensions/how-to/create-product-configurator-extension.html)
 
 [ConfiguratorMessageContext reference](configurable-product-detection-context.md)
 

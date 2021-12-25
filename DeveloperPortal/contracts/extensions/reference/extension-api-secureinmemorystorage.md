@@ -6,7 +6,7 @@ property which provides the way to store user's sensitive authentication data fo
 of time with possibility to access this data later in subsequent requests.
 
 The `SecureInMemoryStorage` property holds an instance of `InMemoryStorage` type. See the
-[How to store sensitive data tutorial](https://community.sana-commerce.com/docs/SCC_Guides/Extensions/how-to//store-sensitive-data.md) to learn how
+[How to store sensitive data tutorial](https://community.sana-commerce.com/docs/SCC_Guides/Extensions/how-to/store-sensitive-data.html) to learn how
 to use this API.
 
 ## Methods
@@ -59,4 +59,4 @@ string data = Api.SecureInMemoryStorage.RetrieveAndForget("cvv");
 
 ## See also
 
-[How to store sensitive data tutorial](https://community.sana-commerce.com/docs/SCC_Guides/Extensions/how-to//store-sensitive-data.md)
+[How to store sensitive data tutorial](https://community.sana-commerce.com/docs/SCC_Guides/Extensions/how-to/store-sensitive-data.html)

@@ -129,7 +129,7 @@ var transactionId = context.HttpContext.Request.Form["x_trans_id"];
 Gets settings of current payment method. This property contains settings of current
 payment method. If no settings exist for current payment method, then `null` is returned.
 More information about payment method settings you can find in
-[Settings per payment method](https://community.sana-commerce.com/docs/SCC_Guides/Extensions/how-to//payment-method-settings.md) article.
+[Settings per payment method](https://community.sana-commerce.com/docs/SCC_Guides/Extensions/how-to/payment-method-settings.html) article.
 
 ```cs
 var methodSettings = (CustomPayPalPaymentMethodSettings)context.MethodSettings;
@@ -221,6 +221,6 @@ var updatedStatus = PspWebService.GetPaymentStatus(context.TransactionId);
 
 [PaymentStartContext reference](payment-start-context.md)
 
-[New payment service provider](https://community.sana-commerce.com/docs/SCC_Guides/Extensions/how-to//create-payment-extension.md)
+[New payment service provider](https://community.sana-commerce.com/docs/SCC_Guides/Extensions/how-to/create-payment-extension.html)
 
-[Settings per payment method](https://community.sana-commerce.com/docs/SCC_Guides/Extensions/how-to//payment-method-settings.md)
+[Settings per payment method](https://community.sana-commerce.com/docs/SCC_Guides/Extensions/how-to/payment-method-settings.html)

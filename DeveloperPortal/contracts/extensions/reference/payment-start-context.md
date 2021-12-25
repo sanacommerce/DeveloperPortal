@@ -24,7 +24,7 @@ you have access to the properties available in `PaymentContext`. More informatio
 Gets the additional customer data for payment provider. This data has been collected on
 "Information for payment provider" checkout step. More details about additional customer data
 for payment provider you can find in
-[Additional information for payment method during checkout](https://community.sana-commerce.com/docs/SCC_Guides/Extensions/how-to//additional-customer-data-model.md)
+[Additional information for payment method during checkout](https://community.sana-commerce.com/docs/SCC_Guides/Extensions/how-to/additional-customer-data-model.html)
 article.
 
 ### Address
@@ -62,4 +62,4 @@ is not an order.
 
 ## See also
 
-[Additional information for payment method during checkout](https://community.sana-commerce.com/docs/SCC_Guides/Extensions/how-to//additional-customer-data-model.md)
+[Additional information for payment method during checkout](https://community.sana-commerce.com/docs/SCC_Guides/Extensions/how-to/additional-customer-data-model.html)
