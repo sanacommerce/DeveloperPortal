@@ -48,7 +48,7 @@ public override Task InvokeAsync(WebstoreEndpointContext context, Func<Task> nex
 
 ## See also
 
-[Create webstore endpoint extension](../how-to/create-webstore-endpoint-extension.md)
+[Create webstore endpoint extension](https://community.sana-commerce.com/docs/SCC_Guides/Extensions/how-to//create-webstore-endpoint-extension.md)
 
 [WebstoreEndpointContext reference](webstore-endpoint-context.md)
 

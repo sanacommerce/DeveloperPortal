@@ -48,6 +48,6 @@ public override Task InvokeAsync(AdminEndpointContext context, Func<Task> next, 
 
 ## See also
 
-[Create admin endpoint extension](../how-to/create-admin-endpoint-extension.md)
+[Create admin endpoint extension](https://community.sana-commerce.com/docs/SCC_Guides/Extensions/how-to//create-admin-endpoint-extension.md)
 
 [AdminEndpointContext reference](admin-endpoint-context.md)

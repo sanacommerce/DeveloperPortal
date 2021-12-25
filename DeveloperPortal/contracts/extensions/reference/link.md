@@ -41,6 +41,6 @@ const Component = ({ model }) => {
 
 ## See also
 
-[How to create a content block extension](../how-to/create-content-block-extension.md)
+[How to create a content block extension](https://community.sana-commerce.com/docs/SCC_Guides/Extensions/how-to//create-content-block-extension.md)
 
-[Extension configuration](../how-to/extension-configuration.md)
+[Extension configuration](https://community.sana-commerce.com/docs/SCC_Guides/Extensions/how-to//extension-configuration.md)

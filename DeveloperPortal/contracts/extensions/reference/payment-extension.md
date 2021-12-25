@@ -8,7 +8,7 @@ There is also generic class `PaymentExtension<TMethodSettings>` inherited from
 `PaymentExtension` which provides payment extensions with possibility to have configurable
 payment methods. It takes type inherited from `PaymentMethodSettings` as a generic type
 parameter. More details about payment method settings you can find in 
-[Settings per payment method](../how-to/payment-method-settings.md) article.
+[Settings per payment method](https://community.sana-commerce.com/docs/SCC_Guides/Extensions/how-to//payment-method-settings.md) article.
 
 ![PaymentExtension inheritance](img/payment-extension/inheritance.png)
 
@@ -27,7 +27,7 @@ class inherited from `AdditionalCustomerDataModel`. Instance of this class has t
 "Information for payment provider" checkout step.
 
 More information about additional customer data model you can find in
-[Additional information for payment method during checkout](../how-to/additional-customer-data-model.md)
+[Additional information for payment method during checkout](https://community.sana-commerce.com/docs/SCC_Guides/Extensions/how-to//additional-customer-data-model.md)
 article.
 
 ```cs
@@ -231,6 +231,6 @@ or sends payment callback immediately, implementing of this method is not necess
 
 ## See also
 
-[Settings per payment method](../how-to/payment-method-settings.md)
+[Settings per payment method](https://community.sana-commerce.com/docs/SCC_Guides/Extensions/how-to//payment-method-settings.md)
 
-[Additional information for payment method during checkout](../how-to/additional-customer-data-model.md)
+[Additional information for payment method during checkout](https://community.sana-commerce.com/docs/SCC_Guides/Extensions/how-to//additional-customer-data-model.md)

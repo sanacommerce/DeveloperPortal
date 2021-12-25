@@ -15,7 +15,7 @@ inherits from the core Sana `Extension` class.
 Gets or sets identifier of payment module.
 
 Payment module identifier connects payment status synchronization extension with payment extension
-itself. Therefore this identifier has to be the same as in [`PaymentModuleIdAttribute`](../how-to/create-payment-extension.md#PaymentModuleIdAttribute) 
+itself. Therefore this identifier has to be the same as in [`PaymentModuleIdAttribute`](https://community.sana-commerce.com/docs/SCC_Guides/Extensions/how-to//create-payment-extension.md#PaymentModuleIdAttribute) 
 of payment extension.
 
 Payment status synchronization extension processes transactions of payment methods that use payment

@@ -108,4 +108,4 @@ public override NextAction ProcessCallback(PaymentContext context)
 
 ## See also
 
-[New payment service provider](../how-to/create-payment-extension.md)
+[New payment service provider](https://community.sana-commerce.com/docs/SCC_Guides/Extensions/how-to//create-payment-extension.md)
