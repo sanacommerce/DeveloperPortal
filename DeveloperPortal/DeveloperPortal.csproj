@@ -19,7 +19,7 @@
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
   <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
-  <RemoveDir Directories="$(ProjectDir)wwwroot" />
+    <RemoveDir Directories="$(ProjectDir)wwwroot" />
   </Target>
   <Target Condition="'$(IsOSX)'=='true'" Name="PreBuild" BeforeTargets="PreBuildEvent">
     <Exec Command="docfx build"></Exec>

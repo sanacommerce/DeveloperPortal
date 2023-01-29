@@ -4,8 +4,11 @@
   <div class="grad-bottom"></div>
   <div class="footer">
     <div class="container">
-      <span class="pull-right">
+      <span class="pull-right footer-link">
         <a href="#top">Back to top</a>
+      </span>
+      <span class="pull-right footer-link">
+        <a href="/cookies">Cookies</a>
       </span>
       <div class="pull-left">
         {{{_appFooter}}}

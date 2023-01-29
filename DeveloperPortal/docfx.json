@@ -36,7 +36,7 @@
       "_templates/sana-template"
     ],
     "globalMetadata": {
-      "_appFooter": "<span>Copyright &copy; 2021 Sana Commerce</span>",
+      "_appFooter": "<span>Copyright &copy; 2023 Sana Commerce</span>",
       "_appTitle": "Sana Developer Portal",
       "_enableNewTab": true,
       "_enableSearch": true,
