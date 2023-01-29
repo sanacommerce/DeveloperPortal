@@ -575,7 +575,7 @@
                             }
                         } 
                     }`
-                const res = await fetch('https://playground.sana-commerce.com/api/graph', {
+                const res = await fetch('https://playground.sana-commerce.com/api/graph/stable', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -600,7 +600,7 @@
                             }
                         }   
                     }`
-                const res = await fetch('https://playground.sana-commerce.com/admin/api/graph', {
+                const res = await fetch('https://playground.sana-commerce.com/admin/api/graph/stable', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -627,13 +627,13 @@
                         headers: {
                             Authorization: "Bearer " + params.get("admin") ? await getAdminToken() : await getWebStoreToken()
                         }, 
-                        endpoint: params.get("admin") ? "https://playground.sana-commerce.com/admin/api/graph" :"https://playground.sana-commerce.com/api/graph",
+                        endpoint: params.get("admin") ? "https://playground.sana-commerce.com/admin/api/graph/stable" :"https://playground.sana-commerce.com/api/graph/stable",
                     }, 
                 tabs = {tabs: [tab]}
             }
             GraphQLPlayground.init(root, {
                 ...tabs,
-                endpoint: "https://playground.sana-commerce.com/api/graph"
+                endpoint: "https://playground.sana-commerce.com/api/graph/stable"
             })
         })
     </script>
